@@ -12,15 +12,15 @@
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="AmiHeines.com &raquo; Feed" href="https://amiheines.com/feed/" />
 <link rel="alternate" type="application/rss+xml" title="AmiHeines.com &raquo; Comments Feed" href="https://amiheines.com/comments/feed/" />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://amiheines.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://amiheines.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2' type='text/css' media='all' />
 <link rel='stylesheet' id='genericons-css'  href='https://amiheines.com/wp-content/themes/independent-publisher/fonts/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
-<link rel='stylesheet' id='independent-publisher-style-css'  href='https://amiheines.com/wp-content/themes/independent-publisher/style.css?ver=5.6' type='text/css' media='all' />
+<link rel='stylesheet' id='independent-publisher-style-css'  href='https://amiheines.com/wp-content/themes/independent-publisher/style.css?ver=5.6.2' type='text/css' media='all' />
 <link rel='stylesheet' id='customizer-css'  href='https://amiheines.com/wp-admin/admin-ajax.php?action=independent_publisher_customizer_css&#038;ver=1.7' type='text/css' media='all' />
 <script type='text/javascript' src='https://amiheines.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
 <script type='text/javascript' src='https://amiheines.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
 <script type='text/javascript' src='https://amiheines.com/wp-content/themes/independent-publisher/js/enhanced-comment-form.js?ver=1.0' id='enhanced-comment-form-js-js'></script>
 <link rel="https://api.w.org/" href="https://amiheines.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://amiheines.com/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 5.6" />
+<meta name="generator" content="WordPress 5.6.2" />
 <link rel="icon" href="https://amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-32x32.jpg" sizes="32x32" />
 <link rel="icon" href="https://amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-192x192.jpg" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-180x180.jpg" />
@@ -47,9 +47,7 @@
 							<nav role="navigation" class="site-navigation main-navigation">
 				<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
 
-													<div class="menu"><ul>
-<li class="page_item page-item-2"><a href="https://amiheines.com/sample-page/">Sample Page</a></li>
-</ul></div>
+													<div class="menu"></div>
 				
 			</nav><!-- .site-navigation .main-navigation -->
 		
@@ -65,11 +63,102 @@
 				<header class="page-header">
 					<h1 class="page-title">
 						<span>2021</span>					</h1>
-					<div class="intro-meta"><p>There is one post published in 2021.</p>
+					<div class="intro-meta"><p>There are 2 posts published in 2021 (this is page <strong>1</strong> of <strong>1</strong>).</p>
 </div>									</header><!-- .page-header -->
 
 								
-					<article id="post-16" class="first-post post-16 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+					<article id="post-22" class="first-post post-22 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<header class="entry-header">
+						<h1 class="entry-title p-name">
+			<a href="https://amiheines.com/toy-compiler-in-javascript/" title="Permalink to Toy compiler in javascript" rel="bookmark">Toy compiler in javascript</a>
+		</h1>
+	</header>
+	<!-- .entry-header -->
+
+	<div class="entry-content e-content">
+
+		
+						
+			
+<p>I&#8217;ve always wanted to build my own compiler. It seemed a hard problem to tackle and a growing opportunity for me as a developer. I needed a good reason to actually get my hands dirty and stop reading books and ebooks on how to do it.</p>
+
+
+
+<p>The best starting point I wanted to use is META_II. There is something magical about the short program in a completely bizarre language which compiles to itself and can be extended and preserve the property of being able to compile itself.</p>
+
+
+
+<p>The first complete compiler I created yesterday is still very limited in its ability and lacks important language features. It is very ugly in its rules and syntax but it works for the use case I need it and it is all mine 🙂</p>
+
+
+
+<p>It is not a polished product for general public consumption but very useful and a good starting point for additional extensions and improvements.</p>
+
+
+
+<p>Now that I have the basic features I wanted and they actually work, I can put it to use and create a compiler that reads SQL flavor table definitions and converts that to eosio smart contract C++ which can then be further developed or uploaded as is to an EOS compatible blockchain.</p>
+
+
+
+<p>The idea of SQL2EOS is that you write simplified SQL CREATE TABLE and it will have all the info it needs to output a valid C++ smart contract code with a multi-index table.</p>
+
+
+
+<p>The SQL syntax is cleaner and doesn&#8217;t have repeating parts where as the C++ code does have longer, more verbose and confusing links between different parts of the code to reach the same result &#8211; a working table for user data.</p>
+
+
+
+<p>Anyway, the META_II I extended and melded to my liking is still a work in progress and has some ugly parts. It is fairly easy to rewrite and I will do it soon and explain how, so you can follow along and use it for something else if you want.</p>
+
+
+
+<p>The problem with META_II is that you need to be able to think in at least 4 different languages at the same time, this is hard. There is the &#8220;<strong>substrate language</strong>&#8221; which in my case is javascript and the usage is pretty straight forward, so not much brain power invested there. The second is the <strong>pseudo-assembler</strong> which is written on top of the substrate language, I chose to implement it as an interpreter. The javascript runs on the code file which is a text file which superficially looks like assembler but has special op-codes or commands which are processed in a large switch case in a loop in the javascript. Next up in the abstraction chain is the <strong>META_II high level language</strong> which is a mix of BNF equations that define the <strong>input language</strong>, intermixed with output commands that will create the output file in the <strong>target language</strong>.</p>
+
+
+
+<p>Oh my! After bolding the different languages and explaining the relationships between them, I think there are actually 5 languages&#8230;</p>
+
+
+
+<p>Not only that, but you need to be able to reasonably do &#8220;dry runs&#8221; in the different languages and debug all of them, sometimes with the help of caveman debugging to level the playing field of the multiple languages sitation.</p>
+
+
+
+<p>Since it takes time to grok a programming language and feel fluent in it, and since META_II introduces at least 2 languages &#8211; the pseudo-assembler and the META_II high level language, it takes time and effort to overcome the initial learning curve.</p>
+
+
+
+<p>The worst part is that the 5 languages are not static. Meaning, once you understand them and know what you can do, you realize they need to be extended and you keep changing them to suite your needs. This is not like adding a function, but adding a language concept altogether. Do you need a missing control structure? Are all variables global and you need the mechanism of scoping them to functions? Hint: META_II is brutally minimalistic and you need to add loops, variables, operators and more&#8230;</p>
+
+
+
+<p>I added 2 things I needed for my task, one is a way to store dynamic arrays of values and the other is a looping construct for the output.</p>
+
+
+
+<p>I also separated the stages of collecting info from the source SQL language and outputting the needed C++ smart contract since it wasn&#8217;t an easy one-to-one transformation from the SQL to the EOSIO C++ smart contract.</p>
+			
+				
+			
+			</div>
+	<!-- .entry-content -->
+
+		
+	<footer class="entry-meta">
+
+							<span class="cat-links"></span>		
+				
+							<span>734 Words</span>		
+		
+				
+				
+		
+	</footer>
+	<!-- .entry-meta -->
+</article><!-- #post-22 -->
+
+				
+					<article id="post-16" class="post-16 post type-post status-publish format-standard category-uncategorized h-entry hentry">
 	<header class="entry-header">
 						<h1 class="entry-title p-name">
 			<a href="https://amiheines.com/blockchain-for-it/" title="Permalink to Blockchain for IT" rel="bookmark">Blockchain for IT</a>
@@ -118,11 +207,10 @@
 
 							<span class="cat-links"></span>		
 				
-							<span>181 Words</span> <span class="sep"> | </span>		
+							<span>181 Words</span>		
 		
 				
-							<span class="comments-link"><a href="https://amiheines.com/blockchain-for-it/#respond">Comment</a></span>
-		
+				
 		
 	</footer>
 	<!-- .entry-meta -->
@@ -148,7 +236,8 @@
 			<aside id="archives" class="widget">
 				<h1 class="widget-title">Archives</h1>
 				<ul>
-						<li><a href='https://amiheines.com/2021/01/'>January 2021</a></li>
+						<li><a href='https://amiheines.com/2021/03/'>March 2021</a></li>
+	<li><a href='https://amiheines.com/2021/01/'>January 2021</a></li>
 	<li><a href='https://amiheines.com/2020/12/'>December 2020</a></li>
 				</ul>
 			</aside>
