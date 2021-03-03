@@ -4,28 +4,28 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-	<link rel="pingback" href="http://wordpressbackoffice.amiheines.com/xmlrpc.php" />
+	<link rel="pingback" href="https://wordpressbackoffice.amiheines.com/xmlrpc.php" />
 	<!--[if lt IE 9]>
-	<script src="http://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/js/html5.js" type="text/javascript"></script>
+	<script src="https://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/js/html5.js" type="text/javascript"></script>
 	<![endif]-->
 	<title>Uncategorized &#8211; AmiHeines.com</title>
 <link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="AmiHeines.com &raquo; Feed" href="http://wordpressbackoffice.amiheines.com/feed/" />
-<link rel="alternate" type="application/rss+xml" title="AmiHeines.com &raquo; Comments Feed" href="http://wordpressbackoffice.amiheines.com/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="AmiHeines.com &raquo; Uncategorized Category Feed" href="http://wordpressbackoffice.amiheines.com/category/uncategorized/feed/" />
-<link rel='stylesheet' id='wp-block-library-css'  href='http://wordpressbackoffice.amiheines.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2' type='text/css' media='all' />
-<link rel='stylesheet' id='genericons-css'  href='http://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/fonts/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
-<link rel='stylesheet' id='independent-publisher-style-css'  href='http://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/style.css?ver=5.6.2' type='text/css' media='all' />
-<link rel='stylesheet' id='customizer-css'  href='http://wordpressbackoffice.amiheines.com/wp-admin/admin-ajax.php?action=independent_publisher_customizer_css&#038;ver=1.7' type='text/css' media='all' />
-<script type='text/javascript' src='http://wordpressbackoffice.amiheines.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
-<script type='text/javascript' src='http://wordpressbackoffice.amiheines.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-<script type='text/javascript' src='http://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/js/enhanced-comment-form.js?ver=1.0' id='enhanced-comment-form-js-js'></script>
-<link rel="https://api.w.org/" href="http://wordpressbackoffice.amiheines.com/wp-json/" /><link rel="alternate" type="application/json" href="http://wordpressbackoffice.amiheines.com/wp-json/wp/v2/categories/1" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wordpressbackoffice.amiheines.com/xmlrpc.php?rsd" />
+<link rel="alternate" type="application/rss+xml" title="AmiHeines.com &raquo; Feed" href="https://wordpressbackoffice.amiheines.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AmiHeines.com &raquo; Comments Feed" href="https://wordpressbackoffice.amiheines.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AmiHeines.com &raquo; Uncategorized Category Feed" href="https://wordpressbackoffice.amiheines.com/category/uncategorized/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://wordpressbackoffice.amiheines.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/fonts/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='independent-publisher-style-css'  href='https://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/style.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='customizer-css'  href='https://wordpressbackoffice.amiheines.com/wp-admin/admin-ajax.php?action=independent_publisher_customizer_css&#038;ver=1.7' type='text/css' media='all' />
+<script type='text/javascript' src='https://wordpressbackoffice.amiheines.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://wordpressbackoffice.amiheines.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/js/enhanced-comment-form.js?ver=1.0' id='enhanced-comment-form-js-js'></script>
+<link rel="https://api.w.org/" href="https://wordpressbackoffice.amiheines.com/wp-json/" /><link rel="alternate" type="application/json" href="https://wordpressbackoffice.amiheines.com/wp-json/wp/v2/categories/1" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wordpressbackoffice.amiheines.com/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 5.6.2" />
-<link rel="icon" href="http://wordpressbackoffice.amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-32x32.jpg" sizes="32x32" />
-<link rel="icon" href="http://wordpressbackoffice.amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-192x192.jpg" sizes="192x192" />
-<link rel="apple-touch-icon" href="http://wordpressbackoffice.amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-180x180.jpg" />
-<meta name="msapplication-TileImage" content="http://wordpressbackoffice.amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-270x270.jpg" />
+<link rel="icon" href="https://wordpressbackoffice.amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://wordpressbackoffice.amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://wordpressbackoffice.amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://wordpressbackoffice.amiheines.com/wp-content/uploads/2021/01/cropped-amiheines_20150220_520x520-270x270.jpg" />
 </head>
 
 <body class="archive category category-uncategorized category-1 single-column-layout no-post-excerpts hfeed h-feed" itemscope="itemscope" itemtype="http://schema.org/WebPage">
@@ -36,11 +36,11 @@
 	<header id="masthead" class="site-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 		<div class="site-header-info">
-																<a class="site-logo" href="http://wordpressbackoffice.amiheines.com/" title="AmiHeines.com" rel="home">
-				<img class="no-grav" src="http://gravatar.com/avatar/b0dc6086ea0d6d9a3e227d670b266f90/?s=100&#038;d=mm" height="100" width="100" alt="AmiHeines.com" />
+																<a class="site-logo" href="https://wordpressbackoffice.amiheines.com/" title="AmiHeines.com" rel="home">
+				<img class="no-grav" src="https://secure.gravatar.com/avatar/b0dc6086ea0d6d9a3e227d670b266f90/?s=100&#038;d=mm" height="100" width="100" alt="AmiHeines.com" />
 			</a>
 				<div class="site-title">
-			<a href="http://wordpressbackoffice.amiheines.com/" title="AmiHeines.com" rel="home">AmiHeines.com</a>
+			<a href="https://wordpressbackoffice.amiheines.com/" title="AmiHeines.com" rel="home">AmiHeines.com</a>
 		</div>
 		<div class="site-description">Ami Heines</div>
 									</div>
@@ -71,7 +71,7 @@
 					<article id="post-22" class="first-post post-22 post type-post status-publish format-standard category-uncategorized h-entry hentry">
 	<header class="entry-header">
 						<h1 class="entry-title p-name">
-			<a href="http://wordpressbackoffice.amiheines.com/toy-compiler-in-javascript/" title="Permalink to Toy compiler in javascript" rel="bookmark">Toy compiler in javascript</a>
+			<a href="https://wordpressbackoffice.amiheines.com/toy-compiler-in-javascript/" title="Permalink to Toy compiler in javascript" rel="bookmark">Toy compiler in javascript</a>
 		</h1>
 	</header>
 	<!-- .entry-header -->
@@ -162,7 +162,7 @@
 					<article id="post-16" class="post-16 post type-post status-publish format-standard category-uncategorized h-entry hentry">
 	<header class="entry-header">
 						<h1 class="entry-title p-name">
-			<a href="http://wordpressbackoffice.amiheines.com/blockchain-for-it/" title="Permalink to Blockchain for IT" rel="bookmark">Blockchain for IT</a>
+			<a href="https://wordpressbackoffice.amiheines.com/blockchain-for-it/" title="Permalink to Blockchain for IT" rel="bookmark">Blockchain for IT</a>
 		</h1>
 	</header>
 	<!-- .entry-header -->
@@ -221,7 +221,7 @@
 					<article id="post-1" class="post-1 post type-post status-publish format-standard category-uncategorized h-entry hentry">
 	<header class="entry-header">
 						<h1 class="entry-title p-name">
-			<a href="http://wordpressbackoffice.amiheines.com/hello-world/" title="Permalink to Hello world!" rel="bookmark">Hello world!</a>
+			<a href="https://wordpressbackoffice.amiheines.com/hello-world/" title="Permalink to Hello world!" rel="bookmark">Hello world!</a>
 		</h1>
 	</header>
 	<!-- .entry-header -->
@@ -262,7 +262,7 @@
 <div id="secondary" class="widget-area" role="complementary">
 					
 			<aside id="search" class="widget widget_search">
-				<form method="get" id="searchform" action="http://wordpressbackoffice.amiheines.com/" role="search">
+				<form method="get" id="searchform" action="https://wordpressbackoffice.amiheines.com/" role="search">
 	<label for="s" class="screen-reader-text">Search</label>
 	<input type="text" class="field" name="s" value="" id="s" placeholder="Search &hellip;" />
 	<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
@@ -272,16 +272,16 @@
 			<aside id="archives" class="widget">
 				<h1 class="widget-title">Archives</h1>
 				<ul>
-						<li><a href='http://wordpressbackoffice.amiheines.com/2021/03/'>March 2021</a></li>
-	<li><a href='http://wordpressbackoffice.amiheines.com/2021/01/'>January 2021</a></li>
-	<li><a href='http://wordpressbackoffice.amiheines.com/2020/12/'>December 2020</a></li>
+						<li><a href='https://wordpressbackoffice.amiheines.com/2021/03/'>March 2021</a></li>
+	<li><a href='https://wordpressbackoffice.amiheines.com/2021/01/'>January 2021</a></li>
+	<li><a href='https://wordpressbackoffice.amiheines.com/2020/12/'>December 2020</a></li>
 				</ul>
 			</aside>
 
 			<aside id="meta" class="widget">
 				<h1 class="widget-title">Meta</h1>
 				<ul>
-										<li><a href="http://wordpressbackoffice.amiheines.com/wp-login.php">Log in</a></li>
+										<li><a href="https://wordpressbackoffice.amiheines.com/wp-login.php">Log in</a></li>
 									</ul>
 			</aside>
 
@@ -296,7 +296,7 @@
 </footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->
 
-<script type='text/javascript' src='http://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/js/skip-link-focus-fix.js?ver=20130115' id='independent-publisher-skip-link-focus-fix-js'></script>
+<script type='text/javascript' src='https://wordpressbackoffice.amiheines.com/wp-content/themes/independent-publisher/js/skip-link-focus-fix.js?ver=20130115' id='independent-publisher-skip-link-focus-fix-js'></script>
 
 </body>
 </html>
