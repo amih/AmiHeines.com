@@ -47,7 +47,9 @@
 							<nav role="navigation" class="site-navigation main-navigation">
 				<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
 
-													<div class="menu"></div>
+													<div class="menu"><ul>
+<li class="page_item page-item-37"><a href="https://amiheines.com/meta_ii-playground-page/">META_II playground page</a></li>
+</ul></div>
 				
 			</nav><!-- .site-navigation .main-navigation -->
 		
@@ -63,156 +65,11 @@
 				<header class="page-header">
 					<h1 class="page-title">
 						<span>March 2021</span>					</h1>
-					<div class="intro-meta"><p>There were 2 posts published in March 2021 (this is page <strong>1</strong> of <strong>1</strong>).</p>
+					<div class="intro-meta"><p>There was one post published in March 2021.</p>
 </div>									</header><!-- .page-header -->
 
 								
-					<article id="post-27" class="first-post post-27 post type-post status-publish format-standard category-uncategorized h-entry hentry">
-	<header class="entry-header">
-						<h1 class="entry-title p-name">
-			<a href="https://amiheines.com/meta_ii-playground/" title="Permalink to META_II playground" rel="bookmark">META_II playground</a>
-		</h1>
-	</header>
-	<!-- .entry-header -->
-
-	<div class="entry-content e-content">
-
-		
-						
-			
-<script>var exports = {};</script>
-<script src="/wp-content/themes/independent-publisher/js/index.js"></script>
-<script src="/wp-content/themes/independent-publisher/js/examples.js"></script>
-<style>
-#page, #content{ max-width: 100%; }
-    #ik, #ck, #ok {
-      width: 30%;
-      display: inline-block;
-      vertical-align: top;
-      height: 100px;
-      overflow-y: auto;
-      border: 1px solid lightgray;
-      padding: 2px;
-    }
-    #ik li.selected, #ck li.selected { background-color: aquamarine; }
-    #editors { height: 100%; }
-    textarea {
-      width: 30%;
-      height: 700px;
-      font-size: 12px;
-    }
-    #ce.identical, #oe.identical{
-      background-color: aqua;
-    }
-    #explainer{
-      width: 60%;
-      display: inline-block;
-    }
-    #out2code{
-      width: 30px;
-      display: inline-block;
-      font-size: 45px;
-      padding: 3px;
-    margin-left: 60%
-    }
-  </style>
-
-
-
-<ol><li>Select &#8216;ia15. meta_ii with loops, use with ca05&#8217; from the first list on the left</li><li>Select &#8216;ca05 added STORE AND LOAD VARIABLES&#8217; from the center list</li><li>click the ⤺ arrow to copy the output to the center text area</li><li>Select &#8216;ia16. sql to eosio&#8217; which will output the compiler</li><li>click the ⤺ arrow to copy the output to the center text area</li><li>Select &#8216;ia17. create table example&#8217; to see the sql2eos compiler in action!</li></ol>
-
-
-
-<div id="out2code">&#x293A;</div>
-  <div id="keys">
-    <div id="ik"></div>
-    <div id="ck"></div>
-    <div id="ok"></div>
-  </div>
-  <div id="editors">
-    <textarea id="ie"></textarea>
-    <textarea id="ce"></textarea>
-    <textarea id="oe"></textarea>
-  </div>
-<script>
-    $ = jQuery;
-    let timeoutID;
-    const _log = console.log;
-    console.log = function(...arguments) {
-      $('#ok').text(arguments);
-      return _log.apply(console, arguments);
-    };
-    const compile = () => {
-      $('#ok').text('');
-      if($('#ie').val().trim().length==0 || $('#ce').val().trim().length==0){ return; }
-      // eval js or run the interpreter?
-      if($('#ce').val().charAt(0)!=='\t'){
-        eval($('#ce').val());
-        switch (typeof(compiler)) {
-          case 'function':
-            compiler( $('#ie').val() );
-            $('#oe').val(outbuf);
-          break;
-          case 'object':
-            compiler.compile( $('#ie').val() );
-            $('#oe').val(compiler.outbuf);
-          break;
-          default: window.alert('ERROR: code as javascript does not define compiler');
-        };
-      }else{
-        let res = vm.META_II( $('#ie').val(), $('#ce').val() );
-        $('#oe').val(res.replace(/(^\n|\n$)/,''));
-      }
-      if( $('#ce').val().trim() == $('#oe').val().trim() && $('#ce').val().length > 0 ){
-        $('#ce, #oe').addClass('identical');
-      }else{
-        $('#ce, #oe').removeClass('identical');
-      }
-    }
-    const update = (type, ele, content) => {
-      // type: #i (input) or #c (code)
-      $(type + 'k li').removeClass('selected');
-      $(ele).addClass('selected');
-      $(type + 'e').val(content.replace(/(^\n|\n$)/,''));
-      compile();
-    }
-    $('#ik').append(Object.keys(input_i).map( e => '<li>' + e + '</li>').join(''));
-    $('#ck').append(Object.keys(code_c ).map( e => '<li>' + e + '</li>').join(''));
-    $('#ik li').click(e => { update('#i', e.target, input_i[$(e.target).text()]); });
-    $('#ck li').click(e => { update('#c', e.target, code_c [$(e.target).text()]); });
-    $('#out2code').click(() => {
-      $('#ck li').removeClass('selected');
-      $('#ce').val( $('#oe').val() );
-      $('#oe').val('');
-      compile();
-    });
-    $('#ie, #ce').keyup( e => {
-      if(!!timeoutID){ clearTimeout(timeoutID); }
-      timeoutID = setTimeout(compile, 3*1000)
-    });
-  </script>
-			
-				
-			
-			</div>
-	<!-- .entry-content -->
-
-		
-	<footer class="entry-meta">
-
-							<span class="cat-links"></span>		
-				
-							<span>387 Words</span>		
-		
-				
-				
-		
-	</footer>
-	<!-- .entry-meta -->
-</article><!-- #post-27 -->
-
-				
-					<article id="post-22" class="post-22 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+					<article id="post-22" class="first-post post-22 post type-post status-publish format-standard category-uncategorized h-entry hentry">
 	<header class="entry-header">
 						<h1 class="entry-title p-name">
 			<a href="https://amiheines.com/toy-compiler-in-javascript/" title="Permalink to Toy compiler in javascript" rel="bookmark">Toy compiler in javascript</a>
@@ -285,7 +142,7 @@
 
 
 
-<p>Want to play with the META_II and the demo SQL2EOSIO compiler? Go to <a href="/meta_ii-playground">this page</a>.</p>
+<p>Want to play with the META_II and the demo SQL2EOSIO compiler? Go to <a href="/meta_ii-playground-page/">this page</a>.</p>
 			
 				
 			
