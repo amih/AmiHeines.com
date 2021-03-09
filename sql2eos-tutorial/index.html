@@ -79,7 +79,7 @@
 	<!-- .entry-header -->
 	<div class="entry-content e-content" itemprop="mainContentOfPage">
 		
-<p>SQL2EOS is built and developed on a custom made Meta_II meta-compiler, so before explaining SQL2EOS I need to explain Meta_II. If you don&#8217;t care about the whole stack and just want to skip to the SQL2EOS, feel free to do so.</p>
+<p>SQL2EOS is built and developed on a custom made Meta_II meta-compiler, so before explaining SQL2EOS I need to explain Meta_II. If you don&#8217;t care about the whole stack and just want to <a href="#SQL2EOS">skip to the SQL2EOS</a>, feel free to do so.</p>
 
 
 
@@ -87,7 +87,7 @@
 
 
 
-<p><strong>META II: A Syntax-Oriented Compiler Writing Language.</strong><br>Schorre, D. V.<br>In <em>Proceedings of the 1964 19th ACM National Conference</em>,<br>ACM Press, New York, NY, 41.301-41.3011, 1964.<br>available as <a href="http://doi.acm.org/10.1145/800257.808896">http://doi.acm.org/10.1145/800257.808896</a></p>
+<p><strong>META II: A Syntax-Oriented Compiler Writing Language.</strong><br>Schorre, D. V.<br>In&nbsp;<em>Proceedings of the 1964 19th ACM National Conference</em>,<br>ACM Press, New York, NY, 41.301-41.3011, 1964.<br>available as&nbsp;<a href="http://doi.acm.org/10.1145/800257.808896">http://doi.acm.org/10.1145/800257.808896</a></p>
 
 
 
@@ -135,7 +135,9 @@
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>Command</td><td>A little explainer</td></tr><tr><td>TST &#8216;abc&#8217;</td><td>this command checks if the next part of the input is exactly equal the string parameter, in this example: abc</td></tr><tr><td>ID</td><td>skip white space and if the next part of the input is a legal identifier, save it in a global variable for later use and set the global flag to true</td></tr><tr><td>B L12</td><td>branch to label L12, in other words, jump to the next command after the label L12</td></tr><tr><td>BT L13</td><td>similar to the above, but only if the global flag (called flag obviously) is True</td></tr><tr><td>BF L14</td><td><strong>B</strong>ranch if flag is <strong>F</strong>alse</td></tr><tr><td>CL &#8216;xyz&#8217;</td><td>There is a global variable to assist in editing the next line of output, <strong>C</strong>opy <strong>L</strong>iteral to that output buffer</td></tr><tr><td>CI</td><td><strong>C</strong>opy the <strong>I</strong>dentifier from the global variable holding the latest scanned identifier to the output buffer</td></tr><tr><td>CLL FUNC</td><td>Make a function call, save the return location and some additional variables and goto the next command after the label</td></tr><tr><td>R</td><td>Return from the function call</td></tr></tbody></table></figure>
+<div class="wp-block-group"><div class="wp-block-group__inner-container">
+<figure class="wp-block-table is-style-stripes"><table><tbody><tr><td>Command</td><td>A little explainer</td></tr><tr><td>TST &#8216;abc&#8217;</td><td>this command checks if the next part of the input is exactly equal the string parameter, in this example: abc</td></tr><tr><td>ID</td><td>skip white space and if the next part of the input is a legal identifier, save it in a global variable for later use and set the global flag to true</td></tr><tr><td>B L12</td><td>branch to label L12, in other words, jump to the next command after the label L12</td></tr><tr><td>BT L13</td><td>similar to the above, but only if the global flag (called flag obviously) is True</td></tr><tr><td>BF L14</td><td><strong>B</strong>ranch if flag is <strong>F</strong>alse</td></tr><tr><td>CL &#8216;xyz&#8217;</td><td>There is a global variable to assist in editing the next line of output, <strong>C</strong>opy <strong>L</strong>iteral to that output buffer</td></tr><tr><td>CI</td><td><strong>C</strong>opy the <strong>I</strong>dentifier from the global variable holding the latest scanned identifier to the output buffer</td></tr><tr><td>CLL FUNC</td><td>Make a function call, save the return location and some additional variables and goto the next command after the label</td></tr><tr><td>R</td><td>Return from the function call</td></tr></tbody></table></figure>
+</div></div>
 
 
 
@@ -171,7 +173,7 @@
 
 
 
-<figure class="wp-block-table"><table><tbody><tr><td>BE</td><td>Branch if the error global variable is true to a special error reporting function and exit</td></tr><tr><td>OUT</td><td>output the global variable <em>output buffer</em> to the actual output string of the program</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><table><tbody><tr><td>BE</td><td>Branch if the error global variable is true to a special error reporting function and exit</td></tr><tr><td>OUT</td><td>output the global variable <em>output buffer</em> to the actual output string of the program</td></tr></tbody></table></figure>
 
 
 
@@ -339,7 +341,9 @@ L2
 
 <pre class="wp-block-code"><code>.SYNTAX METAIIWITHLOOPS
 
-
+... some syntax equations here...
+... some syntax equations here...
+... some syntax equations here...
 
 .END</code></pre>
 
@@ -385,7 +389,7 @@ L2
 
 
 
-<p>So, finally we get to the SQL2EOS compiler.</p>
+<p id="SQL2EOS">So, finally we get to the SQL2EOS compiler.</p>
 
 
 
