@@ -4,12 +4,12 @@
         "url": "/about"
     },
     {
-        "label": "Tag List",
+        "label": "Today",
         "url": "/tags"
     },
     {
         "label": "GitHub",
-        "url": "https://github.com/dafiulh/vredeburg",
+        "url": "https://github.com/amih",
         "newTab": true
     }
 ]
