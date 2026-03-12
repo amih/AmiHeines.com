@@ -1,0 +1,48 @@
+---
+import Subscribe from '../components/Subscribe.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+    title="Newsletter"
+    description="Weekly insights on tamper-proof infrastructure, private blockchain, and fraud prevention. No hype, no tokens."
+    showHeader={false}
+>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-12">
+            <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">Newsletter</h1>
+            <p class="mt-4 text-sm leading-relaxed sm:text-base">
+                One email per week. Practical insights on building tamper-proof systems, fraud prevention, and private blockchain infrastructure. Written for
+                CTOs and engineering leaders, not crypto traders.
+            </p>
+        </header>
+
+        <div class="prose sm:prose-lg max-w-none">
+            <h2>What You'll Get</h2>
+            <ul>
+                <li><strong>Technical deep dives</strong> — how private blockchain actually works in production, without the hype</li>
+                <li><strong>Case studies</strong> — real problems solved with tamper-proof infrastructure</li>
+                <li><strong>Industry analysis</strong> — where blockchain makes sense (and where it doesn't)</li>
+                <li><strong>Behind the build</strong> — lessons from deploying and managing production blockchain systems</li>
+            </ul>
+
+            <h2>Recent Topics</h2>
+            <ul>
+                <li>Why your audit trail is only as trustworthy as your sysadmin</li>
+                <li>Wire fraud in real estate: a $446M problem with a cryptographic solution</li>
+                <li>The Tel Aviv parking ticket scandal and what it teaches about database access control</li>
+                <li>Running a 4-node BFT chain on a single server: when and why it makes sense</li>
+            </ul>
+        </div>
+
+        <Subscribe class="my-16 sm:my-24" />
+
+        <div class="prose sm:prose-lg max-w-none">
+            <h2>Privacy</h2>
+            <p>
+                Your email is stored in my self-hosted Listmonk instance (no third-party email platforms). Double opt-in only. Unsubscribe anytime with one
+                click. I will never share or sell your email address.
+            </p>
+        </div>
+    </article>
+</BaseLayout>

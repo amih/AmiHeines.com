@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import Button from '../components/Button.astro';
+import Hero from '../components/Hero.astro';
+import PostPreview from '../components/PostPreview.astro';
+import Subscribe from '../components/Subscribe.astro';
+import siteConfig from '../data/site-config';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { filterPublishedPosts, sortItemsByDateDesc } from '../utils/data-utils';
+
+const posts = filterPublishedPosts(await getCollection('blog')).sort(sortItemsByDateDesc);
+const featuredPosts = posts.filter(({ data }) => data.isFeatured);
+---
+
+<BaseLayout description={siteConfig.description}>
+    <Hero {...siteConfig.hero} />
+
+    <!-- What I Do -->
+    <section class="mb-16 sm:mb-24">
+        <h2 class="mb-8 font-serif text-xl italic sm:mb-12 sm:text-2xl">What I Build</h2>
+        <div class="grid gap-8 sm:grid-cols-2">
+            <div>
+                <h3 class="font-serif text-lg font-medium">Tamper-Proof Audit Trails</h3>
+                <p class="mt-2 text-sm leading-relaxed">Every record cryptographically sealed and independently verifiable. No admin can silently edit history.</p>
+            </div>
+            <div>
+                <h3 class="font-serif text-lg font-medium">Wire Fraud Prevention</h3>
+                <p class="mt-2 text-sm leading-relaxed">Multi-party verification of wire transfer instructions on-chain before funds move. Real estate's $446M problem, solved.</p>
+            </div>
+            <div>
+                <h3 class="font-serif text-lg font-medium">Encrypted Document Vaults</h3>
+                <p class="mt-2 text-sm leading-relaxed">Client-side encryption with blockchain content hash commitments. The server never sees your plaintext.</p>
+            </div>
+            <div>
+                <h3 class="font-serif text-lg font-medium">Private Chain Infrastructure</h3>
+                <p class="mt-2 text-sm leading-relaxed">4-node BFT consensus, full history indexing, PostgreSQL read cache — production-grade from day one.</p>
+            </div>
+        </div>
+        <div class="mt-8">
+            <Button href="/services">View Service Packages</Button>
+        </div>
+    </section>
+
+    <!-- Featured Writing -->
+    {
+        featuredPosts?.length > 0 && (
+            <div class="mb-16 sm:mb-24">
+                <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">Writing</h2>
+                {featuredPosts.map((post) => (
+                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
+                ))}
+                <div class="mt-12 sm:mt-16">
+                    <Button href="/blog">View All Posts</Button>
+                </div>
+            </div>
+        )
+    }
+
+    <Subscribe class="my-16 sm:my-24" />
+</BaseLayout>

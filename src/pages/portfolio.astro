@@ -1,0 +1,109 @@
+---
+import Button from '../components/Button.astro';
+import Subscribe from '../components/Subscribe.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+    title="Portfolio"
+    description="Case studies of private blockchain systems I've built — from tamper-proof audit trails to wire fraud prevention infrastructure."
+    showHeader={false}
+>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-12">
+            <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">Portfolio</h1>
+            <p class="mt-4 text-sm leading-relaxed sm:text-base">
+                Production systems I've designed and built. Each one runs on private blockchain infrastructure with immutable records, cryptographic
+                verification, and full audit trails.
+            </p>
+        </header>
+
+        <div class="prose sm:prose-lg max-w-none">
+            <!-- ChainVault -->
+            <section class="border-main mb-12 border border-dashed p-6 sm:p-8">
+                <h2>ChainVault</h2>
+                <p class="font-serif italic">Tamper-proof deal room with wire fraud prevention</p>
+
+                <p>
+                    A full-stack platform for real estate closings and M&A transactions. Documents are encrypted client-side before upload — the server never
+                    sees plaintext. Every action is recorded on a private 4-node blockchain with BFT consensus.
+                </p>
+
+                <h3>Technical Stack</h3>
+                <ul>
+                    <li><strong>Blockchain:</strong> 4-node Antelope chain with BFT finality (tolerates 1 node failure)</li>
+                    <li><strong>Smart Contracts:</strong> 3 C++ contracts (chainvault, auditlog, wirevault) — separated so audit survives upgrades</li>
+                    <li><strong>Indexing:</strong> Hyperion full-history API + custom sync daemon materializing to PostgreSQL</li>
+                    <li><strong>Document Storage:</strong> MinIO (S3-compatible) with AES-256-GCM client-side encryption</li>
+                    <li><strong>Frontend:</strong> Next.js 15, App Router, TypeScript, Tailwind v4</li>
+                    <li><strong>Auth:</strong> SSO-ready (Google, Microsoft Entra), multi-tenant membership</li>
+                    <li><strong>Billing:</strong> Stripe integration with usage-based plans</li>
+                </ul>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Wire transfer verification — multi-party on-chain confirmation before funds move</li>
+                    <li>Encrypted document vault with blockchain content hash commitments</li>
+                    <li>Full audit trail — every action immutably recorded</li>
+                    <li>Multi-tenant with role-based access control</li>
+                    <li>Blockchain explorer and superadmin panel</li>
+                </ul>
+
+                <p>
+                    <strong>Live at:</strong>
+                    <a href="https://chainvault.amiheines.com" target="_blank" rel="noopener">chainvault.amiheines.com</a>
+                </p>
+            </section>
+
+            <!-- Verarta -->
+            <section class="border-main mb-12 border border-dashed p-6 sm:p-8">
+                <h2>Verarta</h2>
+                <p class="font-serif italic">Art provenance and authentication on private blockchain</p>
+
+                <p>
+                    A provenance tracking system for art and collectibles. Each piece gets a verifiable chain of ownership recorded on a private blockchain.
+                    Certificates of authenticity are cryptographically signed and permanently linked to the artwork's on-chain record.
+                </p>
+
+                <h3>What It Demonstrates</h3>
+                <ul>
+                    <li>Provenance tracking with cryptographic proof of ownership transitions</li>
+                    <li>Tamper-proof certificates of authenticity</li>
+                    <li>Private blockchain running on the same infrastructure pattern as ChainVault</li>
+                    <li>The versatility of the same core technology across different domains</li>
+                </ul>
+
+                <p>
+                    <strong>Live at:</strong>
+                    <a href="https://verarta.com" target="_blank" rel="noopener">verarta.com</a>
+                </p>
+            </section>
+
+            <!-- Infrastructure -->
+            <section class="border-main mb-12 border border-dashed p-6 sm:p-8">
+                <h2>Self-Hosted Infrastructure</h2>
+                <p class="font-serif italic">Production-grade stack running on bare metal</p>
+
+                <p>Every project above runs on infrastructure I built and manage:</p>
+
+                <ul>
+                    <li><strong>4 block producers</strong> with BFT consensus — 3/4 needed for finality, tolerates 1 failure</li>
+                    <li><strong>State History Plugin (SHIP) node</strong> for full blockchain state streaming</li>
+                    <li><strong>Hyperion</strong> full-history indexer backed by Elasticsearch</li>
+                    <li><strong>PostgreSQL</strong> as a disposable read cache — can be rebuilt from chain at any time</li>
+                    <li><strong>MinIO</strong> for S3-compatible encrypted blob storage</li>
+                    <li><strong>nginx</strong> reverse proxy with rate limiting, SSL via Let's Encrypt</li>
+                    <li><strong>systemd</strong> services with security hardening (NoNewPrivileges, ProtectSystem)</li>
+                </ul>
+
+                <p>All ports bind to localhost only — nginx is the sole external entry point. Docker containers use named volumes with JSON logging rotation.</p>
+            </section>
+
+            <div class="not-prose mt-8">
+                <Button href="/contact">Discuss Your Project</Button>
+            </div>
+        </div>
+    </article>
+
+    <Subscribe class="my-16 sm:my-24" />
+</BaseLayout>

@@ -1,0 +1,118 @@
+---
+import Button from '../components/Button.astro';
+import Subscribe from '../components/Subscribe.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+    title="Services"
+    description="Private blockchain consulting, proof-of-concept builds, architecture audits, and managed infrastructure for tamper-proof record-keeping."
+    showHeader={false}
+>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-12">
+            <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">Services</h1>
+            <p class="mt-4 text-sm leading-relaxed sm:text-base">
+                I help companies build tamper-proof record-keeping and fraud prevention infrastructure. The blockchain is the <em>how</em> — the value is in
+                what it makes possible for your business.
+            </p>
+        </header>
+
+        <div class="prose sm:prose-lg max-w-none">
+            <!-- Entry Point -->
+            <section class="border-main mb-12 border border-dashed p-6 sm:p-8">
+                <h2>Private Chain Proof of Concept — $5,000</h2>
+                <p>
+                    The fastest way to see if private blockchain fits your use case. In 4 weeks, you get a working system you can demo to stakeholders — not a
+                    slide deck.
+                </p>
+
+                <h3>What You Get</h3>
+                <p><strong>Week 1-2:</strong> Discovery calls + architecture document tailored to your specific use case.</p>
+                <p>
+                    <strong>Week 3-4:</strong> Working proof-of-concept with a 2-node private blockchain, 1 smart contract, basic web UI, and API documentation.
+                </p>
+
+                <h3>Deliverables</h3>
+                <ul>
+                    <li>Source code (MIT licensed — it's yours)</li>
+                    <li>Docker Compose for one-command deployment</li>
+                    <li>Architecture document with production scaling notes</li>
+                    <li>Recorded demo walkthrough</li>
+                    <li>30-minute follow-up call after delivery</li>
+                </ul>
+
+                <p>
+                    <strong>Why $5K works:</strong> It's low enough for a CTO to approve without board involvement, but high enough to filter out tire-kickers.
+                    Most PoCs lead to full implementation engagements.
+                </p>
+
+                <div class="not-prose mt-6">
+                    <Button href="/contact">Book a Discovery Call</Button>
+                </div>
+            </section>
+
+            <!-- Upsell Path -->
+            <h2>From PoC to Production</h2>
+            <p>The PoC is the starting point. Here's the typical path:</p>
+
+            <div class="grid gap-6 sm:grid-cols-3">
+                <div class="border-main border border-dashed p-4">
+                    <p class="font-serif text-lg font-medium">$5K</p>
+                    <p class="text-sm">Proof of Concept</p>
+                    <p class="mt-2 text-xs opacity-70">4 weeks, working demo</p>
+                </div>
+                <div class="border-main border border-dashed p-4">
+                    <p class="font-serif text-lg font-medium">$20-50K</p>
+                    <p class="text-sm">Full Implementation</p>
+                    <p class="mt-2 text-xs opacity-70">Production deployment, multi-node chain, custom contracts</p>
+                </div>
+                <div class="border-main border border-dashed p-4">
+                    <p class="font-serif text-lg font-medium">$2-5K/month</p>
+                    <p class="text-sm">Managed Infrastructure</p>
+                    <p class="mt-2 text-xs opacity-70">Monitoring, updates, support, uptime SLA</p>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <h2>Additional Services</h2>
+
+            <h3>Consulting — $500/hour</h3>
+            <p>
+                For teams that have blockchain expertise but need a second opinion. Architecture reviews, security assessments, performance optimization, or
+                just a sounding board for technical decisions.
+            </p>
+
+            <h3>Blockchain Architecture Audit — $15,000</h3>
+            <p>
+                Deep review of an existing blockchain implementation. I examine your smart contracts, node configuration, consensus setup, security model, and
+                disaster recovery. You get a detailed report with prioritized recommendations.
+            </p>
+
+            <h3>Managed Private Blockchain Infrastructure — $2-5K/month</h3>
+            <p>
+                I run your private blockchain so your team doesn't have to. Includes monitoring, security patches, node management, backup verification, and
+                24-hour response SLA for critical issues.
+            </p>
+
+            <!-- Best Fit -->
+            <h2>Best Fit</h2>
+            <p>My clients are typically:</p>
+            <ul>
+                <li><strong>Real estate title companies</strong> — wire fraud prevention and tamper-proof closing documents</li>
+                <li><strong>Legal firms</strong> — M&A, IP transactions, and chain-of-custody for sensitive documents</li>
+                <li><strong>Healthcare organizations</strong> — HIPAA-compliant audit trails that can't be backdated</li>
+                <li><strong>Government & municipal IT</strong> — transparent public records and accountability systems</li>
+                <li><strong>Art & provenance tracking</strong> — verifiable ownership and authentication records</li>
+            </ul>
+
+            <p>If your business handles records where tampering would be costly or dangerous, we should talk.</p>
+
+            <div class="not-prose mt-8">
+                <Button href="/contact">Start With a Free Discovery Call</Button>
+            </div>
+        </div>
+    </article>
+
+    <Subscribe class="my-16 sm:my-24" />
+</BaseLayout>

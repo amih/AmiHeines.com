@@ -1,0 +1,124 @@
+---
+import Button from '../components/Button.astro';
+import siteConfig from '../data/site-config';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Resources" description="Free guides and checklists for private blockchain infrastructure, wire fraud prevention, and audit trail compliance." showHeader={false}>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-12">
+            <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">Free Resources</h1>
+            <p class="mt-4 text-sm leading-relaxed sm:text-base">
+                Practical guides for evaluating and implementing tamper-proof infrastructure. Enter your email to download — you'll also get my weekly newsletter
+                (unsubscribe anytime).
+            </p>
+        </header>
+
+        <!-- Lead Magnet 1 -->
+        <section class="border-main mb-8 border border-dashed p-6 sm:p-8">
+            <h2 class="font-serif text-xl font-medium sm:text-2xl">Private Blockchain Infrastructure Checklist</h2>
+            <p class="mt-2 text-sm leading-relaxed">
+                A step-by-step evaluation checklist for CTOs considering private blockchain. Covers use case validation, infrastructure requirements, security
+                considerations, vendor vs. build-your-own analysis, and production readiness criteria.
+            </p>
+            <form class="resource-form mt-6 flex flex-col gap-3 sm:flex-row" data-resource="blockchain-checklist">
+                <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="name@example.com"
+                    class="text-main border-main placeholder:text-main/60 h-9 w-full rounded-full border bg-transparent px-5 py-2 text-sm focus:outline-hidden"
+                    aria-label="Email address"
+                />
+                <Button type="submit" class="h-9 w-full sm:w-auto">Download PDF</Button>
+            </form>
+            <p class="resource-status mt-2 hidden text-sm"></p>
+        </section>
+
+        <!-- Lead Magnet 2 -->
+        <section class="border-main mb-8 border border-dashed p-6 sm:p-8">
+            <h2 class="font-serif text-xl font-medium sm:text-2xl">Wire Fraud Prevention Playbook for Real Estate</h2>
+            <p class="mt-2 text-sm leading-relaxed">
+                How title companies and law firms can use private blockchain to prevent wire fraud. Includes the anatomy of a typical BEC attack, how on-chain
+                verification stops it, implementation timeline, and cost analysis.
+            </p>
+            <form class="resource-form mt-6 flex flex-col gap-3 sm:flex-row" data-resource="wire-fraud-playbook">
+                <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="name@example.com"
+                    class="text-main border-main placeholder:text-main/60 h-9 w-full rounded-full border bg-transparent px-5 py-2 text-sm focus:outline-hidden"
+                    aria-label="Email address"
+                />
+                <Button type="submit" class="h-9 w-full sm:w-auto">Download PDF</Button>
+            </form>
+            <p class="resource-status mt-2 hidden text-sm"></p>
+        </section>
+
+        <!-- Lead Magnet 3 -->
+        <section class="border-main mb-8 border border-dashed p-6 sm:p-8">
+            <h2 class="font-serif text-xl font-medium sm:text-2xl">Audit Trail Compliance Guide</h2>
+            <p class="mt-2 text-sm leading-relaxed">
+                A guide to building audit trails that satisfy HIPAA, SOX, and GDPR requirements using private blockchain. Covers what auditors actually look
+                for, how blockchain audit trails differ from traditional logging, and how to demonstrate compliance.
+            </p>
+            <form class="resource-form mt-6 flex flex-col gap-3 sm:flex-row" data-resource="audit-compliance-guide">
+                <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="name@example.com"
+                    class="text-main border-main placeholder:text-main/60 h-9 w-full rounded-full border bg-transparent px-5 py-2 text-sm focus:outline-hidden"
+                    aria-label="Email address"
+                />
+                <Button type="submit" class="h-9 w-full sm:w-auto">Download PDF</Button>
+            </form>
+            <p class="resource-status mt-2 hidden text-sm"></p>
+        </section>
+    </article>
+</BaseLayout>
+
+<script define:vars={{ listmonkUrl: siteConfig.listmonk?.url, listUuid: siteConfig.listmonk?.listUuid }}>
+    document.addEventListener('astro:page-load', () => {
+        document.querySelectorAll('.resource-form').forEach((form) => {
+            const status = form.nextElementSibling;
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const email = form.querySelector('input[name="email"]').value;
+                const resource = form.dataset.resource;
+                status.classList.remove('hidden');
+
+                if (!listmonkUrl || !listUuid) {
+                    status.textContent = 'Downloads are being configured. Please check back soon.';
+                    return;
+                }
+
+                try {
+                    const res = await fetch(`${listmonkUrl}/api/public/subscription`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            email: email,
+                            name: '',
+                            list_uuids: [listUuid]
+                        })
+                    });
+
+                    if (res.ok) {
+                        status.textContent = 'Check your email to confirm, then the download link will be sent to you.';
+                        form.reset();
+                    } else {
+                        status.textContent = 'Something went wrong. Please try again.';
+                    }
+                } catch {
+                    status.textContent = 'Could not connect. Please try again later.';
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,144 @@
+---
+import Button from '../components/Button.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Contact" description="Book a free 30-minute discovery call to discuss your tamper-proof infrastructure needs." showHeader={false}>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-12">
+            <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">Let's Talk</h1>
+            <p class="mt-4 text-sm leading-relaxed sm:text-base">
+                Book a free 30-minute discovery call. We'll discuss your use case and I'll tell you honestly whether private blockchain is the right fit — and
+                if it's not, what is.
+            </p>
+        </header>
+
+        <!-- Cal.com Embed -->
+        <section class="mb-12">
+            <h2 class="mb-6 font-serif text-xl font-medium sm:text-2xl">Book a Discovery Call</h2>
+            <div id="cal-embed" class="border-main min-h-[500px] border border-dashed p-4">
+                <p class="text-sm opacity-60">Loading booking calendar...</p>
+            </div>
+        </section>
+
+        <!-- Direct Contact -->
+        <section class="mb-12">
+            <h2 class="mb-6 font-serif text-xl font-medium sm:text-2xl">Or Reach Out Directly</h2>
+
+            <form id="contact-form" class="flex flex-col gap-4">
+                <div>
+                    <label for="name" class="mb-1 block text-sm font-medium">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        class="text-main border-main placeholder:text-main/60 h-9 w-full border bg-transparent px-4 py-2 text-sm focus:outline-hidden"
+                    />
+                </div>
+                <div>
+                    <label for="email" class="mb-1 block text-sm font-medium">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        class="text-main border-main placeholder:text-main/60 h-9 w-full border bg-transparent px-4 py-2 text-sm focus:outline-hidden"
+                    />
+                </div>
+                <div>
+                    <label for="company" class="mb-1 block text-sm font-medium">Company</label>
+                    <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        class="text-main border-main placeholder:text-main/60 h-9 w-full border bg-transparent px-4 py-2 text-sm focus:outline-hidden"
+                    />
+                </div>
+                <div>
+                    <label for="message" class="mb-1 block text-sm font-medium">Tell me about your project</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                        class="text-main border-main placeholder:text-main/60 w-full border bg-transparent px-4 py-2 text-sm focus:outline-hidden"
+                    ></textarea>
+                </div>
+                <div>
+                    <Button type="submit">Send Message</Button>
+                </div>
+                <p id="contact-status" class="hidden text-sm"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="mb-4 font-serif text-xl font-medium sm:text-2xl">Other Ways to Connect</h2>
+            <div class="prose sm:prose-lg max-w-none">
+                <ul>
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:ami@amiheines.com">ami@amiheines.com</a>
+                    </li>
+                    <li>
+                        <strong>LinkedIn:</strong>
+                        <a href="https://www.linkedin.com/in/ami-heines/" target="_blank" rel="noopener">linkedin.com/in/ami-heines</a>
+                    </li>
+                    <li>
+                        <strong>YouTube:</strong>
+                        <a href="https://www.youtube.com/@pofov" target="_blank" rel="noopener">youtube.com/@pofov</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </article>
+</BaseLayout>
+
+<script>
+    document.addEventListener('astro:page-load', () => {
+        const form = document.getElementById('contact-form') as HTMLFormElement;
+        const status = document.getElementById('contact-status');
+        if (!form || !status) return;
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            status.classList.remove('hidden');
+
+            try {
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: formData.get('name'),
+                        email: formData.get('email'),
+                        company: formData.get('company'),
+                        message: formData.get('message')
+                    })
+                });
+
+                if (res.ok) {
+                    status.textContent = "Message sent! I'll get back to you within 24 hours.";
+                    form.reset();
+                } else {
+                    status.textContent = 'Something went wrong. Please email me directly at ami@amiheines.com.';
+                }
+            } catch {
+                status.textContent = 'Could not send. Please email me directly at ami@amiheines.com.';
+            }
+        });
+    });
+</script>
+
+<!-- Cal.com embed script — replace CALCOM_USERNAME with your Cal.com username -->
+<script is:inline>
+    // Uncomment and configure when Cal.com is set up:
+    // (function (C, A, L) {
+    //     let p = function (a, ar) { a.q.push(ar); };
+    //     let d = C.document;
+    //     C.Cal = C.Cal || function () { let cal = C.Cal; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); };
+    //     })(window, "https://app.cal.com/embed/embed.js", "init");
+    //     Cal("init", { origin: "https://cal.com" });
+    //     Cal("inline", { elementOrSelector: "#cal-embed", calLink: "CALCOM_USERNAME/discovery" });
+    //     Cal("ui", { theme: "auto", hideEventTypeDetails: false });
+</script>
