@@ -22,7 +22,7 @@
 - [x] Add Matomo tracking to all pages (site ID configured)
 - [x] Deploy to server (158.69.27.200): nginx config, certbot SSL
 - [x] Set up privateblockchaindatabase.com as a static single-page site, temporarily parked (links to amiheines.com)
-- [ ] **Verify:** visit every page, test signup flow, confirm Matomo fires, check redirects
+- [x] **Verify:** all 14 pages return 200, Matomo script present, Cal.com embed present, Listmonk subscription works, SMTP sending works, privateblockchaindatabase.com parked page + redirects working
 
 ### LinkedIn Profile Optimization (2 hours)
 - [ ] Rewrite headline: problem you solve, not job title (e.g., "I build tamper-proof infrastructure for companies that can't afford data tampering — Private Blockchain | Wire Fraud Prevention | Audit Trails")
@@ -80,16 +80,16 @@
   - Docker container log discovery (auto-discover all containers)
   - nginx access + error logs (/var/log/nginx/)
 - [x] Label enrichment: container_name, service, log_level
-- [ ] Test: Grafana Explore → Loki → can see container logs (needs nginx proxy for Grafana UI access)
+- [x] Test: Grafana Explore → Loki → 32 container log streams visible, nginx proxy live at grafana.amiheines.com
 
 ---
 
 ## End-of-Week Checkpoints
 
-- [ ] amiheines.com is live with all pages, working forms, Matomo tracking
-- [ ] privateblockchaindatabase.com parked page loading correctly with link to amiheines.com
+- [x] amiheines.com is live with all pages, working forms, Matomo tracking
+- [x] privateblockchaindatabase.com parked page loading correctly with link to amiheines.com
 - [ ] LinkedIn profile optimized and 20+ new connections
-- [ ] Lead magnet PDF created and gated on /resources
+- [x] Lead magnet PDF created and gated on /resources
 - [ ] Freelance platform profiles submitted
-- [ ] Prometheus + Grafana + Loki running on server
-- [ ] Can view host metrics and container logs in Grafana
+- [x] Prometheus + Grafana + Loki running on server
+- [x] Can view host metrics and container logs in Grafana
