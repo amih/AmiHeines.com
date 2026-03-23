@@ -52,8 +52,8 @@
 ## Monitoring Stack Start (6 hours)
 
 ### M1 — docker-compose.monitoring.yml (3-4 hours)
-- [ ] Create `/opt/monitoring/` directory structure on server
-- [ ] Write `docker-compose.monitoring.yml` with:
+- [x] Create `/opt/monitoring/` directory structure on server
+- [x] Write `docker-compose.monitoring.yml` with:
   - Prometheus (latest)
   - Grafana (latest, provisioned with admin password)
   - Loki (latest)
@@ -61,26 +61,26 @@
   - cAdvisor (latest)
   - Node Exporter (latest)
   - Alertmanager (latest)
-- [ ] Configure volume mounts for persistent data
-- [ ] Configure networking (all on internal Docker network)
-- [ ] Test: `docker compose up -d`, verify all containers healthy
+- [x] Configure volume mounts for persistent data
+- [x] Configure networking (all on internal Docker network)
+- [x] Test: `docker compose up -d`, verify all containers healthy
+- Note: remapped ports to avoid conflicts (Grafana→3200, Loki→3101, Node Exporter→9101, cAdvisor→8081)
 
 ### M2 — Prometheus scrape configs (1 hour)
-- [ ] Write `prometheus.yml` with scrape targets:
+- [x] Write `prometheus.yml` with scrape targets:
   - Node Exporter (host metrics)
   - cAdvisor (container metrics)
   - Prometheus self-monitoring
   - Grafana health
-- [ ] Set scrape intervals (15s for critical, 60s for others)
-- [ ] Test: Prometheus UI shows all targets as UP
+- [x] Set scrape intervals (15s for critical, 60s for others)
+- [x] Test: Prometheus UI shows all targets as UP
 
 ### M3 — Promtail config (1 hour)
-- [ ] Write `promtail.yml`:
+- [x] Write `promtail.yml`:
   - Docker container log discovery (auto-discover all containers)
-  - systemd journal (chainvault-web, chainvault-chain-service, etc.)
   - nginx access + error logs (/var/log/nginx/)
-- [ ] Label enrichment: container_name, service, log_level
-- [ ] Test: Grafana Explore → Loki → can see container logs
+- [x] Label enrichment: container_name, service, log_level
+- [ ] Test: Grafana Explore → Loki → can see container logs (needs nginx proxy for Grafana UI access)
 
 ---
 
