@@ -86,11 +86,11 @@ const siteConfig: SiteConfig = {
     projectsPerPage: 8,
     listmonk: {
         url: 'https://lists.amiheines.com',
-        listUuid: '' // Set after Listmonk list is created
+        listUuid: '2f2d523d-5b13-48d1-8018-0c4f42078a27'
     },
     matomo: {
         url: 'https://matomo.amiheines.com',
-        siteId: '' // Set after Matomo site is created
+        siteId: '1'
     }
 };
 
