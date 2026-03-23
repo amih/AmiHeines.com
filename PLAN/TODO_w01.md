@@ -1,6 +1,6 @@
 # Week 1 — Foundation: Website + Outreach Setup + Monitoring Start
 
-**Dates:** _____ to _____
+**Dates:** 2026-03-23 to 2026-03-29
 **Focus:** 70% business foundation / 30% monitoring infra start
 **Target hours:** 20
 
@@ -21,7 +21,7 @@
 - [x] Integrate Listmonk API for newsletter signup (list UUID configured)
 - [x] Add Matomo tracking to all pages (site ID configured)
 - [x] Deploy to server (158.69.27.200): nginx config, certbot SSL
-- [x] Set up 301 redirects from privateblockchaindatabase.com → amiheines.com/blog
+- [x] Set up privateblockchaindatabase.com as a static single-page site, temporarily parked (links to amiheines.com)
 - [ ] **Verify:** visit every page, test signup flow, confirm Matomo fires, check redirects
 
 ### LinkedIn Profile Optimization (2 hours)
@@ -87,7 +87,7 @@
 ## End-of-Week Checkpoints
 
 - [ ] amiheines.com is live with all pages, working forms, Matomo tracking
-- [ ] 301 redirects from privateblockchaindatabase.com working
+- [ ] privateblockchaindatabase.com parked page loading correctly with link to amiheines.com
 - [ ] LinkedIn profile optimized and 20+ new connections
 - [ ] Lead magnet PDF created and gated on /resources
 - [ ] Freelance platform profiles submitted
