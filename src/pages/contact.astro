@@ -16,9 +16,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- Cal.com Embed -->
         <section class="mb-12">
             <h2 class="mb-6 font-serif text-xl font-medium sm:text-2xl">Book a Discovery Call</h2>
-            <div id="cal-embed" class="border-main min-h-[500px] border border-dashed p-4">
-                <p class="text-sm opacity-60">Loading booking calendar...</p>
-            </div>
+            <div id="cal-embed" class="min-h-[500px]"></div>
         </section>
 
         <!-- Direct Contact -->
@@ -130,15 +128,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     });
 </script>
 
-<!-- Cal.com embed script — replace CALCOM_USERNAME with your Cal.com username -->
 <script is:inline>
-    // Uncomment and configure when Cal.com is set up:
-    // (function (C, A, L) {
-    //     let p = function (a, ar) { a.q.push(ar); };
-    //     let d = C.document;
-    //     C.Cal = C.Cal || function () { let cal = C.Cal; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); };
-    //     })(window, "https://app.cal.com/embed/embed.js", "init");
-    //     Cal("init", { origin: "https://cal.com" });
-    //     Cal("inline", { elementOrSelector: "#cal-embed", calLink: "CALCOM_USERNAME/discovery" });
-    //     Cal("ui", { theme: "auto", hideEventTypeDetails: false });
+    (function (C, A, L) {
+        let p = function (a, ar) { a.q.push(ar); };
+        let d = C.document;
+        C.Cal = C.Cal || function () { let cal = C.Cal; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); };
+        })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", { origin: "https://cal.com" });
+        Cal("inline", { elementOrSelector: "#cal-embed", calLink: "ami-heines" });
+        Cal("ui", { theme: "auto", hideEventTypeDetails: false });
 </script>
