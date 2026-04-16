@@ -28,7 +28,7 @@ Ami has multiple domains (amiheines.com, pofov.com, chartly.com, verarta.com), s
 **Who:** CTOs, VPs of Engineering, IT Directors at mid-size companies (50-500 employees) needing tamper-proof records, audit trails, or fraud prevention — without in-house blockchain expertise.
 
 **Best verticals:**
-1. **Real estate title companies** — wire fraud is a $446M/year problem; ChainVault is built for this
+1. **Real estate title companies** — wire fraud is a $400M+/year problem; ChainVault is built for this
 2. **Legal firms** — M&A, closings, IP transactions need tamper-proof document trails
 3. **Art/provenance tracking** — Verarta proves the capability
 4. **Healthcare compliance** — HIPAA audit trail requirements
@@ -46,7 +46,7 @@ Ami has multiple domains (amiheines.com, pofov.com, chartly.com, verarta.com), s
 ```
 /                  → Landing (hero + value prop + social proof)
 /about             → Bio, background, philosophy
-/services          → Service packages (all tiers, from $500 assessment to $5K PoC)
+/services          → Service packages ($997 assessment, $7.5K PoC, ongoing)
 /portfolio         → Case studies: ChainVault, Verarta
 /blog              → Blog posts (migrated + new, 1/week)
 /contact           → Contact form + Cal.com booking embed
@@ -96,35 +96,25 @@ Position as: blockchain infrastructure / tamper-proof records specialist. Even 1
 
 ## 5. Service Packaging
 
-### Tier 1: $500 — Architecture Review (2 hours)
-- Recorded video walkthrough of how tamper-proof records would fit their existing stack
-- Written summary with go/no-go recommendation
-- **Why it works:** Low commitment, fast close, builds trust for upsell
-
-### Tier 2: $997 — Feasibility Assessment (1 week)
+### Tier 1: $997 — Feasibility Assessment (1 week)
 - Written report: current fraud/integrity exposure, recommended architecture, cost estimate, implementation roadmap
 - 30-minute walkthrough call
-- **Why it works:** Concrete deliverable, justifiable expense for any department budget
+- **Why it works:** Concrete deliverable, justifiable expense for any department budget, low-risk entry point
 
-### Tier 3: $1,500 — Half-Day Engineering Workshop
-- Live workshop for engineering team: private blockchain fundamentals, architecture patterns, hands-on demo
-- Recording + slides delivered after
-- **Why it works:** Multiple stakeholders see the value, creates internal champions
-
-### Tier 4: $5,000 — Private Chain Proof of Concept (flagship)
+### Tier 2: $7,500 — Private Chain Proof of Concept (flagship)
 **Week 1-2:** Discovery + architecture document
 **Week 3-4:** Working PoC (2-node chain, 1 smart contract, basic web UI, API docs)
-**Deliverables:** Source code (MIT), Docker Compose, architecture doc, demo walkthrough, 30-min follow-up
+**Deliverables:** Source code (MIT, no vendor lock-in), Docker Compose, architecture doc, demo walkthrough, 30-min follow-up
 
-**Why $5K works:** CTO can approve without board; filters tire-kickers; leads to $20-50K full implementation.
+**Why it works:** Serious enough to filter tire-kickers; leads to $20-50K full implementation.
 
-### Tier 5: Ongoing / Upsell
+### Tier 3: Ongoing / Upsell
 - $500/hour consulting
 - $15K blockchain architecture audit
 - $20-50K full implementation
 - $2-5K/month managed private blockchain infrastructure
 
-**Upsell path:** $500 review → $997 assessment → $5K PoC → $20-50K implementation → $2-5K/month managed infra
+**Upsell path:** $997 assessment → $7.5K PoC → $20-50K implementation → $2-5K/month managed infra
 
 ---
 
@@ -137,7 +127,7 @@ Position as: blockchain infrastructure / tamper-proof records specialist. Even 1
 
 **Blog:** 1 post/week, derived from video content. SEO-targeted.
 
-**LinkedIn:** Daily short-form insights (5 min/day). This is where $5K customers actually are. Comment on prospects' posts. Share opinions, not just tutorials.
+**LinkedIn:** Daily short-form insights (5 min/day). This is where $7.5K customers actually are. Comment on prospects' posts. Share opinions, not just tutorials.
 
 **Funnel:**
 ```
@@ -176,7 +166,7 @@ YouTube / LinkedIn / Blog → lead magnet download (email gate) → Listmonk sig
 | 4-6 | Close first paid engagements ($500-$1,500 tier). First YouTube video published. Continue outreach (10-15/week). | $500-$1,500 revenue |
 | 6-8 | Freelance platform revenue starts. Refine pitch based on call feedback. 4+ videos live. | $1,000-$2,000/month |
 | 8-12 | Referrals from first customers. Repeat engagements. Content pipeline running. Inbound leads begin. | $2,000-$3,000/month |
-| 12-16 | Upsells to $5K PoC tier. Managed infra contracts. Content flywheel accelerating. | $3,000-$5,000/month |
+| 12-16 | Upsells to $7.5K PoC tier. Managed infra contracts. Content flywheel accelerating. | $3,000-$5,000/month |
 | 16-24 | 40+ videos, strong SEO, testimonials, inbound dominant. Shift to 30% outreach / 70% content. | $5,000-$15,000/month |
 
 **Realistic answer: 6-10 weeks to first revenue, 8-12 weeks to $2K/month**, with consistent 20+ hrs/week split between outreach and content.
@@ -212,7 +202,7 @@ YouTube / LinkedIn / Blog → lead magnet download (email gate) → Listmonk sig
 
 ### Phase 5: YouTube + Content Pipeline (ongoing)
 - Set up channel, branding, thumbnail template
-- Recording workflow: OBS → DaVinci Resolve → YouTube → blog post → LinkedIn → newsletter
+- Recording workflow: OBS → kdenlive → YouTube → blog post → LinkedIn → newsletter
 - 1 video/week cadence
 
 ### Phase 6: Analytics (half day)
@@ -244,7 +234,7 @@ Topics organized by audience and intent. Each can be a blog post, a YouTube vide
 
 1. **[HIGH INTENT]** "How Wire Fraud Actually Works — And Why Email Verification Won't Save You"
 2. **[HIGH INTENT]** "Building a Tamper-Proof Closing Document Trail for Title Companies"
-3. "The $446M Wire Fraud Problem: What Real Estate Tech Is Missing"
+3. "The $400M+ Wire Fraud Problem: What Real Estate Tech Is Missing"
 4. "Why Your Document Signing Platform Isn't Tamper-Proof (And What to Do About It)"
 5. "Immutable Audit Trails for M&A Transactions: A Technical Walkthrough"
 6. "What Happens When a Notarized Document Gets Altered After Signing?"
@@ -289,7 +279,7 @@ Topics organized by audience and intent. Each can be a blog post, a YouTube vide
 ### Business / Strategy (LinkedIn-First Content)
 
 32. "Why I Stopped Saying 'Blockchain Consultant' and Started Saying 'Fraud Prevention Infrastructure'"
-33. "The $5K Proof of Concept: Why CTOs Love (and Budget For) This Engagement Model"
+33. "The $7.5K Proof of Concept: Why CTOs Love (and Budget For) This Engagement Model"
 34. "What Enterprises Get Wrong About Private Blockchains"
 35. "Blockchain Is Not Crypto: A Message for Every CTO Who Tuned Out in 2022"
 36. "Build vs. Buy for Tamper-Proof Records: A Decision Framework"
@@ -572,19 +562,19 @@ Each app exposes a `/metrics` endpoint (Prometheus format) via `prom-client` (No
 
 ### 11.2 ChainVault — Expansion
 
-**Current state:** Production-deployed. Next.js 15, Antelope blockchain (4 BP + SHIP), Hyperion, PostgreSQL, MinIO, Stripe. Wire fraud verification, document vault with client-side AES-256-GCM encryption. Missing: Stripe live keys, observability, some OAuth wiring.
+**Current state:** Production-deployed. Next.js 15, Antelope blockchain (4 BP + SHIP), Hyperion, PostgreSQL, MinIO. Wire fraud verification, document vault with client-side AES-256-GCM encryption. Missing: Invoice4U payment integration (replacing Stripe — Israel-based), observability, some OAuth wiring.
 
 #### Development Tasks
 
 | # | Task | Description | Est. Time |
 |---|------|-------------|-----------|
-| CV1 | **Stripe live integration** | Add live keys, test webhook flow end-to-end, verify subscription lifecycle | 3-4 hours |
+| CV1 | **Invoice4U payment integration** | Replace Stripe with Invoice4U (invoice4u.co.il) credit card integration, test callback flow end-to-end | 3-4 hours |
 | CV2 | **OAuth SSO completion** | Wire up Google + Microsoft Entra ID login fully, test flow | 3-4 hours |
 | CV3 | **Prometheus metrics** | Add `prom-client` to chain-service + Next.js API routes, expose `/metrics` with ChainVault-specific counters (see metrics list above) | 3-4 hours |
 | CV4 | **Structured logging** | Replace `console.log` in chain-service and hyperion-sync with `pino` (JSON structured logs). Promtail picks these up automatically via Docker log driver. | 2-3 hours |
 | CV5 | **Health check dashboard** | Expand `/health` endpoint on chain-service to return detailed status: blockchain connectivity, DB pool, Redis, MinIO, Hyperion. Grafana panel for service health. | 2 hours |
-| CV6 | **Grafana dashboard** | ChainVault-specific dashboard: API latency, deals created/day, document uploads, wire verifications, Stripe payment outcomes, error rates | 3 hours |
-| CV7 | **Alert rules** | Alertmanager rules: blockchain stopped producing, API error rate >5%, Stripe webhook failures, disk usage >80%, service restarts | 2 hours |
+| CV6 | **Grafana dashboard** | ChainVault-specific dashboard: API latency, deals created/day, document uploads, wire verifications, Invoice4U payment outcomes, error rates | 3 hours |
+| CV7 | **Alert rules** | Alertmanager rules: blockchain stopped producing, API error rate >5%, Invoice4U callback failures, disk usage >80%, service restarts | 2 hours |
 | CV8 | **Smart contract deployment** | Deploy chainvault, auditlog, wirevault contracts to production chain (WASM+ABI). Verify via Hyperion. | 2-3 hours |
 | CV9 | **Demo data seeder** | Script to populate demo deals, documents, wire verifications for portfolio showcasing | 2 hours |
 | CV10 | **Public demo mode** | Read-only demo login that lets prospects explore the UI without creating an account. Shows sample deals, documents, audit trail. | 3-4 hours |
@@ -618,7 +608,7 @@ Each app exposes a `/metrics` endpoint (Prometheus format) via `prom-client` (No
 
 ### 11.4 Parking Tickets System — New Build
 
-**Current state:** Detailed plan exists (PARKING_TICKETS_PLAN.md in verarta.com repo). No code written yet. Shares the Verarta blockchain cluster. Full spec includes smart contract, backend API (32 endpoints), frontend (admin + employee + public payment), Stripe payments, on-chain image storage.
+**Current state:** Detailed plan exists (PARKING_TICKETS_PLAN.md in verarta.com repo). No code written yet. Shares the Verarta blockchain cluster. Full spec includes smart contract, backend API (32 endpoints), frontend (admin + employee + public payment), Invoice4U payments (Israel-based), on-chain image storage.
 
 This is the strongest portfolio piece because it's a **new vertical** — proves you can apply private blockchain to any domain, not just art or real estate.
 
@@ -631,11 +621,11 @@ This is the strongest portfolio piece because it's a **new vertical** — proves
 | P3 | **Admin auth + city setup** | Registration, email verification, login, city creation (chain + DB), price options CRUD, employee management | 5-6 hours |
 | P4 | **Ticket issuance** | Employee endpoint: create ticket on chain + DB, vehicle registry lookup (mock), GPS/location handling | 4-5 hours |
 | P5 | **On-chain image upload** | Chunked image upload (mirrors Verarta pattern): init → chunk upload → complete. Image retrieval and thumbnail generation. | 5-6 hours |
-| P6 | **Stripe payment** | PaymentIntent creation, webhook handler, ticket status update on chain, confirmation emails | 4-5 hours |
+| P6 | **Invoice4U payment** | Invoice4U payment page creation, callback handler, ticket status update on chain, confirmation emails | 4-5 hours |
 | P7 | **Deadline expiration** | node-cron job: expire open tickets past deadline, chain action, email notification | 2 hours |
 | P8 | **Frontend — Admin** | Next.js 16: admin dashboard (stats, ticket list, filters, employee mgmt, price options), city setup wizard | 8-10 hours |
 | P9 | **Frontend — Employee** | Mobile-first: new ticket form (camera, GPS, plate input, price selector), ticket list, image upload progress | 6-8 hours |
-| P10 | **Frontend — Public payment** | Public ticket view page, Stripe Elements payment form, success/failure | 3-4 hours |
+| P10 | **Frontend — Public payment** | Public ticket view page, Invoice4U payment form integration, success/failure | 3-4 hours |
 | P11 | **Email templates** | Ticket issued, payment confirmation, deadline reminder, expired notice | 2-3 hours |
 | P12 | **Prometheus metrics** | `prom-client` in Astro backend: tickets issued, paid, expired, revenue, image upload duration | 2-3 hours |
 | P13 | **Grafana dashboard** | Parking-specific: tickets/day by city, payment conversion rate, revenue, violation type breakdown, employee productivity | 3 hours |
@@ -654,7 +644,7 @@ Assuming 20 hours/week, with Claude Code acceleration. Outreach and content cont
 | Week | Focus | Tasks | Deliverable |
 |------|-------|-------|-------------|
 | **1-2** | Monitoring stack | M1-M6 | Prometheus + Grafana + Loki running, ChainVault + Verarta metrics exposed |
-| **3** | Monitoring polish + ChainVault | M7-M12, CV1-CV2 | All dashboards live, Uptime Kuma public, Stripe + OAuth live on ChainVault |
+| **3** | Monitoring polish + ChainVault | M7-M12, CV1-CV2 | All dashboards live, Uptime Kuma public, Invoice4U + OAuth live on ChainVault |
 | **4** | ChainVault expansion | CV3-CV7 | ChainVault fully monitored with alerts |
 | **5** | ChainVault finish + Verarta start | CV8-CV10, V1-V2 | ChainVault demo mode live, Verarta email + metrics |
 | **6-7** | Verarta expansion | V3-V8 | Verarta fully monitored, file download working, public gallery, multi-device |
@@ -681,7 +671,7 @@ When a prospect visits amiheines.com/portfolio or joins a discovery call, they s
 | **One server** running everything: blockchain, 3 apps, monitoring, email, analytics | "He can do this on our infrastructure too" |
 | **Open-source stack** with zero licensing fees | "No vendor lock-in, no surprise costs" |
 | **Blog/video content** showing how each feature was built | "He's transparent about the process" |
-| **Built with Claude Code** — AI-accelerated delivery | "He ships fast — my $5K PoC won't take 6 months" |
+| **Built with Claude Code** — AI-accelerated delivery | "He ships fast — my $7.5K PoC won't take 6 months" |
 
 ### 11.7 Content Tie-In — Videos From Development
 
@@ -697,7 +687,7 @@ Every development task above is a potential "Build With Me" video or blog post. 
 | V8 | "Multi-Device WebAuthn for Blockchain Accounts: A Recovery Strategy" |
 | P1 | "Writing an Antelope Smart Contract for Parking Tickets — From Scratch" |
 | P5 | "Storing Evidence Photos on a Blockchain: Chunked Upload Deep Dive" |
-| P6 | "Stripe + Blockchain: Marking a Parking Ticket Paid On-Chain" |
+| P6 | "Invoice4U + Blockchain: Marking a Parking Ticket Paid On-Chain" |
 | P8-P9 | "Building a Mobile-First Ticket Issuing App with Next.js and Camera API" |
 | P12-P13 | "Grafana Dashboard for a Municipal Parking System — Real-Time Revenue Tracking" |
 | All | "How I Built 3 Blockchain Apps in 14 Weeks Using Claude Code" |
@@ -1058,7 +1048,7 @@ Revised to include POFOV and ChainTalk alongside the original projects.
 | Week | Focus | Tasks | Deliverable |
 |------|-------|-------|-------------|
 | **1-2** | Monitoring stack | M1-M6 | Prometheus + Grafana + Loki running, metrics exposed |
-| **3** | Monitoring polish + ChainVault | M7-M12, CV1-CV2 | Dashboards live, Uptime Kuma, Stripe + OAuth on ChainVault |
+| **3** | Monitoring polish + ChainVault | M7-M12, CV1-CV2 | Dashboards live, Uptime Kuma, Invoice4U + OAuth on ChainVault |
 | **4** | ChainVault expansion | CV3-CV7 | ChainVault fully monitored with alerts |
 | **5** | ChainVault finish + Verarta start | CV8-CV10, V1-V2 | ChainVault demo mode, Verarta email + metrics |
 | **6-7** | Verarta expansion | V3-V8 | Verarta monitored, gallery, multi-device |

@@ -1,98 +1,58 @@
-# Week 7 — Verarta Multi-Device WebAuthn + Finish
+# Week 7 — Parking Backend Features + Content Cadence
 
 **Dates:** 2026-05-04 to 2026-05-10
-**Focus:** 70% Verarta completion / 20% outreach / 10% content
+**Phase:** 2 — Grow the Audience
+**Focus:** 70% build (recorded) / 30% content
 **Target hours:** 20
 
 ---
 
-## Verarta Expansion (14 hours)
+## Build Work (14 hours) — RECORDED
 
-### V8 — Multi-Device WebAuthn Signers (6-8 hours)
+### Admin Auth + City Setup + Employee Management (6 hours)
+- [ ] **Record session**
+- [ ] Registration, email verification, login, session management
+- [ ] City creation on chain + DB
+- [ ] Price options CRUD
+- [ ] Employee invite flow
 
-This is the biggest single feature. Break it into sub-tasks:
+### Ticket Issuance + Vehicle Registry Mock (4 hours)
+- [ ] **Record session**
+- [ ] Employee creates ticket on chain + DB
+- [ ] GPS handling, vehicle lookup (mock mode)
 
-#### Smart Contract Changes (2 hours)
-- [ ] Add `devices` table to verarta.core contract:
-  - device_id, user account, credential_id_hash, nickname, registered_at, last_used_at, is_active
-- [ ] Add `recovery` table:
-  - recovery_id, user account, trusted_accounts (vector of names), threshold (e.g., 2), created_at
-- [ ] Add actions: `adddevice`, `rmdevice`, `setrecovery`, `execrecovery`
-- [ ] Compile and deploy updated contract
-
-#### Backend (2-3 hours)
-- [ ] API: `POST /api/auth/devices/register` — register additional WebAuthn device to existing account
-- [ ] API: `GET /api/auth/devices` — list user's registered devices (nickname, last used, active)
-- [ ] API: `DELETE /api/auth/devices/:id` — revoke a device
-- [ ] API: `POST /api/auth/recovery/setup` — configure trusted contacts (2-of-N)
-- [ ] API: `POST /api/auth/recovery/initiate` — start recovery process
-- [ ] API: `POST /api/auth/recovery/approve` — trusted contact approves recovery
-- [ ] Update login flow: try all registered credentials, update last_used_at on success
-
-#### Frontend (2-3 hours)
-- [ ] Settings page: "My Devices" section
-  - List all registered devices with nickname, last used date
-  - "Add Device" button → WebAuthn registration flow → nickname prompt
-  - "Revoke" button per device (with confirmation)
-- [ ] Settings page: "Account Recovery" section
-  - Configure trusted contacts (search by username/account)
-  - Set threshold (minimum approvals needed)
-  - Show current recovery config
-- [ ] Recovery flow: "Lost access?" → enter username → trusted contacts notified → approvals → new device registration
-- [ ] Test: register 2 devices, login with each, revoke one, verify can't login with revoked
-
-### V9 — Demo Data Seeder (2 hours)
-- [ ] Write seeder script:
-  - Create 3-5 demo artist accounts
-  - Register 10-15 demo artworks (use sample images, varied sizes)
-  - Upload artwork files to chain (chunked)
-  - Create provenance records
-  - Set some artworks as public, some private
-- [ ] Make script idempotent
-- [ ] Run on production
-- [ ] Verify: gallery shows demo artworks, provenance chains visible
-
-### V10 — Public Demo Mode (3-4 hours)
-- [ ] Create demo login: `POST /api/auth/demo`
-  - Read-only session for demo user
-  - Access to demo artworks, provenance, blockchain explorer
-  - All write operations blocked with "Demo mode" message
-- [ ] Add "Try Demo" button on Verarta landing page
-- [ ] Add "Demo Mode" badge in UI header
-- [ ] Restrict: no file uploads, no real WebAuthn registration, no settings changes
-- [ ] Auto-expire after 30 minutes
-- [ ] Add demo link to amiheines.com/portfolio
-- [ ] Test: full exploration flow in demo mode
+### On-Chain Image Upload Pipeline (4 hours)
+- [ ] **Record session** — "Storing Evidence Photos on a Blockchain"
+- [ ] Chunked image upload (init, chunk, complete) mirroring Verarta pattern
+- [ ] Image retrieval and thumbnail generation (Sharp, Redis)
 
 ---
 
-## Outreach (4 hours)
+## Content Work (6 hours)
 
-- [ ] Send 10-15 new LinkedIn messages
-- [ ] Follow up on pipeline — prioritize warm leads
-- [ ] Post 3-5 LinkedIn insights
-- [ ] Comment on prospect posts
-- [ ] Running total: 75-95 outreach messages
-- [ ] **Revenue check:** How many discovery calls? Any closed deals? Pipeline value?
-- [ ] If no calls yet: review message templates, try different angles, consider warm intro requests
+### Video 6: "Smart Contract Deployment + Testing: Parking Tickets Part 2"
+- [ ] Edit from week 6 deployment footage (target: 15-20 minutes)
+- [ ] Upload to YouTube
 
----
+### Blog Post 6
+- [ ] Write blog post derived from Video 6
 
-## Content (2 hours)
+### LinkedIn
+- [ ] Share a specific technical decision from the parking build
+- [ ] Post 3 insights
 
-- [ ] Publish blog post #6 or YouTube video
-  - Candidate: "Multi-Device WebAuthn for Blockchain Accounts: A Recovery Strategy" (from V8)
-  - Candidate video: first "Build With Me" recording (record while working on V8)
-- [ ] Share on LinkedIn
+### Weekly Email Broadcast #3
+- [ ] Value content + link to latest video
+
+### Survey Planning
+- [ ] Start planning audience survey for week 9
 
 ---
 
 ## End-of-Week Checkpoints
 
-- [ ] Verarta multi-device WebAuthn working (add, list, revoke devices)
-- [ ] Account recovery configured and tested (2-of-N trusted contacts)
-- [ ] Verarta demo data populated, gallery shows real artworks
-- [ ] Verarta demo mode live with "Try Demo" button
-- [ ] Verarta demo linked from amiheines.com/portfolio
-- [ ] **Both ChainVault and Verarta now fully expanded, monitored, and demo-ready**
-- [ ] 75-95 outreach messages total
+- [ ] Parking admin flow complete: registration, cities, prices, employees
+- [ ] Ticket issuance working end-to-end
+- [ ] On-chain image upload pipeline working
+- [ ] Video 6 published, blog post 6 published
+- [ ] Cumulative: 6 videos, 6 blog posts

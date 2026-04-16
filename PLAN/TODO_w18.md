@@ -1,103 +1,59 @@
-# Week 18 — ChainTalk: Widget UI Completion + Landing Page
+# Week 18 — Finish Build + Case Studies + Warm Consulting Outreach
 
 **Dates:** 2026-07-20 to 2026-07-26
-**Focus:** 80% ChainTalk / 20% outreach + content
+**Phase:** 4 — Launch, Automate, Scale
+**Focus:** 50% build / 20% consulting / 30% content. "Turn content into consulting revenue."
 **Target hours:** 20
 
 ---
 
-## ChainTalk Widget + Landing (16 hours)
+## Build Work (10 hours) — RECORDED
 
-### CT7 continued — Embed Widget Iframe UI Completion (4-5 hours)
-
-#### Comment Posting (2-3 hours)
-- [ ] Post comment form:
-  - Textarea with character counter (max 2000)
-  - "Post to blockchain" button with loading state
-  - After post: new comment appears immediately (optimistic UI), blockchain tx link appears when confirmed
-  - Reply: "Reply" button on each comment → expand reply form inline below comment
-- [ ] Voting UI:
-  - Up/down arrow buttons per comment
-  - Current vote count between arrows
-  - Highlight user's own vote
-  - Prevent self-voting
-  - Loading state during blockchain transaction
-- [ ] Error handling:
-  - Network errors: "Failed to post. Retry?"
-  - Rate limiting: "Please wait before posting again"
-  - Auth required: "Sign in to comment"
-
-#### Theming + Polish (2 hours)
-- [ ] Light theme (default): white background, dark text
-- [ ] Dark theme: dark background, light text
-- [ ] Customizable accent color via `data-accent` attribute
-- [ ] CSS variables for all theme tokens (easy for Pro tier customization later)
-- [ ] Responsive: works on mobile (320px) to desktop
-- [ ] Loading skeleton while comments load
-- [ ] Empty state: "Be the first to comment!"
-- [ ] "Powered by ChainTalk 🔗" footer link (links to landing page)
-
-### CT8 — ChainTalk Landing Page (4-5 hours)
-- [ ] Create marketing page at `chaintalk.amiheines.com`:
-  - **Hero:** "Comments that can't be silently deleted." — subhead: "Drop-in blockchain-backed comments for any website."
-  - **How it works:** 3-step: 1. Add script tag, 2. Comments stored on blockchain, 3. Every message has a receipt
-  - **Live demo:** Embedded ChainTalk widget right on the landing page (meta!)
-  - **Comparison table:** ChainTalk vs Disqus vs Commento (the pitch from section 11.10.5)
-  - **Pricing:** Free / Pro / Enterprise / Self-hosted tiers
-  - **Setup wizard:** "Get started in 2 minutes" → register site → get embed code → copy-paste
-  - **FAQ:** How does it work? Is it really immutable? What about spam? Can I moderate? How fast?
-  - **Footer:** "Built by Ami Heines — Blockchain Infrastructure Consultant" → amiheines.com
-- [ ] SEO: title, meta description, Open Graph
-- [ ] Matomo tracking
-- [ ] Test: page loads, demo widget works, setup wizard generates valid embed code
-
-### CT9 — Admin Dashboard (5-6 hours)
-- [ ] Site owner dashboard at `chaintalk.amiheines.com/dashboard`:
-  - **Stats:** total comments, comments today, active users, vote count
-  - **Comment moderation queue:**
-    - Flagged comments requiring review
-    - Recent comments (newest first)
-    - Hide/unhide actions with reason input
-    - Bulk moderation (select multiple → hide)
-  - **Site settings:**
-    - Display name, moderation mode (pre-approve / post-moderate / open)
-    - Anonymous commenting toggle
-    - Theme selection (light/dark/auto)
-    - Accent color picker
-  - **API key management:**
-    - Show current API key (masked, reveal on click)
-    - Regenerate API key (with confirmation warning)
-  - **Embed code generator:**
-    - Preview embed code with current settings
-    - Copy-to-clipboard button
-    - Live preview of widget with current theme
-  - **Pages list:** all pages with comments, sorted by recent activity
-- [ ] Dashboard auth: site owner login (same auth system, site_owner flag)
-- [ ] Test: full dashboard flow — login, view stats, moderate comment, update settings, copy embed code
+### Finish Godot Game + Submit to Stores
+- [ ] **Record session** — deployment and store submission
+- [ ] Final polish: animations, haptics, app icon, splash screen
+- [ ] Export Android build (APK/AAB) via Godot, submit to Google Play
+- [ ] Export iOS build via Godot, submit to App Store
+- [ ] Add to amiheines.com/portfolio — 4th major project complete
+- [ ] Open-source the game code on GitHub (builds credibility)
 
 ---
 
-## Outreach + Content (4 hours)
+## Consulting Work (4 hours)
 
-### Outreach (3 hours)
-- [ ] Send 10 new LinkedIn messages
-- [ ] Pipeline management, close deals
-- [ ] Post 3-5 LinkedIn insights
-- [ ] Running total: 185-240 outreach messages
-- [ ] **Revenue milestone check:** Should be at $2K+/month by now from outreach + freelance + any POFOV leads
+### Write 2 Case Studies (2 hours)
+- [ ] Case Study 1: ChainVault — "Wire Fraud Prevention for Real Estate"
+- [ ] Case Study 2: Parking — "Municipal Parking Enforcement on Private Blockchain"
+- [ ] Each includes: problem, architecture diagram, technical approach, results with metrics, timeline, "What This Means For Your Business"
+- [ ] Format as PDF for proposals AND as blog posts
 
-### Content (1 hour)
-- [ ] Publish blog post #17 or YouTube video
-  - Candidate: "I Built a Blockchain Alternative to Disqus — Here's Why and How" (great video)
-  - Candidate: "Why Your Comment Section Should Be on a Blockchain (5 Minutes for CTOs)"
-- [ ] Share on LinkedIn + Product Hunt consideration for ChainTalk launch
+### Warm Outreach to Top Engaged Subscribers (2 hours)
+- [ ] Identify top 10-20 subscribers (most opens, most clicks, consulting CTA clickers)
+- [ ] Send personalized email: "I noticed you've been following my work. I have 2 open slots for $7.5K PoC projects. Would a 30-minute call be useful?"
+- [ ] Cochrane method: sell to people who already know and trust you
+
+---
+
+## Content Work (6 hours)
+
+### Video 17
+- [ ] Edit from build completion footage
+- [ ] Upload to YouTube
+
+### Blog Post 17
+- [ ] Publish case study as blog post
+
+### LinkedIn
+- [ ] Share case study + 3 insights
+
+### Weekly Email Broadcast #14
+- [ ] Value content + latest video
 
 ---
 
 ## End-of-Week Checkpoints
 
-- [ ] ChainTalk widget fully functional: post, reply, vote, moderate, themed
-- [ ] Landing page live at chaintalk.amiheines.com with live demo
-- [ ] Admin dashboard working: stats, moderation, settings, embed code generator
-- [ ] Setup wizard: register → verify → get embed code → works on any site
-- [ ] 185-240 outreach messages total
+- [ ] 4th project complete, deployed, monitored
+- [ ] 2 case studies written (PDF + blog)
+- [ ] Warm outreach sent to top subscribers
+- [ ] Video 17 published, blog post 17 published

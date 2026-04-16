@@ -70,7 +70,7 @@ Minimum production requirements for a private blockchain deployment.
 | **Vendor lock-in** | None | High (data migration is complex) |
 | **Customization** | Unlimited | Limited to vendor's feature set |
 
-**Recommendation:** Start with a 4-week proof-of-concept ($5K) to validate the approach before committing to either path.
+**Recommendation:** Start with a 4-week proof-of-concept ($7.5K) to validate the approach before committing to either path.
 
 ---
 
@@ -95,7 +95,7 @@ Watch for these when evaluating blockchain vendors or consultants.
 
    **https://amiheines.com/contact**
 
-3. **$5K Proof of Concept:** A working system in 4 weeks — not a slide deck. Source code included (MIT licensed).
+3. **$7.5K Proof of Concept:** A working system in 4 weeks — not a slide deck. Source code included (MIT licensed).
 
 ---
 

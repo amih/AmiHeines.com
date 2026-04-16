@@ -1,107 +1,69 @@
-# Week 2 — Outreach Launch + Listmonk Setup + Monitoring Dashboards
+# Week 2 — Content Engine Setup + Start Building Publicly
 
 **Dates:** 2026-03-30 to 2026-04-05
-**Focus:** 50% outreach & email infrastructure / 50% monitoring completion
+**Phase:** 1 — The Foundation
+**Focus:** 70% build (content infrastructure + first recorded session) / 30% content
 **Target hours:** 20
 
 ---
 
-## Outreach & Email (10 hours)
+## Build Work (14 hours)
 
-### Prospect List Building (4 hours)
-- [ ] Build spreadsheet/CRM with 120+ contacts across 4 verticals:
-  - 50 real estate title company CTOs / IT directors
-  - 30 legal firm technology partners / CIOs
-  - 20 healthcare compliance officers
-  - 20 government IT directors
-- [ ] For each: name, company, title, LinkedIn URL, specific pain point note
-- [ ] Research 5-10 companies deeply (recent news, transactions, compliance issues) for personalized outreach
+### YouTube + Recording Infrastructure (4 hours)
+- [x] Create YouTube channel (`@amiheines`), set name, description, branding, channel art
+- [x] Install OBS Studio, configure screen recording: 1080p, 60fps, mic input, facecam overlay
+- [x] Create thumbnail template in GIMP/Canva (consistent style: dark background, bold text, tech icon)
+- [ ] Record 30-second test clip — verify audio quality, screen readability, facecam lighting
+- [x] Define recording workflow: OBS → `~/Videos/raw/` → edit → `~/Videos/final/`
+- [x] Install kdenlive, do a test edit
 
-### Outreach Templates (2 hours)
-- [ ] Write 3-4 LinkedIn message templates:
-  - Template A: Real estate / wire fraud angle
-  - Template B: Legal / document integrity angle
-  - Template C: Healthcare / audit trail angle
-  - Template D: General tamper-proof records angle
-- [ ] Each template: 1 specific reference to their company/industry, 1 pain point sentence, offer free 30-min audit, link to amiheines.com
-- [ ] Create discovery call script (30 min format: 10 min listen, 10 min diagnose, 10 min propose)
-- [ ] Create proposal template (1-page, covers all tiers)
+### Website Email Capture Optimization (3 hours)
+- [x] Add subtle Subscribe component to bottom of every page: /about, /contact, /services, /portfolio, /blog posts (was already on most pages; added to contact, resources, and [...id] catch-all)
+- [x] Add inline CTA to blog post template — lead magnet offer below every post (Subscribe component already present at bottom of blog/[id].astro)
+- [ ] Configure Matomo goals: newsletter signups, resource downloads, contact form submissions, services page views
 
-### First Outreach Batch (2 hours)
-- [ ] Send 15-20 personalized LinkedIn messages (use templates, customize per prospect)
-- [ ] Comment on 10-15 target prospects' LinkedIn posts (add value, don't pitch)
-- [ ] Post first LinkedIn insight (1-2 paragraphs on wire fraud, audit trails, or tamper-proof records)
-- [ ] Track: messages sent, connection requests accepted, responses received
+### Listmonk Welcome Sequence (3 hours)
+- [x] Create branded HTML email template in Listmonk (responsive, matches amiheines.com design) — template id:5
+- [x] Build 5-email welcome sequence (transactional templates id:6-10):
+  1. Day 0: Welcome + deliver lead magnet PDF + "Here's what I'm building right now"
+  2. Day 3: Ami's story + why private blockchain matters
+  3. Day 7: Case study deep dive — ChainVault wire fraud prevention
+  4. Day 10: "4 misconceptions about blockchain in enterprise"
+  5. Day 14: "How I can help" + book a discovery call CTA
+- [x] Configure automation: cron job at /opt/amiheines/welcome-sequence.sh runs daily 9:00 UTC, sends based on subscriber join date
+- [x] Test end-to-end: transactional send to ami@amiheines.com confirmed working
 
-### Listmonk Setup — Phase 3 (2 hours)
-- [ ] Create lists in Listmonk:
-  - amiheines.com subscribers
-  - POFOV subscribers (for later)
-  - Lead magnet downloaders
-- [ ] Configure double opt-in
-- [ ] Create email templates (branded, responsive HTML)
-- [ ] Build welcome sequence (5 emails over 14 days):
-  1. Welcome + link to best resource (checklist PDF)
-  2. Your story + why private blockchain
-  3. Case study: ChainVault
-  4. Common misconceptions about blockchain in enterprise
-  5. "How I can help" + book a call CTA
-- [ ] Test: sign up → receive welcome email → sequence triggers correctly
+### Grafana Dashboard Polish — FIRST RECORDED SESSION (3 hours)
+- [ ] **Record entire session with OBS** — this becomes Video 1 footage
+- [ ] Complete Server Overview and Docker Containers dashboards
+- [ ] Provision dashboards as code (JSON files)
+- [ ] Take screenshots for portfolio page and blog post
 
 ---
 
-## Monitoring Stack Completion (10 hours)
+## Content Work (6 hours)
 
-### M4 — Grafana Dashboard JSON Files (3-4 hours)
-- [ ] Create Server Overview dashboard: Host CPU, RAM, disk, network, load average
-- [ ] Create Docker Containers dashboard: per-container CPU, RAM, network I/O, restart count
-- [ ] Create Blockchain Health dashboard: block production rate, head block, finality
-- [ ] Provision all dashboards as code (JSON files in `/opt/monitoring/grafana/dashboards/`)
-- [ ] Configure Grafana datasources provisioning (Prometheus + Loki)
-- [ ] Test: dashboards auto-load on fresh Grafana start
+### Video 1: "Enterprise Monitoring for $0: Grafana + Prometheus on One Server"
+- [ ] Edit monitoring dashboard recording (target: 12-15 minutes)
+- [ ] Create YouTube thumbnail from template
+- [ ] Upload to YouTube with SEO title, description (links to amiheines.com, lead magnet, subscribe), tags
+- [ ] End video with CTA: "Download my Private Blockchain Infrastructure Checklist — link in description"
 
-### M5 — ChainVault Prometheus Metrics (2-3 hours)
-- [ ] Install `prom-client` in ChainVault chain-service
-- [ ] Add metrics middleware to Express.js:
-  - `http_requests_total{method, route, status}`
-  - `http_request_duration_seconds{method, route}`
-  - `blockchain_head_block_number`
-  - `blockchain_transactions_total{contract, action}`
-  - `chainvault_deals_total{status}`
-  - `chainvault_documents_uploaded_total`
-- [ ] Expose `GET /metrics` endpoint on chain-service
-- [ ] Add `prom-client` to Next.js API routes (via middleware)
-- [ ] Add ChainVault scrape targets to Prometheus config
-- [ ] Test: Prometheus can scrape ChainVault metrics
+### Blog Post 1
+- [ ] Write blog post derived from Video 1 script, publish to amiheines.com/blog
 
-### M6 — Verarta Prometheus Metrics (2 hours)
-- [ ] Install `prom-client` in Verarta Astro backend
-- [ ] Add metrics middleware:
-  - `http_requests_total{method, route, status}`
-  - `http_request_duration_seconds{method, route}`
-  - `verarta_artworks_registered_total`
-  - `verarta_chunks_uploaded_total`
-  - `verarta_webauthn_auth_total{result}`
-- [ ] Expose `GET /metrics` endpoint
-- [ ] Add Verarta scrape targets to Prometheus config
-- [ ] Test: Prometheus can scrape Verarta metrics
-
----
-
-## Content — First Blog Posts (ongoing, 1-2 hours spare time)
-
-- [ ] Write first blog post for amiheines.com (derived from setup work this week):
-  - Candidate: "How I Self-Host My Entire Business Infrastructure" or "Enterprise Monitoring for $0"
-- [ ] Publish to amiheines.com/blog
-- [ ] Share on LinkedIn as a post with key takeaway
+### LinkedIn
+- [ ] Share Video 1 with 2-paragraph insight post
+- [ ] Post 3 LinkedIn insights during the week (5 min each)
 
 ---
 
 ## End-of-Week Checkpoints
 
-- [ ] 120+ prospects in spreadsheet/CRM
-- [ ] 15-20 LinkedIn messages sent, tracking responses
-- [ ] Listmonk welcome sequence live and tested
-- [ ] Grafana has Server, Docker, and Blockchain dashboards with real data
-- [ ] ChainVault and Verarta exposing `/metrics` to Prometheus
-- [ ] First blog post published
+- [ ] YouTube channel live with 1 published video
+- [ ] OBS recording workflow tested and working
+- [x] Subtle per-page subscribe CTAs live on amiheines.com (no popup)
+- [x] Listmonk welcome sequence configured, tested, auto-triggering
+- [ ] Matomo goals configured
+- [ ] Blog post 1 published
+- [ ] Video 1 published

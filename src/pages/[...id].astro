@@ -1,5 +1,6 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
+import Subscribe from '../components/Subscribe.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
@@ -28,4 +29,5 @@ const { Content } = await render(page);
             <Content />
         </div>
     </article>
+    <Subscribe class="my-16 sm:my-24" />
 </BaseLayout>

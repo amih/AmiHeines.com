@@ -25,12 +25,12 @@
 - [x] **Verify:** all 14 pages return 200, Matomo script present, Cal.com embed present, Listmonk subscription works, SMTP sending works, privateblockchaindatabase.com parked page + redirects working
 
 ### LinkedIn Profile Optimization (2 hours)
-- [ ] Rewrite headline: problem you solve, not job title (e.g., "I build tamper-proof infrastructure for companies that can't afford data tampering — Private Blockchain | Wire Fraud Prevention | Audit Trails")
-- [ ] Update About section: who you help, what you've built, CTA to book a call
-- [ ] Add amiheines.com as website
-- [ ] Add ChainVault and Verarta as projects/experience
-- [ ] Update banner image (professional, relates to blockchain infra)
-- [ ] Connect with 20-30 people in target verticals (don't pitch yet — just connect)
+- [x] Rewrite headline: problem you solve, not job title (e.g., "I build tamper-proof infrastructure for companies that can't afford data tampering — Private Blockchain | Wire Fraud Prevention | Audit Trails")
+- [x] Update About section: who you help, what you've built, CTA to book a call
+- [x] Add amiheines.com as website
+- [x] Add ChainVault and Verarta as projects/experience
+- [x] Update banner image (professional, relates to blockchain infra)
+- [x] Connect with 20-30 people in target verticals (don't pitch yet — just connect)
 
 ### Lead Magnet — First Draft (2 hours)
 - [x] Write "Private Blockchain Infrastructure Checklist" (PDF, 3 pages)
@@ -41,11 +41,11 @@
 - [x] Upload to /resources page (public/resources/), gated behind Listmonk email capture
 
 ### Freelance Platform Profiles (2 hours)
-- [ ] Create/update Toptal profile (apply if not yet accepted)
-- [ ] Create/update Upwork profile (expert-vetted tier)
-- [ ] Create/update Catalant profile
-- [ ] Position as: blockchain infrastructure / tamper-proof records specialist
-- [ ] Include links to amiheines.com, ChainVault, Verarta as portfolio
+- [x] Create/update Toptal profile (apply if not yet accepted)
+- [x] Create/update Upwork profile (expert-vetted tier)
+- [x] Create/update Catalant profile
+- [x] Position as: blockchain infrastructure / tamper-proof records specialist
+- [x] Include links to amiheines.com, ChainVault, Verarta as portfolio
 
 ---
 
@@ -88,8 +88,8 @@
 
 - [x] amiheines.com is live with all pages, working forms, Matomo tracking
 - [x] privateblockchaindatabase.com parked page loading correctly with link to amiheines.com
-- [ ] LinkedIn profile optimized and 20+ new connections
+- [x] LinkedIn profile optimized and 20+ new connections
 - [x] Lead magnet PDF created and gated on /resources
-- [ ] Freelance platform profiles submitted
+- [x] Freelance platform profiles submitted
 - [x] Prometheus + Grafana + Loki running on server
 - [x] Can view host metrics and container logs in Grafana

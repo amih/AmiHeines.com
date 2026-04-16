@@ -1,5 +1,6 @@
 ---
 import Button from '../components/Button.astro';
+import Subscribe from '../components/Subscribe.astro';
 import siteConfig from '../data/site-config';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
@@ -80,6 +81,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <p class="resource-status mt-2 hidden text-sm"></p>
         </section>
     </article>
+    <Subscribe class="my-16 sm:my-24" />
 </BaseLayout>
 
 <script define:vars={{ listmonkUrl: siteConfig.listmonk?.url, listUuid: siteConfig.listmonk?.listUuid }}>

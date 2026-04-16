@@ -25,7 +25,7 @@ My projects include **ChainVault** (a tamper-proof deal room with wire fraud pre
 
 ## What I'm Looking For
 
-I take on roughly one new engagement per month at $5,000 for a proof-of-concept. If private blockchain is the right fit for your problem, I'll tell you. If it's not, I'll tell you that too.
+I take on roughly one new engagement per month at $7,500 for a proof-of-concept. If private blockchain is the right fit for your problem, I'll tell you. If it's not, I'll tell you that too.
 
 **Best fit:** CTOs and VPs of Engineering at companies handling sensitive records — real estate closings, legal transactions, healthcare compliance, municipal systems, art provenance.
 

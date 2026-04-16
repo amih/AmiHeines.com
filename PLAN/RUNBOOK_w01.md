@@ -149,7 +149,7 @@ ssh ubuntu@158.69.27.200 "cd /opt/monitoring && sudo docker compose -f docker-co
 |------|-----|---------------|
 | Home | https://amiheines.com/ | Hero section loads, "Book a Discovery Call" and "View My Work" buttons link correctly, newsletter subscribe form visible at bottom |
 | About | https://amiheines.com/about/ | Bio content renders, navigation works |
-| Services | https://amiheines.com/services/ | All tiers displayed ($500/hr, $5K PoC, $20-50K, $15K audit, $2-5K/mo managed), "Book a Discovery Call" button links to /contact, subscribe form at bottom |
+| Services | https://amiheines.com/services/ | All tiers displayed ($997 assessment, $7.5K PoC, $20-50K, $15K audit, $2-5K/mo managed), "Book a Discovery Call" button links to /contact, subscribe form at bottom |
 | Portfolio | https://amiheines.com/portfolio/ | ChainVault and Verarta case studies with tech stacks, links to chainvault.amiheines.com and verarta.com, "Discuss Your Project" button links to /contact |
 | Blog | https://amiheines.com/blog/ | Shows 2 posts (parking ticket, Tel Aviv scandal), no placeholder posts visible |
 | Blog Post | https://amiheines.com/blog/tel-aviv-parking-ticket-scandal-why-private-blockchain-matters/ | Full article renders, tags link to tag pages |
