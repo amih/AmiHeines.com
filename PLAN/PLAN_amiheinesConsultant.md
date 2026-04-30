@@ -67,7 +67,9 @@ Examples:
 - **Format:** Mon–Fri, 60–90 min/day live + recording.
 - **Outcome:** by Friday each attendee has a tiny on-chain interaction working on testnet (e.g. mint an NFT, simple contract call).
 - **Day 5:** pitch the $5k cohort as the natural next step. Cochrane-style: 60-second offer at the end of a transformation week.
-- **Target conversion:** 30 paid attendees → 5+ cohort sales (= $25k cohort revenue + $2.9k challenge revenue).
+- **Target conversion (base case):** 18 paid attendees → 3 cohort sales (= $15k cohort + $2.3k challenge).
+- **Stretch:** 30 attendees → 5 cohort sales (= $25k + $2.9k). Bull (existing audience): 8+ sales.
+- **Payment plans:** offer 3-pay ($1,750/mo × 3, +5% uplift) alongside lump $5k. Industry rule of thumb: 40-60% of buyers take the plan; payment plans typically lift conversion 20-40%. See `payment_plans.md` for checkout flow.
 
 Run the challenge in **W10** (Jul 06–12, 2026). Cohort #1 starts **W12** (Jul 20–26).
 
@@ -110,7 +112,7 @@ All weeks Mon–Sun. 20-hour cap.
 | 07 | 2026-06-15 → 06-21 | Cohort LP + payment + Video #6 | LP live, Invoice4U test charge |
 | 08 | 2026-06-22 → 06-28 | List growth push + Video #7 | List ≥200 |
 | 09 | 2026-06-29 → 07-05 | Challenge announce + Video #8 | Challenge LP live, ≥10 tickets |
-| 10 | 2026-07-06 → 07-12 | **RUN paid 5-day challenge** | ≥30 paid attendees, ≥5 cohort sales |
+| 10 | 2026-07-06 → 07-12 | **RUN paid 5-day challenge** | Base: ≥18 attendees, ≥3 cohort sales. Stretch: 30 / 5. |
 | 11 | 2026-07-13 → 07-19 | Onboard cohort + Video #9 | Cohort #1 students paid + onboarded |
 | 12 | 2026-07-20 → 07-26 | Cohort wk1 + Video #10 | Cohort live |
 | 13 | 2026-07-27 → 08-02 | Cohort wk2 + Video #11 | — |
@@ -129,11 +131,14 @@ All weeks Mon–Sun. 20-hour cap.
 
 | Source | W | Amount |
 |---|---|---|
-| Paid 5-day challenge tickets (30 × $97) | W10 | $2,910 |
-| Cohort #1 (5 seats × $5,000) | W11–W17 | $25,000 |
-| **Phase 1 total** | | **$27,910** |
+| Paid 5-day challenge tickets (15 × $97 + 3 VIP × $297) | W10 | $2,346 |
+| Cohort #1 (3 seats × $5,000 — base) | W11–W17 | $15,000 |
+| **Phase 1 total — base** | | **$17,346** |
 
-If cohort sells 8 seats: $40k+ Phase 1.
+**Stretch:** 30 attendees + 5 cohort seats = $27,910.
+**Bull (existing audience >1k engaged subs):** 8+ cohort seats = $43k+.
+
+**Reality check (see `business_plans.xlsx → Funnel` sheet):** at 800 views/long-form video and Cochrane-mid funnel rates (0.5% view→email, 2% email→challenge, 12% challenge→cohort), pure-funnel cohort sales for the first quarter ≈ 0.1 seats. Hitting **3 seats in W12 requires 2-3 from warm-network sources** (LinkedIn DMs, referrals, existing list). Plan W08–W09 explicitly for this.
 Phase 2 (W22+) targets first paid RE pilot $20k–$30k by ~W30.
 
 ---

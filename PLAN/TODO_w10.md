@@ -19,7 +19,8 @@
 ### Cohort sales conversations (5h)
 - [ ] Day 5 → Day 7: follow up with everyone who showed interest.
 - [ ] No 1-on-1 sales calls — answer in Discord / email only.
-- [ ] Goal: 5+ cohort sales by EOW Sun.
+- [ ] Offer both lump ($5,000) and 3-pay ($1,750/mo × 3 = $5,250) options. See `payment_plans.md`.
+- [ ] **Targets:** Base = 3 cohort sales. Stretch = 5. Bull (warm-network) = 8.
 
 ---
 
@@ -41,7 +42,7 @@
 ## End-of-week checkpoints
 
 - [ ] Challenge ran all 5 days.
-- [ ] ≥30 paid attendees total (target).
-- [ ] ≥5 cohort seats sold (target).
+- [ ] **Attendees:** Base 18 / Stretch 30.
+- [ ] **Cohort seats sold:** Base 3 / Stretch 5 / Bull 8.
 - [ ] Recording archive saved.
 - [ ] Hours ≤25 (acceptable spike for launch week).

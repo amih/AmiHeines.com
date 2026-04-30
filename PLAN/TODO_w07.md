@@ -9,12 +9,14 @@
 ## Rainmaker (6h)
 
 ### Payment flow (Invoice4U) (4h)
-- [ ] Set up Invoice4U product for $5,000 cohort seat.
-- [ ] Test charge with own card, refund. Verify receipt + tax handling.
-- [ ] Wire success → Listmonk list `cohort_paid` → onboarding email auto-fires.
+**See `PLAN/payment_plans.md` for full checkout flow + offer matrix.**
+- [ ] Set up Invoice4U product: lump-sum $5,000 + 3-pay $1,750/mo × 3 ($5,250 total).
+- [ ] Test charge both options with own card, refund. Verify receipt + tax handling.
+- [ ] Wire success webhooks → Listmonk list `cohort_paid` → onboarding email auto-fires.
+- [ ] Wire 3-pay payment_failed webhook → Slack #cohort-ops + retry email.
 
 ### Refund / terms / contract (2h)
-- [ ] Draft refund policy (e.g. full refund within 7 days of purchase if no group calls attended).
+- [ ] Refund policy: 7-day money-back from Module 1 start (per `payment_plans.md`).
 - [ ] Cohort participation agreement / NDA-lite. Save to `PLAN/cohort_terms.md`.
 
 ---
