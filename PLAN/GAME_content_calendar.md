@@ -32,11 +32,21 @@ The newsletter is not a broadcast — it's an invitation to reply. **Ami reads e
 
 **Recurring CTA — append to every newsletter footer + blog post footer + video end-card:**
 
-> Hit reply — I read every email. Tell me what you'd build, what you'd cut, which engine I should pick. The replies shape next week's video.
+> Hit reply — I read every email and answer personally **while the list is small**. Tell me what you'd build, what you'd cut, which engine I should pick. The replies shape next week's video.
 
 **Welcome email (Listmonk W01 sequence) opening line:**
 
-> Welcome. Two things up front: (1) every email I send is from me, not a tool. (2) reply to any of them. I want your opinions on game dev directions, graphics/modeling engines, contract design — replies shape what I build next.
+> Welcome. Two things up front: (1) every email I send is from me, not a tool. (2) reply to any of them — while the list is small (under ~1,000 subs) I answer every reply personally. After that, I'll still read everything, but answers will move into a public Q&A column in the next issue. So early subscribers get the most direct line — that's the trade. I want your opinions on game dev directions, graphics/modeling engines, contract design — replies shape what I build next.
+
+### Phase transitions (set expectations now, honor them later)
+
+| List size | Reply mode | Comms |
+|---|---|---|
+| **0 – 1,000** (current phase) | Personal reply within 48h to every email | "You're early — I'm answering personally" in welcome + footer |
+| **1,000 – 5,000** | Two-line personal reply; meaty threads quoted (with permission) into a public Q&A column in the next issue | Send a "the list crossed 1,000 — here's what changes" broadcast. The transition itself is content. |
+| **5,000+** | Public Q&A column primary; personal replies triaged to high-signal | Same — announce, don't drift silently |
+
+This is honest *and* a soft urgency lever — "subscribe now, get the direct line while it lasts" without being scammy because we'll genuinely deliver until we can't.
 
 **Per-week reply prompt** (one specific question closing each broadcast):
 
