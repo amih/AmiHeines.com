@@ -1,57 +1,48 @@
-# Week 9 — Parking Frontend (Admin) + Audience Survey
+# Week 9 — Challenge announce + Video #8
 
-**Dates:** 2026-05-18 to 2026-05-24
-**Phase:** 2 — Grow the Audience
-**Focus:** 70% build / 30% content. "Listen to your audience."
-**Target hours:** 20
-
----
-
-## Build Work (14 hours) — RECORDED
-
-### Parking Frontend: Admin Dashboard (10 hours)
-- [ ] **Record key sessions** (wizard and dashboard most visually compelling)
-- [ ] Initialize Next.js project
-- [ ] Auth pages: registration, login, email verification
-- [ ] City setup wizard (multi-step)
-- [ ] Dashboard: stats cards (tickets, revenue), recent tickets, charts
-- [ ] Ticket list with filters, ticket detail view
-- [ ] Employee and price management
-
-### Parking Frontend: Responsive Layout (4 hours)
-- [ ] Sidebar navigation, mobile collapse
-- [ ] Breadcrumbs, loading skeletons
+**Dates:** 2026-06-29 to 2026-07-05
+**Phase:** 1 — Cohort
+**Target hours:** ≤20 (hard cap)
 
 ---
 
-## Content Work (6 hours)
+## Rainmaker (10h)
 
-### Video 8: "Invoice4U + Blockchain: Marking a Parking Ticket Paid On-Chain"
-- [ ] Edit from week 8 footage
-- [ ] Upload to YouTube
-
-### Blog Post 8
-- [ ] Write blog post from Video 8
-
-### AUDIENCE SURVEY (Cochrane Method)
-- [ ] **Send dedicated email to entire list via Listmonk:**
-  "What is your biggest frustration when it comes to [blockchain infrastructure / self-hosting / AI-accelerated development]?"
-- [ ] Use Google Form or custom Astro page at amiheines.com/survey
-- [ ] This survey determines the first paid product in Phase 3
-
-### LinkedIn
-- [ ] Post a question to network: "What's the hardest part about [topic from best content]?"
-- [ ] Post 3 insights
-
-### Weekly Email Broadcast #5
-- [ ] Value content + latest video
+### Paid 5-day challenge build (10h)
+- [ ] Name: "Ship Your First On-Chain Interaction" 5-Day Challenge.
+- [ ] Daily lessons (60–90 min each):
+  - Mon: install toolchain + first "hello world" contract local
+  - Tue: deploy to Vaulta testnet
+  - Wed: connect a React frontend
+  - Thu: mint a tiny on-chain NFT or simple action
+  - Fri: polish + record demo + 60s cohort pitch
+- [ ] Build challenge LP: amiheines.com/challenge, $97 GA / $297 VIP.
+- [ ] Wire Invoice4U product for tickets.
+- [ ] Email to existing list: "Doors open."
 
 ---
 
-## End-of-Week Checkpoints
+## Content (5h)
 
-- [ ] Parking admin frontend functional
-- [ ] Audience survey sent to email list
-- [ ] Video 8 published, blog post 8 published
-- [ ] Survey responses starting to come in
-- [ ] Cumulative: 8 videos, 8 blog posts
+### Video #8 — "What's Inside My Paid 5-Day Web3 Challenge" (5h)
+- [ ] 30 min walkthrough of what attendees will build.
+- [ ] Reciprocity-heavy: include 1 fully usable framework attendees keep regardless of attending.
+- [ ] CTA: buy ticket.
+
+---
+
+## EAD / admin (5h)
+
+- [ ] Auto pipeline.
+- [ ] Pre-event ops: confirm Zoom seat, Discord channel, recording flow, refund handling.
+- [ ] Reach ≥10 paid tickets sold by EOW (early-bird cap).
+
+---
+
+## End-of-week checkpoints
+
+- [ ] /challenge LP live, payments tested.
+- [ ] ≥10 tickets sold pre-launch.
+- [ ] Video #8 live.
+- [ ] All 5 daily lesson plans drafted.
+- [ ] Hours ≤20.

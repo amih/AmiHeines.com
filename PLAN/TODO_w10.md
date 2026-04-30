@@ -1,64 +1,47 @@
-# Week 10 — Parking Frontend (Employee + Public) + Deploy + Analyze Survey
+# Week 10 — RUN paid 5-day challenge
 
-**Dates:** 2026-05-25 to 2026-05-31
-**Phase:** 2 — Grow the Audience (final week)
-**Focus:** 70% build / 30% content. "Ship the project, analyze the feedback."
-**Target hours:** 20
-
----
-
-## Build Work (14 hours) — RECORDED
-
-### Employee Mobile Frontend (6 hours)
-- [ ] **Record session** — mobile-first design is visually compelling content
-- [ ] Camera integration, GPS auto-capture
-- [ ] License plate input, violation selector
-- [ ] Upload progress UI with blockchain confirmation
-
-### Public Payment Page (3 hours)
-- [ ] **Record session**
-- [ ] Token-based public ticket view
-- [ ] Invoice4U payment form integration, success/failure states
-
-### Demo Data Seeder + Deployment (5 hours)
-- [ ] Create demo city, employees, 20 tickets with images
-- [ ] Deploy to parking.amiheines.com: nginx config, PM2, certbot
-- [ ] Add to Uptime Kuma
+**Dates:** 2026-07-06 to 2026-07-12
+**Phase:** 1 — Cohort
+**Target hours:** ≤20 (hard cap)
 
 ---
 
-## Content Work (6 hours)
+**This week is mostly live delivery + sales. No long-form video this week.**
 
-### Video 9: "Building a Mobile-First Ticket App with Camera + GPS + Next.js"
-- [ ] Edit from employee frontend footage
-- [ ] Upload to YouTube
+## Rainmaker (15h)
 
-### Blog Post 9
-- [ ] Write blog post from Video 9
+### Live challenge delivery (Mon–Fri) (10h)
+- [ ] Mon–Fri 60–90 min live each day. Record everything.
+- [ ] Open Q&A 15 min after each session.
+- [ ] Discord channel hot — answer within 6h.
+- [ ] Day 5 (Fri): 60-second cohort offer pitch at end of session. "Would you like to keep going?"
 
-### ANALYZE SURVEY RESULTS
-- [ ] Read every response, categorize into themes
-- [ ] Identify most common frustration/desire
-- [ ] **This determines the mini-course topic for Phase 3**
-
-### Portfolio Update
-- [ ] Add parking.amiheines.com to amiheines.com/portfolio with screenshots and demo link
-
-### LinkedIn
-- [ ] Share parking launch + 3 insights
-
-### Weekly Email Broadcast #6
-- [ ] Share parking launch, thank survey respondents
-- [ ] Tease: "Something coming based on your feedback"
+### Cohort sales conversations (5h)
+- [ ] Day 5 → Day 7: follow up with everyone who showed interest.
+- [ ] No 1-on-1 sales calls — answer in Discord / email only.
+- [ ] Goal: 5+ cohort sales by EOW Sun.
 
 ---
 
-## End-of-Week Checkpoints
+## Admin (3h)
 
-- [ ] Parking system fully deployed at parking.amiheines.com
-- [ ] Full end-to-end flow working in production
-- [ ] Portfolio updated with all 3 projects (ChainVault, Verarta, Parking)
-- [ ] Survey results analyzed; first product topic identified
-- [ ] 9 videos published, 9 blog posts published
-- [ ] Weekly email broadcasts: 6 sent
-- **Email subscriber target: 200+**
+- [ ] Send recordings to attendees daily.
+- [ ] Refund any low-effort no-shows that ask within terms.
+- [ ] Tally numbers: tickets sold, attendance %, cohort sales, conversion %.
+
+---
+
+## Content (2h)
+
+- [ ] Auto-clip best moments from challenge → 3 shorts queued for next week.
+- [ ] No standalone YouTube video this week.
+
+---
+
+## End-of-week checkpoints
+
+- [ ] Challenge ran all 5 days.
+- [ ] ≥30 paid attendees total (target).
+- [ ] ≥5 cohort seats sold (target).
+- [ ] Recording archive saved.
+- [ ] Hours ≤25 (acceptable spike for launch week).

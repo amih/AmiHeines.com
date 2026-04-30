@@ -1,95 +1,75 @@
-# Week 1 — Foundation: Website + Outreach Setup + Monitoring Start
+# Week 1 — Reset, ICP, Magic Offer brief
 
-**Dates:** 2026-03-23 to 2026-03-29
-**Focus:** 70% business foundation / 30% monitoring infra start
-**Target hours:** 20
+**Dates:** 2026-05-04 to 2026-05-10
+**Phase:** 1 — Cohort
+**Focus:** strategy reset; no video this week
+**Target hours:** 18–20 (hard cap)
 
----
-
-## Business Foundation (14 hours)
-
-### amiheines.com Website Launch (8 hours)
-- [x] Fork/adapt the Dante Astro theme from privateblockchaindatabase.com
-- [x] Create landing page: hero section, value prop, social proof placeholder
-- [x] Create /about page: bio, background, philosophy
-- [x] Create /services page with all 5 tiers ($500 → $5K → managed infra)
-- [x] Create /portfolio page: ChainVault and Verarta case studies with screenshots
-- [x] Create /contact page: contact form + Cal.com booking embed
-- [x] Create /newsletter page: Listmonk signup form
-- [x] Create /resources page: gated lead magnets (placeholder for now)
-- [x] Create /blog page: removed 14 placeholder posts, kept 2 original blockchain posts
-- [x] Integrate Listmonk API for newsletter signup (list UUID configured)
-- [x] Add Matomo tracking to all pages (site ID configured)
-- [x] Deploy to server (158.69.27.200): nginx config, certbot SSL
-- [x] Set up privateblockchaindatabase.com as a static single-page site, temporarily parked (links to amiheines.com)
-- [x] **Verify:** all 14 pages return 200, Matomo script present, Cal.com embed present, Listmonk subscription works, SMTP sending works, privateblockchaindatabase.com parked page + redirects working
-
-### LinkedIn Profile Optimization (2 hours)
-- [x] Rewrite headline: problem you solve, not job title (e.g., "I build tamper-proof infrastructure for companies that can't afford data tampering — Private Blockchain | Wire Fraud Prevention | Audit Trails")
-- [x] Update About section: who you help, what you've built, CTA to book a call
-- [x] Add amiheines.com as website
-- [x] Add ChainVault and Verarta as projects/experience
-- [x] Update banner image (professional, relates to blockchain infra)
-- [x] Connect with 20-30 people in target verticals (don't pitch yet — just connect)
-
-### Lead Magnet — First Draft (2 hours)
-- [x] Write "Private Blockchain Infrastructure Checklist" (PDF, 3 pages)
-  - What to evaluate before choosing a platform
-  - Key questions for your CTO/VP Engineering
-  - Red flags in vendor proposals
-- [x] Design in simple template (Markdown → PDF via pandoc)
-- [x] Upload to /resources page (public/resources/), gated behind Listmonk email capture
-
-### Freelance Platform Profiles (2 hours)
-- [x] Create/update Toptal profile (apply if not yet accepted)
-- [x] Create/update Upwork profile (expert-vetted tier)
-- [x] Create/update Catalant profile
-- [x] Position as: blockchain infrastructure / tamper-proof records specialist
-- [x] Include links to amiheines.com, ChainVault, Verarta as portfolio
+> Previous W01 work (amiheines.com launch, Listmonk, monitoring stack, freelance profiles, original lead magnet) is **done** — see git history before 2026-04-28 and `BACKUP_PLAN.md`. This file restarts the numbering for the post-pivot plan.
 
 ---
 
-## Monitoring Stack Start (6 hours)
+## Rainmaker (10h)
 
-### M1 — docker-compose.monitoring.yml (3-4 hours)
-- [x] Create `/opt/monitoring/` directory structure on server
-- [x] Write `docker-compose.monitoring.yml` with:
-  - Prometheus (latest)
-  - Grafana (latest, provisioned with admin password)
-  - Loki (latest)
-  - Promtail (latest)
-  - cAdvisor (latest)
-  - Node Exporter (latest)
-  - Alertmanager (latest)
-- [x] Configure volume mounts for persistent data
-- [x] Configure networking (all on internal Docker network)
-- [x] Test: `docker compose up -d`, verify all containers healthy
-- Note: remapped ports to avoid conflicts (Grafana→3200, Loki→3101, Node Exporter→9101, cAdvisor→8081)
+### Persona doc — "Marco" (3h)
+- [ ] Write 1–2 paragraph description of Marco: junior full-stack dev (React/Node, 2–4 yrs), curious about blockchain, uses Claude Code/Cursor, wants a portfolio piece + path into Web3.
+- [ ] List 3–5 burning questions Marco types into Google/YouTube ("how do I build my first smart contract", "is web3 still worth learning 2026", etc.).
+- [ ] List 3–5 pain points (impostor syndrome, tutorial hell, no portfolio, salary stuck).
+- [ ] Save to `PLAN/persona_marco.md`.
 
-### M2 — Prometheus scrape configs (1 hour)
-- [x] Write `prometheus.yml` with scrape targets:
-  - Node Exporter (host metrics)
-  - cAdvisor (container metrics)
-  - Prometheus self-monitoring
-  - Grafana health
-- [x] Set scrape intervals (15s for critical, 60s for others)
-- [x] Test: Prometheus UI shows all targets as UP
+### Perfect Client Code (2h)
+6 elements, Cochrane Ch.3:
+- [ ] 1. Ideal client (Marco, see above).
+- [ ] 2. Big problem in his words ("I want to build something real on-chain but I don't know where to start").
+- [ ] 3. Pain points (3–5 bullets).
+- [ ] 4. Dream outcome in his words ("I shipped a real on-chain game I can show in interviews").
+- [ ] 5. Payoffs (Web3 job interviews, salary delta, side income, credibility on Twitter).
+- [ ] 6. Process — 4 steps: Spec → Contract → Frontend → Ship.
+- [ ] Save to `PLAN/perfect_client_code.md`.
 
-### M3 — Promtail config (1 hour)
-- [x] Write `promtail.yml`:
-  - Docker container log discovery (auto-discover all containers)
-  - nginx access + error logs (/var/log/nginx/)
-- [x] Label enrichment: container_name, service, log_level
-- [x] Test: Grafana Explore → Loki → 32 container log streams visible, nginx proxy live at grafana.amiheines.com
+### Magic Offer brief (3h)
+Cochrane Ch.5 — 5-step build:
+- [ ] 1. Name: "Ship Your First On-Chain Game in 60 Days" (or pick alt — must pass "I want ___" test).
+- [ ] 2. Price: $5,000.
+- [ ] 3. Hell → heaven sentences.
+- [ ] 4. 4 high-level steps (Spec → Contract → Frontend → Ship).
+- [ ] 5. Fulfillment: 6-week live cohort, 8–12 seats, 1 group call/week + private channel + AI-pair-prog office hours.
+- [ ] Save to `PLAN/magic_offer.md`.
+
+### Cohort #1 dates lock (2h)
+- [ ] Cohort #1 runs W12–W17 (Jul 20 – Aug 30).
+- [ ] Paid challenge runs W10 (Jul 06–10).
+- [ ] Add to personal calendar (lock recharge / relationship blocks too).
 
 ---
 
-## End-of-Week Checkpoints
+## Build / Content infra (4h)
 
-- [x] amiheines.com is live with all pages, working forms, Matomo tracking
-- [x] privateblockchaindatabase.com parked page loading correctly with link to amiheines.com
-- [x] LinkedIn profile optimized and 20+ new connections
-- [x] Lead magnet PDF created and gated on /resources
-- [x] Freelance platform profiles submitted
-- [x] Prometheus + Grafana + Loki running on server
-- [x] Can view host metrics and container logs in Grafana
+### Channel + site refresh (2h)
+- [ ] Update YouTube `@amiheines` channel description + banner: lead with "Web2 dev → Web3 builder, AI-accelerated."
+- [ ] Update amiheines.com hero copy to point at Marco, not enterprise CTOs.
+- [ ] Drop the Tier 1/Tier 2/Tier 3 service ladder from /services (replace with "cohort waitlist" placeholder).
+
+### Listmonk welcome sequence repoint (2h)
+- [ ] Edit existing 5-email sequence in Listmonk: shift positioning from "wire fraud" to "Web2→Web3 with Claude Code".
+- [ ] Day 14 CTA → cohort waitlist (link to `/cohort` placeholder for now).
+
+---
+
+## EAD audit + admin (4h)
+
+- [ ] Read `PLAN_amiheinesConsultant.md` and `FUTURE_MAYBE.md` end-to-end.
+- [ ] Pause: stop writing original LinkedIn posts. Stop bespoke blog/email writing.
+- [ ] Pause: any cold-outreach drafts, Toptal proposals, freelance bidding.
+- [ ] Energy audit: list tasks that drain vs. give energy. Save to `PLAN/energy_audit.md`.
+- [ ] Dream Week wheel: block recharge / relationship / rainmaker / reflection on calendar.
+
+---
+
+## End-of-week checkpoints
+
+- [ ] `persona_marco.md`, `perfect_client_code.md`, `magic_offer.md`, `energy_audit.md` all written.
+- [ ] amiheines.com hero + /services updated to new ICP.
+- [ ] Listmonk welcome sequence repointed.
+- [ ] Calendar blocked for next 6 weeks (4 pillars).
+- [ ] Total hours logged ≤20.

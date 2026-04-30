@@ -1,64 +1,35 @@
-# Week 15 — Course Delivery + Automated Funnels + Portfolio Polish
+# Week 15 — Cohort wk4 + Video #13
 
-**Dates:** 2026-06-29 to 2026-07-05
-**Phase:** 3 — Craft & Pre-Sell (final week)
-**Focus:** 40% delivery + automation / 30% portfolio / 30% content
-**Target hours:** 20
-
----
-
-## Course Delivery + Automation (8 hours)
-
-### Deliver Course to Pre-Sale Buyers
-- [ ] Send all module links via Listmonk (one email per day or all at once)
-- [ ] Create course page on amiheines.com (`/course/[slug]/modules`) with video embeds
-
-### Set Up Automated Email Funnel (Cochrane's "Income Engine")
-- [ ] New subscriber → welcome sequence (5 emails, 14 days) → nurture sequence (1 value email/week, every 4th email includes course pitch)
-- [ ] Configure in Listmonk campaigns — runs automatically 24/7
-
-### POFOV-Specific Welcome Sequence
-- [ ] 5 emails tailored to POFOV subscribers
-- [ ] Gradually introduce consulting services and course
-
-### Course Feedback
-- [ ] Send 3-question email to buyers: "What was most valuable? What was missing? Would you recommend?"
+**Dates:** 2026-08-10 to 2026-08-16
+**Phase:** 1 — Cohort
+**Target hours:** ≤20 (hard cap)
 
 ---
 
-## Portfolio Polish (6 hours)
+## Rainmaker — Cohort delivery (10h)
 
-- [ ] Update amiheines.com/portfolio with all projects, demo links, Grafana screenshots, tech stack badges
-- [ ] Add "Monitoring" section showing Grafana overview
-- [ ] Update /services to include the course as an offering
-- [ ] Add testimonial section to homepage (from course buyers or existing contacts)
-- [ ] Verify all cross-links: amiheines.com ↔ demos, POFOV ↔ consulting CTAs, every page has email capture
+### Module 4: Testing & Deploy (10h)
+- [ ] Group call 90 min — unit tests, deploy scripts, mainnet considerations.
+- [ ] Discord, homework feedback.
 
 ---
 
-## Content Work (6 hours)
+## Content (6h)
 
-### Video 14 (regular weekly content)
-- [ ] Publish to YouTube
-
-### Blog Post 14
-- [ ] Write blog post from Video 14
-
-### LinkedIn
-- [ ] Share course launch post: "I just shipped my first online course — here's what I learned"
-- [ ] Post 3 insights
-
-### Weekly Email Broadcast #11
-- [ ] Value content
+### Video #13 — "Shipping a Smart Contract Without Losing Your Job" (6h)
+- [ ] Testing + deploy patterns; common foot-guns.
 
 ---
 
-## End-of-Week Checkpoints
+## EAD / admin (4h)
 
-- [ ] Course delivered to all pre-sale buyers
-- [ ] Automated email funnel configured and running in Listmonk
-- [ ] POFOV email sequences live
-- [ ] Portfolio fully updated
-- [ ] Course feedback collected
-- [ ] Video 14 published, blog post 14 published
-- [ ] Cumulative: 14 videos, 14 blog posts
+- [ ] Auto pipeline.
+- [ ] Module 5 prep (Polish & Portfolio Video).
+
+---
+
+## End-of-week checkpoints
+
+- [ ] Module 4 delivered.
+- [ ] Video #13 live.
+- [ ] Hours ≤20.

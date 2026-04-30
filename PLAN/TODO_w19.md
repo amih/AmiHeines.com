@@ -1,60 +1,41 @@
-# Week 19 — Second Automated Funnel + Masterclass Recording
+# Week 19 — Phase 2 prep — RE title discovery + Video #17
 
-**Dates:** 2026-07-27 to 2026-08-02
-**Phase:** 4 — Launch, Automate, Scale
-**Focus:** 40% automation / 30% build / 30% content. "Automate the sales."
-**Target hours:** 20
-
----
-
-## Automation Work (8 hours)
-
-### Consulting Discovery Funnel (4 hours)
-- [ ] Listmonk tagged sequence: when subscriber downloads case study or clicks consulting CTA 2+ times:
-  1. Most relevant case study
-  2. "What a $7.5K PoC looks like" — timeline, deliverables, results
-  3. "Book a free 30-minute discovery call" — Cal.com link
-- [ ] Runs 24/7 for every future subscriber showing consulting interest
-
-### Optimize Course Funnel (2 hours)
-- [ ] 3 weeks of sales data: find the leak (open rate? click rate? sales page conversion?)
-- [ ] Fix weakest link: rewrite subject lines, email copy, CTA, or sales page headline
-
-### Record Evergreen Masterclass (2 hours)
-- [ ] 45-60 minute "masterclass" on best-performing topic
-- [ ] Email-gated lead magnet: "Watch my free masterclass on [topic]"
-- [ ] Add to automated funnel: after welcome sequence, before course pitch
+**Dates:** 2026-09-07 to 2026-09-13
+**Phase:** 1 — Cohort
+**Target hours:** ≤20 (hard cap)
 
 ---
 
-## Build Work (6 hours)
+**Phase 2 starts here. Discovery only — no SaaS dev yet.**
 
-### Small Build from Best Content Bucket
-- [ ] GitHub repo/template, new feature, or utility tool the audience asked for
-- [ ] Record the build
+## Rainmaker (10h)
 
----
-
-## Content Work (6 hours)
-
-### Video 18
-- [ ] Publish to YouTube
-
-### Blog Post 18
-- [ ] Write blog post from Video 18
-
-### LinkedIn
-- [ ] Post 3 insights
-
-### Weekly Email Broadcast #15
-- [ ] Value content + latest video
+### 10 RE title / escrow discovery calls (10h)
+- [ ] Build a list of 50 small/mid title-firm owners or ops directors (LinkedIn / state-bar lookups / industry groups).
+- [ ] Reach out (warm framing — research interview, not pitch). Goal: 10 calls done.
+- [ ] Use Cochrane "perfect client code" interview script. Capture problem language verbatim.
+- [ ] Save raw notes to `PLAN/saas_discovery_calls.md`.
 
 ---
 
-## End-of-Week Checkpoints
+## Content (5h)
 
-- [ ] Consulting automated funnel configured and running
-- [ ] Course funnel optimized
-- [ ] Masterclass recorded and added as gated content
-- [ ] Video 18 published, blog post 18 published
-- **Email subscriber target: 750+**
+### Video #17 — "Pivoting to Real-Estate Wire-Fraud Prevention: First 10 Customer Calls" (5h)
+- [ ] Build-in-public segment for the existing audience.
+- [ ] Sets up Cohort #2 vs. SaaS positioning.
+
+---
+
+## EAD / admin (5h)
+
+- [ ] Auto pipeline.
+- [ ] Cohort #2 waitlist email ready (don't send yet).
+
+---
+
+## End-of-week checkpoints
+
+- [ ] 10 discovery calls done.
+- [ ] Problem-language doc compiled.
+- [ ] Video #17 live.
+- [ ] Hours ≤20.

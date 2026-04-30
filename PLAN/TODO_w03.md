@@ -1,63 +1,48 @@
-# Week 3 — ChainVault "Build With Me" Series Begins
+# Week 3 — Game contract spec + Video #2
 
-**Dates:** 2026-04-06 to 2026-04-12
-**Phase:** 1 — The Foundation
-**Focus:** 70% build (all sessions recorded) / 30% content
-**Target hours:** 20
-
----
-
-## Build Work (14 hours) — ALL SESSIONS RECORDED WITH OBS
-
-### ChainVault Invoice4U Payment Integration (4 hours)
-- [ ] **Record session** — becomes Video 2 footage
-- [ ] Integrate Invoice4U (invoice4u.co.il) credit card payments, test webhook/callback flow
-- [ ] Narrate decisions out loud as you work
-
-### ChainVault Demo Data Seeder (3 hours)
-- [ ] **Record session** — becomes part of Video 3
-- [ ] Write seeder script: demo organizations, users, deals, documents, wire verification records
-
-### ChainVault Public Demo Mode (4 hours)
-- [ ] **Record session** — combined with seeder footage becomes Video 3
-- [ ] Build read-only demo login (`POST /api/auth/demo`)
-- [ ] "Try Demo" button on ChainVault landing page
-- [ ] Demo badge in UI, 30-min auto-expiring sessions
-
-### ChainVault Prometheus Metrics + Structured Logging (3 hours)
-- [ ] Add `prom-client` to chain-service and Next.js
-- [ ] Replace `console.log` with pino structured logs
-- [ ] Background work — provides footage for monitoring series later
+**Dates:** 2026-05-18 to 2026-05-24
+**Phase:** 1 — Cohort
+**Target hours:** ≤20 (hard cap)
 
 ---
 
-## Content Work (6 hours)
+## Rainmaker (4h)
 
-### Video 2: "Invoice4U + Private Blockchain: Taking Payments On-Chain"
-- [ ] Edit payment integration recording (target: 15-20 minutes)
-- [ ] Upload to YouTube with CTA: "Try the demo at chainvault.amiheines.com/demo"
-
-### Blog Post 2
-- [ ] Write blog post derived from Video 2
-
-### Video 3 Prep
-- [ ] Begin editing demo mode + seeder footage (publishes next week)
-
-### LinkedIn
-- [ ] Share Video 2 with post about Invoice4U integration — what went wrong, what worked
-- [ ] Post 3 LinkedIn insights
-
-### Portfolio
-- [ ] Add ChainVault demo link to amiheines.com/portfolio
+### Cohort offer copy v0 (4h)
+- [ ] Draft sales page sections: name, hell→heaven, 4 steps, payoffs, FAQs, price reveal at bottom.
+- [ ] Spend 80–95% on payoff (Cochrane 4 Ps: Pieces / Process / Person / Payoff).
+- [ ] Save draft as `PLAN/cohort_offer_v0.md`.
 
 ---
 
-## End-of-Week Checkpoints
+## Build (10h)
 
-- [ ] ChainVault Invoice4U payment integration live and tested
-- [ ] ChainVault demo mode live with seeded data
-- [ ] ChainVault metrics exposed to Prometheus, structured logs flowing to Loki
-- [ ] Video 2 published on YouTube
-- [ ] Blog post 2 published
-- [ ] Demo link added to portfolio
-- [ ] Cumulative: 2 videos, 2 blog posts
+### Game smart contract — design + scaffold (10h)
+- [ ] Antelope C++ contract scaffold for the chosen game: actions, tables, permissions.
+- [ ] Use Claude Code as pair-architect — record the planning session for Video #2.
+- [ ] Push to repo.
+
+---
+
+## Content (4h)
+
+### Video #2 — "Designing My First On-Chain Game (Live with Claude Code)" (4h)
+- [ ] 30–45 min, screen-record the AI design loop: prompt → review → iterate.
+- [ ] Show the contract spec emerge in real time.
+- [ ] CTA: cohort waitlist.
+
+---
+
+## EAD / admin (2h)
+
+- [ ] Auto-clips, auto-blog, auto-email (same pipeline as W02).
+- [ ] Energy audit weekly review — adjust calendar if drift.
+
+---
+
+## End-of-week checkpoints
+
+- [ ] Video #2 live.
+- [ ] Game contract scaffold pushed.
+- [ ] Cohort offer copy v0 drafted.
+- [ ] Hours ≤20.

@@ -1,61 +1,35 @@
-# Week 16 — Full Course Launch + Consulting Funnel
+# Week 16 — Cohort wk5 + Video #14
 
-**Dates:** 2026-07-06 to 2026-07-12
-**Phase:** 4 — Launch, Automate, Scale
-**Focus:** 30% launch / 40% build / 30% content. "Open the doors wide."
-**Target hours:** 20
-
----
-
-## Launch Work (6 hours)
-
-### Full Course Launch to Entire Email List
-- [ ] 3-email launch sequence over 5 days:
-  1. Monday: "The course is now available" — problem, solution, what's inside, link
-  2. Wednesday: Social proof — share pre-sale buyer feedback, module preview
-  3. Friday: Final reminder — scarcity ("raising price next week" or "first 50 get bonus 1-on-1 call")
-
-### Consulting Discovery Call Funnel
-- [ ] Automated Listmonk sequence for high-engagement subscribers (those who click consulting CTAs):
-  1. Case study email
-  2. "What a PoC engagement looks like"
-  3. "Book a free discovery call" CTA (Cal.com link)
+**Dates:** 2026-08-17 to 2026-08-23
+**Phase:** 1 — Cohort
+**Target hours:** ≤20 (hard cap)
 
 ---
 
-## Build Work (8 hours) — RECORDED
+## Rainmaker — Cohort delivery (10h)
 
-### New Original Game with Godot — "Build With Me" Series
-- [ ] **Record entire session** — multi-part game dev series starts here
-- [ ] Install Godot Engine, set up project structure
-- [ ] Design game concept (original idea — puzzle, arcade, or card game)
-- [ ] Build core game mechanics: player input, game loop, scoring
-- [ ] Target: playable prototype by end of week
-- [ ] Export targets: Android + iOS (native Godot exports, not PWA wrap)
-- [ ] This becomes a 3-4 week video series: "Building an Original Game from Scratch with Godot"
+### Module 5: Polish & Portfolio Video (10h)
+- [ ] Group call 90 min — UX polish, recording your demo, narrating it.
+- [ ] Discord, feedback on draft demo recordings.
 
 ---
 
-## Content Work (6 hours)
+## Content (6h)
 
-### Video 15
-- [ ] Publish to YouTube
-
-### Blog Post 15
-- [ ] Write blog post from Video 15
-
-### LinkedIn
-- [ ] Promote course launch + 3 insights
-
-### Weekly Email Broadcast #12
-- [ ] Launch week — the launch IS the broadcast
+### Video #14 — "How to Record a Web3 Portfolio Demo That Actually Lands Interviews" (6h)
 
 ---
 
-## End-of-Week Checkpoints
+## EAD / admin (4h)
 
-- [ ] Course launched to full list
-- [ ] Consulting discovery call funnel automated
-- [ ] New build started and recorded
-- [ ] Video 15 published, blog post 15 published
-- [ ] Revenue tracking: course sales + consulting leads
+- [ ] Auto pipeline.
+- [ ] Module 6 prep (Demo Day script).
+- [ ] Begin asking students for testimonials (text first, video later).
+
+---
+
+## End-of-week checkpoints
+
+- [ ] Module 5 delivered.
+- [ ] Video #14 live.
+- [ ] Hours ≤20.

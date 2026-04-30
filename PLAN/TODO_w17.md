@@ -1,49 +1,39 @@
-# Week 17 — Continue Build + Optimize Funnels
+# Week 17 — Cohort wk6 (final) + Video #15
 
-**Dates:** 2026-07-13 to 2026-07-19
-**Phase:** 4 — Launch, Automate, Scale
-**Focus:** 70% build / 30% content. "Build, teach, refine."
-**Target hours:** 20
-
----
-
-## Build Work (14 hours) — RECORDED
-
-### Continue Godot Game Build (8-10 hours)
-- [ ] **Record sessions** — "Building a Game from Scratch with Godot" series
-- [ ] Add levels, difficulty progression, visual polish, sound effects
-- [ ] Implement menus, score tracking, game-over flow
-- [ ] Test on Android device via Godot export
-
-### Optimize Based on Data (4-6 hours)
-- [ ] Review Matomo: highest traffic pages, CTA click rates, best-converting lead magnets
-- [ ] Review YouTube Analytics: best retention, viewer drop-off points, thumbnail CTR
-- [ ] Review Listmonk: open rates, click rates, unsubscribe rates
-- [ ] Review course sales: conversion rate from email click to purchase
-- [ ] Adjust: replace underperforming lead magnets, do more of what works, test subject lines
+**Dates:** 2026-08-24 to 2026-08-30
+**Phase:** 1 — Cohort
+**Target hours:** ≤20 (hard cap)
 
 ---
 
-## Content Work (6 hours)
+## Rainmaker — Cohort delivery (10h)
 
-### Video 16
-- [ ] Publish from build footage or analytics review ("How I Track Every Metric of My Solo Business")
-- [ ] Upload to YouTube
-
-### Blog Post 16
-- [ ] Write blog post from Video 16
-
-### LinkedIn
-- [ ] Post 3 insights
-
-### Weekly Email Broadcast #13
-- [ ] Value content + latest video
+### Module 6: Demo Day (10h)
+- [ ] Final group call 2h: each student demos their game live.
+- [ ] Public showcase video / blog post compiling all student demos (with permission).
+- [ ] Collect testimonials (text + 1–2 video).
 
 ---
 
-## End-of-Week Checkpoints
+## Content (6h)
 
-- [ ] New build progressing
-- [ ] Funnel optimization complete — weakest links identified and fixed
-- [ ] Video 16 published, blog post 16 published
-- [ ] Cumulative: 16 videos, 16 blog posts
+### Video #15 — "60 Days, N Web2 Devs Shipped: Cohort #1 Showcase" (6h)
+- [ ] Public reel of student demos + their take.
+- [ ] Powerful sales asset for Cohort #2.
+
+---
+
+## EAD / admin (4h)
+
+- [ ] Auto pipeline.
+- [ ] Send certificate of completion + LinkedIn-ready badge to students.
+- [ ] Final cohort survey (NPS + open-ended).
+
+---
+
+## End-of-week checkpoints
+
+- [ ] Cohort #1 wrapped.
+- [ ] ≥3 testimonials collected (target).
+- [ ] Video #15 live.
+- [ ] Hours ≤20.

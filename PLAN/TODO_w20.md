@@ -1,63 +1,40 @@
-# Week 20 — Full System Polish + Batch Content Production
+# Week 20 — ChainVault demo polish + Video #18
 
-**Dates:** 2026-08-03 to 2026-08-09
-**Phase:** 4 — Launch, Automate, Scale
-**Focus:** 30% polish / 40% batch content / 30% regular content
-**Target hours:** 20
-
----
-
-## Polish Work (6 hours)
-
-### Full System Smoke Test (2 hours)
-- [ ] Walk through every project as first-time visitor (desktop + mobile)
-- [ ] Fix UX issues, broken links, slow pages
-
-### Grafana Dashboard Review (1 hour)
-- [ ] Verify all dashboards show real data
-- [ ] Create "Portfolio Overview" dashboard combining all apps
-
-### Security Audit (2 hours)
-- [ ] Check all .env files, API auth, rate limiting, CORS
-- [ ] Invoice4U callback validation, nginx configs
-- [ ] Run `npm audit` on all projects
-
-### Documentation Update (1 hour)
-- [ ] Update READMEs, DEPLOYMENT.md, CLAUDE.md files
+**Dates:** 2026-09-14 to 2026-09-20
+**Phase:** 1 — Cohort
+**Target hours:** ≤20 (hard cap)
 
 ---
 
-## Batch Content Production (8 hours)
+## Rainmaker (8h)
 
-### Record 3-4 Videos in One Sitting
-- [ ] "How I Built 4 Blockchain Apps in 20 Weeks Using Claude Code" (updated milestone portfolio tour)
-- [ ] "My Full Self-Hosted Stack: MiaB, Listmonk, Matomo, Grafana, and Why I Ditched SaaS"
-- [ ] Best-performing content bucket topic
-- [ ] Second-best content bucket topic
-- [ ] Edit all 4 into publishable state — creates 4-week content buffer
-
----
-
-## Regular Content Work (6 hours)
-
-### Video 19
-- [ ] Publish to YouTube
-
-### Blog Post 19
-- [ ] Write blog post from Video 19
-
-### LinkedIn
-- [ ] Post 3 insights
-
-### Weekly Email Broadcast #16
-- [ ] Value content + latest video
+### ChainVault SaaS demo prep (8h)
+- [ ] Re-open ChainVault repo (dormant since W01).
+- [ ] Build a scripted 10-min demo specifically for title firms: wire-instruction tamper-proofing flow.
+- [ ] Pricing positioning: $25k/yr/firm + $10–25k onboarding (per `FUTURE_MAYBE.md` §F).
+- [ ] One-pager PDF: problem, solution, pilot terms.
 
 ---
 
-## End-of-Week Checkpoints
+## Content (6h)
 
-- [ ] All projects polished and verified
-- [ ] Security audit complete
-- [ ] 4-week content buffer recorded and edited
-- [ ] Video 19 published, blog post 19 published
-- [ ] Cumulative: 19 videos, 19 blog posts
+### Video #18 — "What 10 Title Firms Told Me About Wire Fraud (And What I'm Building)" (6h)
+- [ ] Discovery synthesis content. Marco-relevant + title-firm-relevant.
+
+---
+
+## EAD / admin (6h)
+
+- [ ] Auto pipeline.
+- [ ] Cochrane EAD audit on Phase 2 work — what gets eliminated/automated/delegated before scaling.
+- [ ] Decide: Phase 2 cold-outreach strategy needed (Phase 1's inbound-only choice 8C). Note in `PLAN/saas_phase2_plan.md`.
+
+---
+
+## End-of-week checkpoints
+
+- [ ] ChainVault demo recorded + script saved.
+- [ ] One-pager PDF ready.
+- [ ] Video #18 live.
+- [ ] `saas_phase2_plan.md` draft.
+- [ ] Hours ≤20.
