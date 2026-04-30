@@ -19,7 +19,7 @@
 ## Content (6h)
 
 ### Video #18 — "What 10 Title Firms Told Me About Wire Fraud (And What I'm Building)" (6h)
-- [ ] Discovery synthesis content. Marco-relevant + title-firm-relevant.
+- [ ] Discovery synthesis content. Garnon-relevant + title-firm-relevant.
 
 ---
 

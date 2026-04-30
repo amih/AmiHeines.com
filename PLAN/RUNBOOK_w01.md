@@ -19,7 +19,7 @@ No code is deployed this week. No video is recorded this week. The output is **d
 
 | File | Source / Tool |
 |---|---|
-| `persona_marco.md` | Free write, 30 min. Then Claude review pass. |
+| `persona_garnon.md` | Free write, 30 min. Then Claude review pass. |
 | `perfect_client_code.md` | Cochrane Ch.3 6-element template. Section per element. |
 | `magic_offer.md` | Cochrane Ch.5 5-step template. |
 | `cohort_curriculum.md` | (W06 will fill v1 — leave a stub now.) |
@@ -29,11 +29,11 @@ Each can be a 1-page markdown. Resist over-writing. The point is decisions, not 
 
 ---
 
-## Persona — anchor questions for `persona_marco.md`
+## Persona — anchor questions for `persona_garnon.md`
 
 Answer these in 1–2 sentences each:
 
-1. What are Marco's 5 burning questions about Web3 right now?
+1. What are Garnon's 5 burning questions about Web3 right now?
 2. What is the lie he believes about blockchain/Web3? (Cochrane Ch.3)
 3. Where does he hang out online? (subreddits, Discords, YouTube channels)
 4. What does his portfolio look like today, and what does he wish it looked like?
@@ -46,7 +46,7 @@ Answer these in 1–2 sentences each:
 
 Two small edits to amiheines.com:
 
-1. **Hero** — replace enterprise CTO targeting with Marco-targeting. Keep technical credibility, drop "tamper-proof records / fraud prevention" language from above the fold.
+1. **Hero** — replace enterprise CTO targeting with Garnon-targeting. Keep technical credibility, drop "tamper-proof records / fraud prevention" language from above the fold.
 2. **/services** — replace 3-tier service ladder with a single panel: "Cohort: Ship Your First On-Chain Game in 60 Days — Doors open July 2026. [Join the waitlist]." Form posts to Listmonk list `cohort_waitlist` (create if missing).
 
 Astro pages:

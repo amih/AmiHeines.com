@@ -10,7 +10,7 @@
 
 ### Video #1 — record + ship (6h)
 - [ ] Topic: **"Why Web2 Devs Should Build On-Chain in 2026 (And Why Most Don't)"** — 30–45 min long-form.
-- [ ] Speak directly to Marco. No "hey guys."
+- [ ] Speak directly to Garnon. No "hey guys."
 - [ ] Live demo segment: Claude Code spinning up a Hello-World Antelope contract in real time (~10 min of footage).
 - [ ] Studied 5 top Web3-dev YouTube channels' top videos for thumbnail + title patterns. Borrow the wrapper.
 - [ ] Record (Tue), edit (Wed), thumbnail + upload (Thu). Ship by Fri.

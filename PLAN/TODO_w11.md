@@ -28,7 +28,7 @@
 
 ### Video #9 — "I Just Sold N Spots in My $5k Cohort — Here's What Worked" (5h)
 - [ ] Honest retro of challenge → cohort numbers.
-- [ ] Frame as Marco-relevant lesson: how Cochrane's paid-event model worked.
+- [ ] Frame as Garnon-relevant lesson: how Cochrane's paid-event model worked.
 - [ ] CTA: waitlist for Cohort #2 (date TBD by W21).
 
 ---

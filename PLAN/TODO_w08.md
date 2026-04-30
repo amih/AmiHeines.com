@@ -27,7 +27,7 @@
 
 ### Video #7 — "From 0 to 200 Email Subscribers Without Posting Daily" (5h)
 - [ ] Honest breakdown: what's working, what isn't, the exact numbers.
-- [ ] Marco-relevant lesson: how he can do same when he ships his portfolio piece.
+- [ ] Garnon-relevant lesson: how he can do same when he ships his portfolio piece.
 - [ ] CTA: waitlist + tease challenge dates.
 
 ---

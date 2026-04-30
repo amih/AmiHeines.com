@@ -19,7 +19,7 @@
 
 ### Video #11 — "5 Antelope Contract Patterns Every Web2 Dev Misses" (6h)
 - [ ] 30–45 min teaching segment, evergreen content.
-- [ ] Marco-relevant; standalone watchable.
+- [ ] Garnon-relevant; standalone watchable.
 
 ---
 

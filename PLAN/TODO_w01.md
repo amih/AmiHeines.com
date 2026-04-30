@@ -11,15 +11,15 @@
 
 ## Rainmaker (10h)
 
-### Persona doc — "Marco" (3h)
-- [ ] Write 1–2 paragraph description of Marco: junior full-stack dev (React/Node, 2–4 yrs), curious about blockchain, uses Claude Code/Cursor, wants a portfolio piece + path into Web3.
-- [ ] List 3–5 burning questions Marco types into Google/YouTube ("how do I build my first smart contract", "is web3 still worth learning 2026", etc.).
+### Persona doc — "Garnon" (3h)
+- [ ] Write 1–2 paragraph description of Garnon: junior full-stack dev (React/Node, 2–4 yrs), curious about blockchain, uses Claude Code/Cursor, wants a portfolio piece + path into Web3.
+- [ ] List 3–5 burning questions Garnon types into Google/YouTube ("how do I build my first smart contract", "is web3 still worth learning 2026", etc.).
 - [ ] List 3–5 pain points (impostor syndrome, tutorial hell, no portfolio, salary stuck).
-- [ ] Save to `PLAN/persona_marco.md`.
+- [ ] Save to `PLAN/persona_garnon.md`.
 
 ### Perfect Client Code (2h)
 6 elements, Cochrane Ch.3:
-- [ ] 1. Ideal client (Marco, see above).
+- [ ] 1. Ideal client (Garnon, see above).
 - [ ] 2. Big problem in his words ("I want to build something real on-chain but I don't know where to start").
 - [ ] 3. Pain points (3–5 bullets).
 - [ ] 4. Dream outcome in his words ("I shipped a real on-chain game I can show in interviews").
@@ -47,7 +47,7 @@ Cochrane Ch.5 — 5-step build:
 
 ### Channel + site refresh (2h)
 - [ ] Update YouTube `@amiheines` channel description + banner: lead with "Web2 dev → Web3 builder, AI-accelerated."
-- [ ] Update amiheines.com hero copy to point at Marco, not enterprise CTOs.
+- [ ] Update amiheines.com hero copy to point at Garnon, not enterprise CTOs.
 - [ ] Drop the Tier 1/Tier 2/Tier 3 service ladder from /services (replace with "cohort waitlist" placeholder).
 
 ### Listmonk welcome sequence repoint (2h)
@@ -68,7 +68,7 @@ Cochrane Ch.5 — 5-step build:
 
 ## End-of-week checkpoints
 
-- [ ] `persona_marco.md`, `perfect_client_code.md`, `magic_offer.md`, `energy_audit.md` all written.
+- [ ] `persona_garnon.md`, `perfect_client_code.md`, `magic_offer.md`, `energy_audit.md` all written.
 - [ ] amiheines.com hero + /services updated to new ICP.
 - [ ] Listmonk welcome sequence repointed.
 - [ ] Calendar blocked for next 6 weeks (4 pillars).

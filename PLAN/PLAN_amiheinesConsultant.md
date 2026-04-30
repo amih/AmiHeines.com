@@ -12,7 +12,7 @@
 
 **Working name:** "Ship Your First On-Chain Game in 60 Days"
 **Audience:** junior full-stack devs curious about blockchain.
-**Persona ("Marco"):** 25–32, 2–4 yrs React/Node experience, has played with Claude Code or Cursor, hears Web3 hype, wants a real portfolio piece + faster path into Web3 jobs / side income. Doesn't want to read a 600-page Solidity book.
+**Persona ("Garnon"):** 25–32, 2–4 yrs React/Node experience, has played with Claude Code or Cursor, hears Web3 hype, wants a real portfolio piece + faster path into Web3 jobs / side income. Doesn't want to read a 600-page Solidity book.
 **Format:** 6-week live cohort, group-coaching (8–12 seats).
 **Price:** $5,000 USD.
 **Promise (measurable outcome):** at end of 60 days you have a **deployed, playable on-chain game** on Antelope/Vaulta + a portfolio video walking through it.
@@ -30,7 +30,7 @@ Cohort is in the "Magic" quadrant (high price, easy convert via paid challenge).
 
 ### Why "AI-accelerated"
 Two reasons:
-1. **Hook for Marco** — modern junior devs already use Claude Code / Cursor; framing the cohort as AI-accelerated lowers their perceived skill barrier.
+1. **Hook for Garnon** — modern junior devs already use Claude Code / Cursor; framing the cohort as AI-accelerated lowers their perceived skill barrier.
 2. **Ami's actual workflow** — building Game with Claude Code is faster, AND every session is recordable content. Eat your own dog food on camera.
 
 ---
@@ -39,7 +39,7 @@ Two reasons:
 
 **Format:** ONE long-form YouTube video per week, 30–45 min, evergreen, searchable.
 **Channel:** existing `@amiheines` (refreshed branding for new ICP in W01).
-**Persona target:** Marco. Speak to ONE person. No "hey guys", no "everyone."
+**Persona target:** Garnon. Speak to ONE person. No "hey guys", no "everyone."
 **Repurposing (hub-and-spoke):**
 - AI-clipped 60–90s shorts → LinkedIn / YT Shorts (no original posts).
 - Auto-derived blog post → amiheines.com/blog (transcript + light AI cleanup).
@@ -172,7 +172,7 @@ If any miss → run Cohort #2 first, defer Phase 2.
 
 | Layer | Tool | Why |
 |---|---|---|
-| Code (Game + frontend) | **Claude Code** | the workflow we sell to Marco — eat dog food on camera |
+| Code (Game + frontend) | **Claude Code** | the workflow we sell to Garnon — eat dog food on camera |
 | Smart contract chain | **Antelope / Vaulta** | Ami's existing depth; teach what you know |
 | Site | Astro + Tailwind (existing) | already deployed |
 | Email | **Listmonk** (self-hosted) | already deployed; welcome sequence repointed in W01 |
