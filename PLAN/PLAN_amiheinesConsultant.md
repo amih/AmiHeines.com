@@ -178,7 +178,7 @@ If any miss → run Cohort #2 first, defer Phase 2.
 | Layer | Tool | Why |
 |---|---|---|
 | Code (Game + frontend) | **Claude Code** | the workflow we sell to Garnon — eat dog food on camera |
-| Smart contract chain | **Antelope / Vaulta** | Ami's existing depth; teach what you know |
+| Smart contract chain | **Antelope, private (4 × OVH bare-metal)** | Ami's existing depth; teach what you know. Full spec + topology in `GAME_spec.md`. |
 | Site | Astro + Tailwind (existing) | already deployed |
 | Email | **Listmonk** (self-hosted) | already deployed; welcome sequence repointed in W01 |
 | Payments | **Invoice4U** | Israel-based, already chosen (memory: `reference_invoice4u.md`) |
@@ -193,6 +193,8 @@ If any miss → run Cohort #2 first, defer Phase 2.
 ## 10. Living docs
 
 - `PLAN_amiheinesConsultant.md` (this file) — strategy.
+- `GAME_spec.md` — reference game design, smart-contract architecture, OVH self-hosting topology + cost.
+- `GAME_content_calendar.md` — W01–W12 build-in-public beat sheet (YT + LI + blog + newsletter), maps to §5 above.
 - `TODO_w01.md` … `TODO_w21.md` — weekly execution.
 - `RUNBOOK_w01.md` — concrete commands/checklists for the active week.
 - `FUTURE_MAYBE.md` — parked items.
