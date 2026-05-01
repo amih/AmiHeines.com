@@ -25,6 +25,7 @@
 - [ ] Auto pipeline.
 - [ ] Module 6 prep (Demo Day script).
 - [ ] Begin asking students for testimonials (text first, video later).
+- [ ] Phase 2 discovery trickle (1h — see `PLAN §7`): 1 call OR 5 fresh outreach msgs.
 
 ---
 

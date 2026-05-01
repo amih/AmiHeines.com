@@ -86,6 +86,8 @@ Don't chase: time spent on a $1,750 collection beats the value of the next sale 
 
 Why 7 days specifically: matches Day 1 of cohort plus a 6-day grace period. Most buyer remorse hits before live delivery starts; clean refund here = fewer chargebacks later.
 
+**Force-majeure clause (state in cohort terms before sale):** if for any reason a live Module call is replaced with a recorded session (illness, infrastructure outage, family emergency), the recording will be delivered within 72 hours and the refund window does NOT reopen. The cohort is a 6-week curriculum; one delivery-mode change does not invalidate the contract. (See `risk_register.md` R3 + `cohort_contingency.md`.)
+
 ---
 
 ## Numbers to track (per cohort)

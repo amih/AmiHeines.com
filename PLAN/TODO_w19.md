@@ -6,15 +6,14 @@
 
 ---
 
-**Phase 2 starts here. Discovery only — no SaaS dev yet.**
+**Phase 2 prep continues. Discovery is now a W13–W21 trickle (revised 2026-05-01 — the original "10 calls in 1 week" sprint was infeasible: title-firm-owner cold→call cycle is 50–100 touches over 4–8 weeks).**
 
-## Rainmaker (10h)
+## Rainmaker (3h)
 
-### 10 RE title / escrow discovery calls (10h)
-- [ ] Build a list of 50 small/mid title-firm owners or ops directors (LinkedIn / state-bar lookups / industry groups).
-- [ ] Reach out (warm framing — research interview, not pitch). Goal: 10 calls done.
-- [ ] Use Cochrane "perfect client code" interview script. Capture problem language verbatim.
-- [ ] Save raw notes to `PLAN/saas_discovery_calls.md`.
+### Phase 2 discovery — this week's call + outreach top-up (3h)
+- [ ] **1 discovery call** booked from prior weeks' outreach. ~1h call + 30 min notes → `PLAN/saas_discovery_calls.md`. Cumulative target by W21 = ~5–8 calls.
+- [ ] Send 5–10 fresh cold-outreach messages from the running 50-name list (built W13). Use Cochrane "perfect client code" interview framing — research, not pitch.
+- [ ] Skim accumulated `saas_discovery_calls.md` notes — has problem language stabilized? Any pattern emerging that should change W20 demo?
 
 ---
 
@@ -35,7 +34,7 @@
 
 ## End-of-week checkpoints
 
-- [ ] 10 discovery calls done.
-- [ ] Problem-language doc compiled.
+- [ ] 1 discovery call this week + outreach top-up sent (cumulative ~5 calls).
+- [ ] Problem-language doc updated.
 - [ ] Video #17 live.
-- [ ] Hours ≤20.
+- [ ] Hours ≤20 (was 20h; 7h freed by killing the W19 sprint — reallocate to whatever needs it most this week).

@@ -40,6 +40,7 @@
 - [ ] Reflection week — Cochrane Mondays scaled up.
 - [ ] Read 1 relevant book (recommend something operational, e.g. _Built to Sell_ or revisit _Effortless Business_ for any missed framework).
 - [ ] Update business_plans.xlsx projection actuals vs plan.
+- [ ] Phase 2 discovery trickle (1h — see `PLAN §7`): 1 call OR 5 fresh outreach msgs. Quick review of cumulative `saas_discovery_calls.md` — pattern emerging?
 
 ---
 

@@ -3,7 +3,7 @@
 **Dates:** 2026-05-04 to 2026-05-10
 **Phase:** 1 — Cohort
 **Focus:** strategy reset; no video this week
-**Target hours:** 18–20 (hard cap)
+**Target hours:** ≤21 (1h over the 20h cap, deliberate — the +3h warm-network gating deliverable added 2026-05-01 is what determines whether the rest of the 21-week plan is supportable. Compress EAD/admin to 3h if needed to absorb.)
 
 > Previous W01 work (amiheines.com launch, Listmonk, monitoring stack, freelance profiles, original lead magnet) is **done** — see git history before 2026-04-28 and `BACKUP_PLAN.md`. This file restarts the numbering for the post-pivot plan.
 
@@ -40,6 +40,16 @@ Cochrane Ch.5 — 5-step build:
 - [ ] Cohort #1 runs W12–W17 (Jul 20 – Aug 30).
 - [ ] Paid challenge runs W10 (Jul 06–10).
 - [ ] Add to personal calendar (lock recharge / relationship blocks too).
+
+### Warm network enumeration — gating deliverable for OVH spend (3h)
+**See `PLAN/warm_network.md` for the full template, filter rules, and bucket targets.**
+- [ ] 30-min brain-dump of every Garnon-shaped or Garnon-referrer name that comes to mind.
+- [ ] Sweep LinkedIn / GitHub / Twitter DMs / inbox / Discord-Slack memberships. Apply the "warm" filter (ruthless — public-broadcast-only relationships do NOT count).
+- [ ] Bucket: Direct Garnon (target ≥15) / Referrers (≥5) / Adjacent amplifiers (≥10). Total minimum ≥30.
+- [ ] **Decision gate at end of W01** (per `PLAN §6` abort trigger):
+  - ≥30 total + ≥15 direct → green. §6 base case supportable. Proceed to W02 as planned.
+  - 20–29 total → yellow. Proceed BUT shrink OVH ramp to 1 node + Vaulta testnet through W10. Re-evaluate W11.
+  - <20 total → red. **Halt OVH spend ramp.** Reconvene: revise persona, drop cohort price, OR extend audience-building runway by 6–12 weeks before committing to the W10 challenge.
 
 ---
 

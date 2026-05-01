@@ -138,8 +138,26 @@ All weeks Mon–Sun. 20-hour cap.
 **Stretch:** 30 attendees + 5 cohort seats = $27,910.
 **Bull (existing audience >1k engaged subs):** 8+ cohort seats = $43k+.
 
-**Reality check (see `business_plans.xlsx → Funnel` sheet):** at 800 views/long-form video and Cochrane-mid funnel rates (0.5% view→email, 2% email→challenge, 12% challenge→cohort), pure-funnel cohort sales for the first quarter ≈ 0.1 seats. Hitting **3 seats in W12 requires 2-3 from warm-network sources** (LinkedIn DMs, referrals, existing list). Plan W08–W09 explicitly for this.
+**Reality check (see `business_plans.xlsx → Funnel` sheet):** at 800 views/long-form video and Cochrane-mid funnel rates (0.5% view→email, 2% email→challenge, 12% challenge→cohort), pure-funnel cohort sales for the first quarter ≈ 0.1 seats. Hitting **3 seats in W12 requires 2-3 from warm-network sources** (LinkedIn DMs, referrals, existing list). The warm network is enumerated in `PLAN/warm_network.md` during W01 — that file is the gating input for the OVH spend ramp below.
+
 Phase 2 (W22+) targets first paid RE pilot $20k–$30k by ~W30.
+
+### Cash-burn abort gate (added 2026-05-01)
+
+OVH spend = €60–100/mo per node. Spec ramps from 1 → 2 → 4 nodes across W04–W08. Cumulative through W21 = ~€1,500–2,000 with zero revenue until W11 at the earliest.
+
+**Decision gates (auto-evaluated at end of each named week):**
+
+| Gate | Check | Green | Yellow | Red |
+|---|---|---|---|---|
+| **End of W01** | `warm_network.md` total names | ≥30 (including ≥15 direct Garnon-shaped) → proceed full ramp | 20–29 → shrink to **single OVH node + Vaulta testnet** through W10 | <20 → **halt OVH ramp**. Revise persona / drop price / extend audience-building runway 6–12 weeks before W10. |
+| **End of W06** | List subs + warm names | ≥100 subs AND warm-network green/yellow → 2 nodes provision (TODO_w07) | 50–99 OR warm yellow → 1 node only; defer cluster expansion to W22+ | <50 OR warm red → halt OVH spend; reuse local `nodeos` for content track |
+| **End of W08** | List subs + warm names + W08 Show HN performance | ≥200 subs AND HN post made front-page top-30 → expand to 4 nodes per spec | ≥120 subs OR HN post landed but didn't spike → 2 nodes only; W09–W10 challenge runs on the smaller cluster | <120 subs AND no HN traction → halt cluster expansion; cancel node 4 backup, downgrade nodes 2+3 if economic |
+| **End of W11** | Cohort #1 seats sold | ≥3 seats → cluster expansion approved; ChainVault + Phase 2 prep proceeds | 1–2 seats → freeze cluster at current size; defer Phase 2 prep | 0 seats → **halt all OVH ramp; cancel node 4 + node 2 if possible**; reframe Phase 1 as audience-building only and run Cohort #2 attempt at month 5 |
+
+**Why this exists:** the original plan committed to ~€2,000 of OVH burn against a §6 base case that depends on a warm network that wasn't enumerated. The W01 warm-network file + the gates above turn the spend into a series of small bets, each with an auto-evaluated abort condition. No silent autopilot.
+
+**Mitigation already chosen** (per `GAME_spec.md` §6 mitigation): start with 2 servers, not 4. The W01 / W06 / W08 / W11 gates above further refine this.
 
 ---
 
@@ -154,7 +172,7 @@ Phase 2 (W22+) targets first paid RE pilot $20k–$30k by ~W30.
 - No daily original LinkedIn posts.
 - No bespoke standalone blog/email writing.
 - No POFOV gating or POFOV email funnel.
-- No cold outreach.
+- No cold outreach **for Phase 1 cohort sales** — but **Phase 2 discovery is a deliberate exception**: 1 RE-title-firm cold-outreach call/week W13–W21 (cumulative ~8 calls by W21). This is research interviews, not sales pitches; called out explicitly so the Cochrane rule is consciously broken, not silently violated. See `TODO_w13.md`–`TODO_w21.md` for per-week budget; W19's "10 calls in 1 week" sprint was killed on 2026-05-01 (industry cycle for cold→call to title-firm-owners is 50–100 touches over 4–8 weeks, not 1).
 - No Toptal/Upwork active work.
 - No vertical chasing — Phase 1 audience is junior devs only.
 
@@ -166,10 +184,10 @@ By end of W21, all of:
 - ≥1 cohort has run with ≥5 paid seats.
 - ≥3 student testimonials on file (text + ideally video).
 - YouTube subscribers ≥1,000 OR list ≥500.
-- 10 RE title/escrow discovery calls completed (W19).
+- ≥5 RE title/escrow discovery calls completed cumulatively across W13–W21 (revised 2026-05-01 from "10 calls in W19" — see `TODO_w13.md`–`TODO_w21.md` trickle outreach).
 - Ami still working ≤20 hrs/week (no burnout signal).
 
-If any miss → run Cohort #2 first, defer Phase 2.
+If any miss → run Cohort #2 first, defer Phase 2. See `risk_register.md` R10 for the response if discovery calls produce no clear signal.
 
 ---
 
@@ -196,6 +214,11 @@ If any miss → run Cohort #2 first, defer Phase 2.
 - `GAME_spec.md` — reference game design, smart-contract architecture, OVH self-hosting topology + cost.
 - `GAME_content_calendar.md` — W01–W12 build-in-public beat sheet (YT + LI + blog + newsletter), maps to §5 above.
 - `LAUNCH_playbook.md` — reusable launch playbook (Amy Hoy LCC + Brennan/Brandon patterns); applied to W10 challenge in `GAME_content_calendar.md` §"Launch playbook"; reused for W17/W21/Phase-2 launches.
+- `notes_hn_warmup.md` — 8-week HN account warmup ladder gating the W08 Show HN.
+- `payment_plans.md` — challenge + cohort pricing, checkout flow, decline/refund handling.
+- `warm_network.md` — gating deliverable for W01 OVH-spend decision: real-name enumeration of warm contacts who can fill the §6 cohort-seat gap that pure funnel math doesn't.
+- `risk_register.md` — 10 named risks with pre-written triggers + responses (R1 0 seats, R3 sick week, R5 HN tanks, R7 family unhappy, etc.). Quarterly review every 4 weeks.
+- `cohort_contingency.md` — built in W11. Co-host backup, sick-day plan, recording-only fallback, Discord-only emergency mode.
 - `TODO_w01.md` … `TODO_w21.md` — weekly execution.
 - `RUNBOOK_w01.md` — concrete commands/checklists for the active week.
 - `FUTURE_MAYBE.md` — parked items.

@@ -22,12 +22,21 @@
 
 ---
 
-## Build (4h)
+## Build (8h)
 
 ### Game project kickoff (4h)
 - [ ] Confirm game design per existing `PLAN/GAME_spec.md` (CryptoKitties-style breeding, web-only, Antelope private chain). No re-deciding the game type — spec is locked.
 - [ ] Repo created (public per `GAME_spec.md` §7 — build-in-public from day 1), README points at `GAME_spec.md` and the cohort framing.
 - [ ] Local `nodeos` dev env up; smoke-test a hello-world contract compiles + deploys to local single-BP chain.
+
+### Listmonk welcome autoresponder — full 8-email sequence (4h) — **gating before W04 lead-magnet drop**
+**See `LAUNCH_playbook.md` §4 for the spreadsheet spec (offsets 0/1/3/5/8/12/17/24, columns: Subject / Points / Takeaway / Bridge to next).**
+- [ ] Draft all 8 emails per the §4 template. Each one ≤300 words. Each ends with a cliffhanger to the next.
+- [ ] Email #1 (offset 0d): welcome + reply prompt + "while-list-is-small" framing (per `GAME_content_calendar.md` §"Newsletter as a 2-way channel").
+- [ ] Email #2 (offset 1d): lead-magnet delivery (placeholder until W04 magnet ships; for now = "the thesis post").
+- [ ] Emails #3–#8: per the LAUNCH_playbook §4 table, with the W08 primary magnet (8-Week Build-in-Public Template) referenced at offset 12d.
+- [ ] Wire in Listmonk: create campaign, set offsets, attach to the main subscriber list. Test with a throwaway address — verify 24h offset fires correctly and the subject lines render with `{{ .Subscriber.FirstName }}`.
+- [ ] **Why W02 (not later):** Video #1 ships this week. Every sub from this point forward should hit the autoresponder. Without it, every new sub from W02–W04 hits a 6-day silence and dormancy compounds.
 
 ---
 
@@ -46,5 +55,6 @@
 - [ ] Video #1 live on YouTube.
 - [ ] Blog post + email broadcast derived (not bespoke).
 - [ ] /cohort waitlist page live, linked from video description.
-- [ ] Game spec doc written.
+- [ ] Game repo public + local `nodeos` dev env smoke-tested.
+- [ ] Listmonk welcome autoresponder all 8 emails drafted + wired + test-fired (no sub leakage from this week onward).
 - [ ] Hours ≤20.

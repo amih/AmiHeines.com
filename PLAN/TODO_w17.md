@@ -28,6 +28,7 @@
 - [ ] Auto pipeline.
 - [ ] Send certificate of completion + LinkedIn-ready badge to students.
 - [ ] Final cohort survey (NPS + open-ended).
+- [ ] Phase 2 discovery trickle (1h — see `PLAN §7`): 1 call OR 5 fresh outreach msgs.
 
 ---
 

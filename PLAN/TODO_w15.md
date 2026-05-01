@@ -25,6 +25,7 @@
 
 - [ ] Auto pipeline.
 - [ ] Module 5 prep (Polish & Portfolio Video).
+- [ ] Phase 2 discovery trickle (1h — see `PLAN §7`): 1 call OR 5 fresh outreach msgs.
 
 ---
 

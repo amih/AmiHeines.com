@@ -27,7 +27,7 @@
 
 - [ ] Auto pipeline.
 - [ ] Cochrane EAD audit on Phase 2 work — what gets eliminated/automated/delegated before scaling.
-- [ ] Decide: Phase 2 cold-outreach strategy needed (Phase 1's inbound-only choice 8C). Note in `PLAN/saas_phase2_plan.md`.
+- [ ] Phase 2 discovery trickle (1h — see `PLAN §7`): 1 call OR 5 fresh outreach msgs. **By end of W20, cumulative ~5–8 calls should exist** — the W21 GO/NO-GO decision is grounded in this evidence (per `risk_register.md` R10).
 
 ---
 

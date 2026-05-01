@@ -28,6 +28,11 @@
 - [ ] Auto pipeline.
 - [ ] Module 3 prep (Frontend & Wallet).
 
+### Phase 2 discovery — kickoff trickle outreach (1h within EAD slot — see `PLAN §7` cold-outreach exception)
+- [ ] Build the 50-name target list of small/mid title-firm owners or ops directors (LinkedIn / state-bar lookups / industry groups). Save to `PLAN/saas_outreach_list.md`.
+- [ ] Send first 5 cold-outreach messages this week. Cochrane "research interview, not pitch" framing.
+- [ ] Goal: book 1 call to land in W14 or W15. Cumulative target across W13–W21 = ~5–8 calls.
+
 ---
 
 ## End-of-week checkpoints

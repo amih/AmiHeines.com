@@ -37,6 +37,12 @@
 
 - [ ] Auto pipeline.
 - [ ] Reflection day: did everything fit ≤20h? Adjust W12+ if not.
+- [ ] **Cohort delivery contingency plan** (gating before Module 1 ships W12) — 1h within this admin slot:
+  - [ ] **Co-host backup:** name 1 person who can run a single Module call if Ami can't (someone Antelope-fluent — ex-EOS dev, prior collaborator). Pre-brief them on the curriculum + record a "you might get a panicked Slack from me" 5-min video. Standing offer of a Module-record fee.
+  - [ ] **Sick-day plan:** if Ami can't run a live call within 24h notice → drop to async-only that week (recorded screencast posted to Discord with written prompts + 1:1 office-hour offers across the week). Pre-write the "I had to push this week's live to async" student email template.
+  - [ ] **Recording-only fallback:** if internet/Zoom dies mid-call → switch to OBS local recording + post within 4h. Pre-test the failover path once before W12.
+  - [ ] **Discord-only emergency mode:** if a full week is lost (illness >5 days) → the week's content lands as a 60-min recorded video + Ami responds to questions in Discord text only. Refund window does NOT reopen for one missed live week if the recording is delivered within 72h. State this in `payment_plans.md` cohort terms before any sale.
+  - [ ] Save the contingency runbook to `PLAN/cohort_contingency.md`. Print + tape next to laptop.
 
 ---
 
