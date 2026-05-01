@@ -379,6 +379,95 @@ When blocks.log + state-history hit 5+ TB and snapshots take hours, you have fou
 
 **Slot:** Phase 1 W19 or W20 — natural sequel to the W18/W19 RAM-at-scale post. Together the two form a "Antelope Operations at Scale" mini-series, repackageable as a paid mini-course or cohort bonus module post-W21.
 
+### Topic 4 — Self-hosted MinIO mesh: anti-fragile blob storage at home + family + cloud
+
+**Working title:** *"I Replaced AWS S3 with 4 Cheap Boxes at Home, My Parents', My Brother's, and One Tiny VPS — Here's the Math"*
+
+**Angle:** Concrete continuation of Topic 3's off-chain blob recommendation. Where Topic 3 lists S3 / IPFS / Arweave / Filecoin as targets, this post argues for **a self-hosted MinIO mesh with anti-fragile multi-site replication**, and shows it beats AWS S3 on TCO at >2 TB. The Taleb angle ("low-reliability nodes, but many of them") is the differentiator — most self-hosted-storage content assumes one beefy NAS in a basement; this post assumes 3–4 cheap boxes that each have a 90% uptime, replicated.
+
+**Audience hook:** Garnon (and the wider self-host-curious dev audience) wants to escape AWS lock-in but believes "real" S3 replacement requires a homelab + UPS + 10G switch + a CCNA. This post says no — 4 × $500 mini-PCs running MinIO + Tailscale + a $20 VPS is enough to beat AWS Standard at TCO and survive any single home burning down.
+
+**Spine — five sections:**
+
+#### 4a. Why MinIO (not Ceph, not Garage, not just rsync)
+
+- **MinIO**: single Go binary, S3-API-compatible, BSD-3, built-in bucket replication to any other S3 target (including AWS, Backblaze, another MinIO). The pragmatic choice.
+- **Ceph**: industrial-strength, but operational burden is high — plan for 2 weeks to get comfortable, ongoing OSD-rebalance dramas. Overkill for ≤10 TB.
+- **Garage**: newer, designed exactly for geo-distributed home setups, fewer features, smaller community. Worth a sidebar mention; not the recommendation.
+- **rsync + cron**: fine for backup, not a usable storage tier — apps can't write to it via S3 API.
+
+#### 4b. The architecture (4 sites, all independent)
+
+| Site | Hardware | Role | Cost (one-time) |
+|---|---|---|---|
+| Home | N100 mini-PC + 4 TB NVMe + UPS | primary writer | ~$500 |
+| Parents | Pi 5 + 4 TB USB SSD + small UPS | replica | ~$300 |
+| Brother | N100 mini-PC + 4 TB NVMe | replica | ~$500 |
+| Cloud (OVH small VPS) | 2 vCPU / 4 GB / 4 TB attached block storage | replica + public read endpoint | ~$20/mo |
+
+**Topology:** **NOT distributed-mode MinIO** (that needs sub-100ms inter-node latency — home Internet won't deliver). Instead **4 independent single-node MinIO instances** with **bucket replication** between them. Each node is its own truth; replication is async, eventual consistency.
+
+**Replication policy:**
+- Home → Cloud + Parents + Brother (3-way fan-out, async)
+- Cloud → Glacier lifecycle rule (objects older than 30 days → Glacier @ ~$1/TB/mo) — the doomsday-backup tier
+- Parents/Brother → read-only mirrors, never written by apps
+
+#### 4c. Networking: Tailscale, not Mailinabox-DDNS (mostly)
+
+**Why DDNS alone doesn't solve this:**
+- Most residential ISPs put you behind NAT (often CGNAT now). A DDNS A-record points to a public IP that can't accept inbound connections.
+- Even when you have a real public IP, opening ports = exposed S3 endpoints = constant scanning + brute-force attacks.
+
+**The right primitive: Tailscale (or self-hosted Headscale).**
+- Each MinIO node joins one Tailnet. Each gets a stable `100.x.y.z` address.
+- Inter-node MinIO replication runs over Tailscale — no port forwarding, no public exposure, WireGuard under the hood (fast, encrypted).
+- Free for personal use up to 100 devices. Headscale = the open-source control plane if Ami wants full sovereignty.
+
+**Where Mailinabox-DDNS *does* fit:**
+- The public read endpoint. The Cloud node is the only one with a real public IP. Point `s3.amiheines.com` (CNAME or A record managed by Mailinabox's nsupdate API) at the Cloud node. Apps and end-users hit that endpoint; the home/family nodes stay invisible behind Tailscale.
+
+#### 4d. Monitoring + remote management from laptop
+
+- **MinIO Prometheus endpoint** (`/minio/v2/metrics/cluster`) → existing Grafana stack (you already run Grafana per credentials memory). Dashboards: per-node uptime, replication lag, disk %, SMART warnings.
+- **Alerts** (Grafana → ntfy.sh or Pushover): node down >5 min, replication lag >10 min, disk >85%, SMART pre-fail.
+- **Fleet management**: tiny Ansible playbook over Tailscale SSH. Targets: `apt update`, MinIO version bump, cert renewal (none needed if all-Tailscale), config sync.
+- **Ami's laptop = the only ops console.** Family members are explicitly *not* sysadmins.
+
+#### 4e. Cost comparison + the anti-fragile case
+
+| Option | 4 TB usable, 1 yr | Survives 1 site loss? | Survives 3 site loss? |
+|---|---|---|---|
+| **AWS S3 Standard** | ~$1,100/yr | ✓ (S3's own redundancy) | ✗ (single region) |
+| **AWS S3 Standard + Glacier replica** | ~$1,150/yr | ✓ | ✓ |
+| **Backblaze B2** | ~$240/yr | ✓ | ✗ |
+| **MinIO mesh (this proposal)** | $1,800 once + ~$420/yr (VPS + Glacier + power) | ✓ | ✓ (Glacier survives) |
+
+**Break-even: ~year 2.** From year 3 on, MinIO mesh costs ~30% of AWS for the same redundancy.
+
+**Anti-fragile angle (the headline):**
+- Each node has 90% uptime. Mesh as a whole has 99.99%+ — you only lose service if 4 independent unreliable systems fail simultaneously.
+- Hardware failure = swap a $300 box, replication backfills automatically.
+- Family member unplugs node = it's back when they plug it back in. No sysadmin emergency.
+- ISP outage = other 3 nodes serve, replication catches up when ISP returns.
+- House fire / theft = 3 other replicas + Glacier. Sleep fine.
+- *Actively gets stronger from stress*: every recovery exercise validates the topology, every alert tunes the noise floor.
+
+#### 4f. Honest cons (don't hand-wave these)
+
+- **Family is not your team.** They will unplug, repower, accidentally factory-reset. UPS + boot-on-power + auto-restart MinIO + remote IPMI/PiKVM where possible. Document recovery in a one-page PDF taped to the box.
+- **Residential ISP T&Cs** sometimes prohibit "running servers." Practically ignored for personal use; legally fragile if you ever serve customer data and the ISP audits. Read your contract before storing anything that isn't yours.
+- **Asymmetric upload bandwidth.** Home fiber: typical 1 Gbps down / 50–300 Mbps up. Replication writes saturate upstream — schedule heavy backfills overnight or rate-limit MinIO replication (`mc admin bandwidth`).
+- **Insurance + GDPR** if anything other than your own data lives on a residential box in another country. Don't promise "production-grade compliance" on this stack.
+- **Config is the real asset.** Losing the IAM users + bucket policies + replication rules is worse than losing a node. Back up `~/.minio/` to a separate target weekly. Use Ansible vault or sops for secrets.
+
+**Format:**
+- Long-form video (45 min): physical hardware unboxing of all 4 sites, install timelapse, live "unplug a node, watch the dashboard" demo, cost-comparison spreadsheet walkthrough
+- Blog: the architecture diagram + cost table + Tailscale-vs-DDNS argument
+- LinkedIn: ① "I run S3 across my parents' house" headline carousel, ② "Tailscale beats public DDNS for self-hosted storage — here's why" hot take, ③ uptime dashboard screenshot
+- Lead magnet: **"4-site MinIO build kit"** — Ansible playbook + Tailscale ACL template + Grafana dashboard JSON + bill-of-materials spreadsheet
+
+**Slot:** Phase 1 W20 or W21, paired with Topic 3 for the "Antelope Operations at Scale" mini-series. Together — Topic 2 (RAM) + Topic 3 (disk + chain pruning) + Topic 4 (off-chain blob mesh) — form a complete operational story repackageable as a paid mini-course or cohort #2 bonus module.
+
 ### Adding new backlog topics
 
 Append to this section as ideas surface. Each entry: working title + angle + audience hook + format + slot guess. Promote into the dated calendar when a slot opens.
