@@ -18,8 +18,12 @@
 
 ## Build (3h)
 
-### Game side improvements as cohort demo material (3h)
-- [ ] Add 1 polished feature that cohort students will replicate as their first homework.
+### Learn Tailscale + Headscale (3h) — foundational for self-host content track
+- [ ] Install Tailscale on laptop + 1 spare box. Tailnet up.
+- [ ] Read docs: ACLs, MagicDNS, subnet routes, exit nodes.
+- [ ] Stand up Headscale in a Docker container for sovereignty option.
+- [ ] Outcome: enough fluency to use Tailnet for OVH BP cluster inter-node + future MinIO mesh. Notes → `PLAN/notes_tailscale.md`.
+- [ ] **Defers:** "Game side improvements as cohort demo material" — cohort polish moves to W09 if time permits, otherwise students will see W08 build state.
 
 ---
 

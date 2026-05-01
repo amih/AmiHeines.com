@@ -18,9 +18,13 @@
 
 ## Build (3h)
 
-### Cohort offer page v3 (3h)
+### Cohort offer page v3 (2h)
 - [ ] Add real testimonials, real demo clips, real student names (with consent).
 - [ ] Drop "first cohort" framing language.
+
+### Tailscale primer post draft (1h)
+- [ ] Draft the standalone "Why Tailscale beats public DDNS for self-hosted infra" post (publishes alongside Topic 4 in W20–W21). Use notes from `PLAN/notes_tailscale.md` (W08).
+- [ ] Includes a 2-min screencast showing 4-node tailnet up. Save raw to `~/Videos/tailscale_demo/`.
 
 ---
 

@@ -389,12 +389,13 @@ When blocks.log + state-history hit 5+ TB and snapshots take hours, you have fou
 
 **Spine — five sections:**
 
-#### 4a. Why MinIO (not Ceph, not Garage, not just rsync)
+#### 4a. Why MinIO (not AWS S3, not Ceph, not Garage, not just rsync)
 
 - **MinIO**: single Go binary, S3-API-compatible, BSD-3, built-in bucket replication to any other S3 target (including AWS, Backblaze, another MinIO). The pragmatic choice.
-- **Ceph**: industrial-strength, but operational burden is high — plan for 2 weeks to get comfortable, ongoing OSD-rebalance dramas. Overkill for ≤10 TB.
-- **Garage**: newer, designed exactly for geo-distributed home setups, fewer features, smaller community. Worth a sidebar mention; not the recommendation.
-- **rsync + cron**: fine for backup, not a usable storage tier — apps can't write to it via S3 API.
+- **vs AWS S3 (managed):** S3 wins on zero-ops, baked-in HIPAA/SOC2/PCI, instant PB scale, 11-nines region durability. **Lose on:** ~$23/TB/mo storage + $90/TB egress (the killer — every game asset download bills you), surprise-bill risk (one misconfigured pipeline = $$$), US legal jurisdiction + account-suspension exposure (data hostage if AWS turns you off), and lock-in (S3 lifecycle policies are easy in, hard out). MinIO is bit-identical S3 API → apps don't notice the swap. For a sovereign, predictable-cost, ≤50 TB game-asset workload, MinIO wins on TCO from year ~2 and on sovereignty from day 1.
+- **vs Ceph**: industrial-strength, but operational burden is high — plan 2 weeks to get comfortable, ongoing OSD-rebalance dramas. Overkill for ≤10 TB.
+- **vs Garage**: newer, designed exactly for geo-distributed home setups, fewer features, smaller community. Worth a sidebar mention; not the recommendation.
+- **vs rsync + cron**: fine for backup, not a usable storage tier — apps can't write to it via S3 API.
 
 #### 4b. The architecture (4 sites, all independent)
 
