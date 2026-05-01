@@ -37,6 +37,7 @@
 
 - [ ] Auto-clips, auto-blog, auto-email (same pipeline as W02).
 - [ ] Energy audit weekly review — adjust calendar if drift.
+- [ ] **HN warmup Phase 2 starts** (per `notes_hn_warmup.md`): 5–10 substantive comments this week (200–500 words each, real expertise only, no self-links). Karma target EoW: ~15.
 
 ---
 

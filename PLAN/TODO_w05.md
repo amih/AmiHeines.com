@@ -35,6 +35,7 @@
 
 - [ ] Auto pipeline.
 - [ ] Mid-cohort planning: outline 6-week curriculum modules, save to `PLAN/cohort_curriculum.md` v0.
+- [ ] **HN warmup Phase 2 wraps** (per `notes_hn_warmup.md`): 5–10 substantive comments. Karma target EoW: **≥50** (gating threshold for first submissions in W06). If <50, push another comment-heavy week before submitting anything.
 
 ---
 

@@ -37,6 +37,7 @@
 
 - [ ] Auto pipeline.
 - [ ] Friday off.
+- [ ] **HN warmup Phase 2 cont'd** (per `notes_hn_warmup.md`): 5–10 substantive comments. Karma target EoW: ~30. Still no submissions.
 
 ---
 

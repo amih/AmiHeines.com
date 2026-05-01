@@ -37,6 +37,7 @@
 - [ ] Auto-derive blog post from transcript via Claude (1-shot prompt, light human polish only).
 - [ ] Auto-derive weekly email (3 takeaways + video link) → Listmonk broadcast.
 - [ ] Friday off; Sunday recharge.
+- [ ] **HN warmup Phase 1 cont'd** (per `notes_hn_warmup.md`): keep lurking ~20 min/day. Note 5 commenters whose voice you respect — that's the register to aim for. Karma target EoW: ~5 (still no comments, just observation).
 
 ---
 

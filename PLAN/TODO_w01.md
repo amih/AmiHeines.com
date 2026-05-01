@@ -63,6 +63,7 @@ Cochrane Ch.5 — 5-step build:
 - [ ] Pause: any cold-outreach drafts, Toptal proposals, freelance bidding.
 - [ ] Energy audit: list tasks that drain vs. give energy. Save to `PLAN/energy_audit.md`.
 - [ ] Dream Week wheel: block recharge / relationship / rainmaker / reflection on calendar.
+- [ ] **HN warmup Phase 1** (per `notes_hn_warmup.md`): refresh HN profile (real name, URL, 1-line bio). Lurk daily ~20 min, no posts/comments yet. Karma target this week: starting baseline (~0).
 
 ---
 
