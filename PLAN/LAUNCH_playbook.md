@@ -68,8 +68,8 @@ Auto-fires from the moment someone subscribes. Spreadsheet columns:
 | 1d | Lead magnet delivery | The download + "how I'd use it" | Value, no ask | "In 2 days, the post that explains why I built it" |
 | 3d | Origin / why I'm doing this | The thesis — why on-chain games on Antelope | Earned credibility | "Friday I'll show you the thing I shipped this week" |
 | 5d | Latest build update | This week's commit + screenshot + what broke | Reader sees the live work | "Next week's deep dive will be on ___" |
-| 8d | Best evergreen post | Link to the most-shared blog post | Free value, second magnet | "In a few days I'll share my OVH cost spreadsheet" |
-| 12d | Second lead magnet | OVH cost spreadsheet (or current best free thing) | Magnet #2 — second sub-affirmation moment | "Coming up: the 5-day challenge in [month]" |
+| 8d | Best evergreen post | Link to the most-shared blog post | Free value, second magnet | "In a few days I'll share the 8-week build-in-public template" |
+| 12d | Second lead magnet | 8-Week Build-in-Public Template (or current best Garnon-shaped free thing) | Magnet #2 — second sub-affirmation moment | "Coming up: the 5-day challenge in [month]" |
 | 17d | Soft challenge mention | What the challenge is, who it's for, no price | Plant the seed early | "I'll write you when the date is locked" |
 | 24d | Hand off to broadcast cadence | "From here you're on the regular Sunday list" | Reader knows the rhythm now | — |
 

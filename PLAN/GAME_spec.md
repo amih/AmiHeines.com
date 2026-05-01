@@ -72,7 +72,7 @@ This is the on-chain game Ami builds in public, as both the cohort's reference i
 
 **Why self-host (vs Vaulta mainnet):**
 - Real teaching value — Garnon never sees what's under a managed RPC.
-- Material for the W08 cost-breakdown post (strong HN/Reddit hook).
+- Material for a future cost-breakdown post (strong HN/Reddit hook — deferred to W22+ as part of "Antelope Operations at Scale" mini-series; see `GAME_content_calendar.md` Content backlog).
 - Full control over chain config (no governance / token economics of Vaulta mainnet).
 - A teaching chain that resets is a feature: demoable failures (intentional fork, replay) without spending real tokens.
 

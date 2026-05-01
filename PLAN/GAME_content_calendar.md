@@ -131,13 +131,14 @@ Aligned to `PLAN_amiheinesConsultant.md` §5.
 - **Newsletter:** "the chain is now public — try it".
 - **🎁 Lead magnet drop:** OVH self-hosting checklist (PDF).
 
-### W08 (Jun 22–28) — Full 4-node cluster + list growth push
-- **Dev:** nodes 2 + 4 added, failover tested, snapshots automated, off-site backups working.
-- **YT:** *"I Run an Antelope BP Cluster for €300/Month — Full Cost Breakdown"*.
-- **Blog:** cost breakdown post — **THE HN post; schedule for Tuesday US morning**.
-- **LI:** ① cost-breakdown carousel, ② "my full failover drill", ③ "what self-hosting taught me that managed never would".
-- **Newsletter:** "€300/mo BP cluster" cost spreadsheet (lead magnet) → **second sub spike**.
-- **Shareable hook:** *"Show HN: I run my chain on €300/mo of OVH — here's the breakdown"*.
+### W08 (Jun 22–28) — Full 4-node cluster + list growth push (Garnon-shaped HN shot)
+- **Dev:** nodes 2 + 4 added, failover tested, snapshots automated, off-site backups working. (Infra ships, but it's NOT the public framing this week.)
+- **YT:** *"8 Weeks Building a Web3 Game in Public — Numbers, Mistakes, What I'd Do Again"* (Garnon-aligned indie-hacker recap; pulls in junior devs who want to ship their own portfolio piece).
+- **Blog:** the indie-hacker recap post — **THE HN post; schedule for Tuesday US morning**. Body: weekly subscriber count, hours spent (build vs marketing vs sales), why Antelope, code snippets from the contract, the OVH cost breakdown as a *closing aside* ("if you're curious about infra, here's the spreadsheet — but you don't need this until later"). Frames the OVH content for the right audience and avoids the senior-infra HN spike that hurts cohort conversion.
+- **LI:** ① "8-week numbers carousel" (sub count, hours, $0 spent so far), ② "5 things I'd build differently if I started over" (Garnon hot-take), ③ "the contract that runs the whole game — 60 lines of C++".
+- **Newsletter:** **primary lead magnet** = *"8-Week Build-in-Public Template (.zip — repo skeleton + GitHub Project board + weekly post template)"* → second sub spike, Garnon-shaped. **Secondary magnet** = the OVH cost spreadsheet (still there for the infra-curious tail; not the headline).
+- **Shareable hook:** *"Show HN: 8 weeks building a Web3 game in public — full numbers, no hype"*. (The audience landing on this is junior devs + indie hackers, not SREs. That converts to challenge tickets at 5–10×.)
+- **Note:** the OVH 4-node cluster + cost breakdown content is preserved — moves to W22+ as part of the "Antelope Operations at Scale" mini-series. See "Content backlog" below.
 
 ### W09 (Jun 29–Jul 05) — Game polish + challenge announce
 - **Dev:** game live at `play.amiheines.com`, gen-0 minted, breeding open.
@@ -231,8 +232,9 @@ These are aggressive vs the `business_plans.xlsx → Funnel` base case (Cochrane
 | Week | Magnet | Audience |
 |---|---|---|
 | W04 | Antelope C++ contract starter template (.zip + README) | Garnon |
-| W07 | OVH self-hosting checklist (PDF) | infra-curious devs |
-| W08 | "€300/mo BP cluster" cost spreadsheet (.xlsx) | infra-curious devs |
+| W07 | OVH self-hosting checklist (PDF) | infra-curious devs (secondary) |
+| W08 | **PRIMARY:** 8-Week Build-in-Public Template (.zip — repo skeleton + GitHub Project board + weekly post template) | **Garnon** |
+| W08 | SECONDARY: OVH cost spreadsheet (.xlsx) — for the infra-curious tail only | infra-curious devs (secondary) |
 | W09 | Challenge curriculum preview | challenge-buyer adjacent |
 | W12 | 90-day retro (PDF, gated) | newsletter spike |
 
@@ -247,9 +249,11 @@ These are aggressive vs the `business_plans.xlsx → Funnel` base case (Cochrane
 
 ---
 
-## Content backlog (post-W12 + supplementary)
+## Content backlog (post-W21 / Phase 2 / secondary audience)
 
-Topics that don't fit the W01–W12 spine but are high-value for Garnon + infra-curious devs. Slot into Phase 1 W13–W21 video schedule when the W08 cost-breakdown / W12 retro buys breathing room, or hold for cohort #2 enrollment cycle.
+> ⚠ **Audience note (locked 2026-05-01).** All four topics below target the **secondary infra-curious audience** — *not* Garnon (the cohort buyer). They are deliberately deferred to **W22+** so the W14–W21 video slots stay focused on Cohort #1 delivery + Cohort #2 enrollment for the right audience. Together Topics 2 + 3 + 4 form an "Antelope Operations at Scale" mini-series that can be repackaged as a standalone paid mini-course or a Cohort #2 bonus module — it is **not** Phase 1 funnel content.
+
+Slot all four post-W21 in the Phase 2 calendar (TBD; depends on Phase 2 GO/NO-GO at W21).
 
 ### Topic 1 — Glacier-style cold storage, adapted (non-Bitcoin + tunable paranoia)
 
@@ -275,7 +279,7 @@ Topics that don't fit the W01–W12 spine but are high-value for Garnon + infra-
 
 **Format:** 1 long-form video (35 min) + 1 deep blog post (the framework table) + 1 LinkedIn carousel (the tier table is shareable on its own) + lead magnet ("Cold-storage tier picker — 5 questions that tell you which tier you need", PDF).
 
-**Slot:** Phase 1 W14 or W15 (cohort week 3–4 — students will have asked about key custody by then).
+**Slot:** **W22+** (deferred from W14–W15 per audience-fit decision 2026-05-01 — senior-infra cold-storage content was clashing with Cohort #1 delivery + Cohort #2 enrollment Garnon-shape).
 
 ### Topic 2 — Antelope RAM at scale: what happens when you hit 1M users?
 
@@ -310,7 +314,7 @@ Tractable on 32 GB nodes for ~3M users; serious problems at ~10M.
 
 **Format:** 1 long-form video (40 min, the capacity math is the visual) + 1 deep blog post (the math table is the lead magnet) + 1 LinkedIn carousel + spreadsheet lead magnet ("Antelope capacity calculator — input users, get RAM/disk/cost").
 
-**Slot:** Phase 1 W18 or W19 (post-cohort retro slot — students will be asking this exact question by then).
+**Slot:** **W22+** (deferred from W18–W19 per audience-fit decision 2026-05-01 — those weeks ship the cohort retro + Phase 2 pivot videos, both Garnon-shaped).
 
 ### Topic 3 — Disk, blob storage, throughput, and chain pruning
 
@@ -408,7 +412,7 @@ When blocks.log + state-history hit 5+ TB and snapshots take hours, you have fou
 - LinkedIn: ① "Stop storing files on-chain — the math" carousel, ② "How I throw away 5 years of chain history without losing customer balances" hot take, ③ snapshot-rehydrate GIF
 - Lead magnet: **disk-space + blob-storage decision spreadsheet** — input tx/sec, avg tx size, blob size, retention years → output TB/yr per node + recommended off-chain target
 
-**Slot:** Phase 1 W19 or W20 — natural sequel to the W18/W19 RAM-at-scale post. Together the two form a "Antelope Operations at Scale" mini-series, repackageable as a paid mini-course or cohort bonus module post-W21.
+**Slot:** **W22+** (deferred from W19–W20 per audience-fit decision 2026-05-01). Natural sequel to Topic 2; together they form the "Antelope Operations at Scale" mini-series, repackageable as a paid mini-course or Cohort #2 bonus module.
 
 ### Topic 4 — Self-hosted MinIO mesh: anti-fragile blob storage at home + family + cloud
 
@@ -498,7 +502,7 @@ When blocks.log + state-history hit 5+ TB and snapshots take hours, you have fou
 - LinkedIn: ① "I run S3 across my parents' house" headline carousel, ② "Tailscale beats public DDNS for self-hosted storage — here's why" hot take, ③ uptime dashboard screenshot
 - Lead magnet: **"4-site MinIO build kit"** — Ansible playbook + Tailscale ACL template + Grafana dashboard JSON + bill-of-materials spreadsheet
 
-**Slot:** Phase 1 W20 or W21, paired with Topic 3 for the "Antelope Operations at Scale" mini-series. Together — Topic 2 (RAM) + Topic 3 (disk + chain pruning) + Topic 4 (off-chain blob mesh) — form a complete operational story repackageable as a paid mini-course or cohort #2 bonus module.
+**Slot:** **W22+** (deferred from W20–W21 per audience-fit decision 2026-05-01). Paired with Topic 3 in the "Antelope Operations at Scale" mini-series. Topic 2 (RAM) + Topic 3 (disk + chain pruning) + Topic 4 (off-chain blob mesh) form a complete operational story repackageable as a paid mini-course or Cohort #2 bonus module.
 
 ### Adding new backlog topics
 

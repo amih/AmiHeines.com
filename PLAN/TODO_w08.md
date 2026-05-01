@@ -3,7 +3,7 @@
 **Dates:** 2026-06-22 to 2026-06-28
 **Phase:** 1 — Cohort
 **Target hours:** ~26 — **EXPLICITLY OVER 20h CAP** (last of the over-cap stretch — W06/W07/W08 ship the OVH self-host content track. Returns to ≤20h cap from W09 — non-negotiable, the W10 challenge launch demands clear-headedness.)
-**Burnout watch:** if W08 actuals >28h, defer node 4 (read replica + backup target) to W11. Three nodes is enough for the W08 cost-breakdown video; a 4th adds the off-site backup story which can land later.
+**Burnout watch:** if W08 actuals >28h, defer node 4 (read replica + backup target) to W11. Three nodes is enough to run the chain; the 4th adds the off-site backup story which can land later. (Note: the OVH cost-breakdown post itself was deferred to W22+ per audience-fit decision 2026-05-01 — W08's HN shot is now Garnon-shaped; see `GAME_content_calendar.md` W08 section. The cluster still ships this week, just not as the public framing.)
 
 ---
 
@@ -59,6 +59,7 @@
 - [ ] Video #7 live.
 - [ ] 5 podcast/newsletter outreach replies tracked.
 - [ ] OVH 4-node cluster live; Tailnet enforced; failover drill passed and documented.
-- [ ] OVH cost spreadsheet ready as W08 lead magnet (Topic 4 lead magnet feed).
+- [ ] **Primary** W08 lead magnet ready: 8-Week Build-in-Public Template (.zip — repo skeleton + GH Project board + weekly post template). Garnon-shaped.
+- [ ] **Secondary** W08 lead magnet ready: OVH cost spreadsheet (.xlsx) — for the infra-curious tail; not the headline. (Source data for the future W22+ cost-breakdown post.)
 - [ ] Tailscale fluency confirmed; primer post outline drafted for W18 finalization.
 - [ ] Hours **~26** (over-cap, deliberate — last over-cap week before W09 reset).
