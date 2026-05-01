@@ -195,6 +195,7 @@ If any miss → run Cohort #2 first, defer Phase 2.
 - `PLAN_amiheinesConsultant.md` (this file) — strategy.
 - `GAME_spec.md` — reference game design, smart-contract architecture, OVH self-hosting topology + cost.
 - `GAME_content_calendar.md` — W01–W12 build-in-public beat sheet (YT + LI + blog + newsletter), maps to §5 above.
+- `LAUNCH_playbook.md` — reusable launch playbook (Amy Hoy LCC + Brennan/Brandon patterns); applied to W10 challenge in `GAME_content_calendar.md` §"Launch playbook"; reused for W17/W21/Phase-2 launches.
 - `TODO_w01.md` … `TODO_w21.md` — weekly execution.
 - `RUNBOOK_w01.md` — concrete commands/checklists for the active week.
 - `FUTURE_MAYBE.md` — parked items.

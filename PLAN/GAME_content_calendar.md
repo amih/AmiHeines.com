@@ -170,6 +170,52 @@ Aligned to `PLAN_amiheinesConsultant.md` §5.
 
 ---
 
+## Launch playbook (W08–W11) — applies LCC patterns
+
+Detailed playbook lives in `LAUNCH_playbook.md`. This section is the W10-challenge-specific schedule.
+
+### W08 Sun (Jun 28) — list-only price + cliffhanger
+- Broadcast announces W10 challenge dates + **list-only price**: subscribers get $20 off both tiers (final price $77 GA / $277 VIP, public $97 / $297) for the first 48h after the cart opens.
+- Cliffhanger close: *"Next Monday I'll send the first of 3 pre-launch emails — Pain / Dream / Reason. Day-7 email is pure-value, no pitch. Then Wed. Then Fri. Cart opens Sun night."*
+- Reply prompt: *"Anything you want me to address in the pre-launch sequence — drop it now."*
+
+### W09 (Jun 29 – Jul 5) — Pain / Dream / Reason 3-email sequence
+Mapped to Brandon's 7/5/1/0 cadence with W10 launch on Mon Jul 6.
+
+| Day | Date | Type | Subject (draft) | Body angle |
+|---|---|---|---|---|
+| **Day-7** | Mon Jun 29 | **Pure value, no pitch** | *"You wanted to ship on-chain in 2025. Here's why you didn't."* | The 3 specific blockers Garnon hits (chain choice paralysis, gas anxiety, wallet UX). Useful even if reader never buys. |
+| **Day-5** | Wed Jul 1 | **Dream + autobiographical** | *"The week I went from $0 chain experience to a deployed contract"* | Story-driven. Ami's own first Antelope deploy. End: "What if you had a structured 5 days to do this?" |
+| **Day-3** | Fri Jul 3 | **Reason + price reveal** | *"Why I'm running this challenge — and what your subscriber discount looks like"* | Reason story (cohort funding the game OSS, etc.). Reveal $77/$277 list-only price. Cart opens Sun night IST. Cliffhanger: "Sunday night you'll get the link first." |
+| **Day-1** | Sun Jul 5 | **Tomorrow / reply CTA** | *"Cart opens tonight 22:00 IST — what you get + reply with questions"* | Exact time, exact deliverables, reply for any pre-purchase Qs. List-only discount expires Wed 8am IST (TZ-aware extension for US/EU). |
+| **Day-0** | Mon Jul 6 | **Available now** | *"It's live — 20 seats, list-only $77 link inside"* | Short, link, scarcity. 24h list-only window. |
+
+### W10 (Jul 6–12) — daily emails during the live challenge
+
+Pre-write all 6 in W08 — no improvisation under load.
+
+| Day | Date | Email |
+|---|---|---|
+| Mon | Jul 6 | Day-0 launch (above) |
+| Tue | Jul 7 | "Day 1 went down — here's tonight's session link + 14 of 20 seats sold" (live attendee count, transparent) |
+| Wed | Jul 8 | Mid-challenge highlight + **gimmick**: *"Ticket #20 gets a free 30-min 1:1 chain-architecture review with me after the challenge."* |
+| Thu | Jul 9 | "What attendees built tonight" + soft mention of $5k cohort starting W12 |
+| Fri | Jul 10 | Last call — list-only price closes tonight; public price applies from tomorrow if any seats remain |
+| Sat | Jul 11 | Post-challenge cohort offer pitch (per existing PLAN §3) — pre-written W08 |
+
+### W11 (Jul 13–19) — vulnerability retro, drafted W08
+
+The retro email gets a first draft in W08 with template blanks. Ship in W11 even if everything went well — the *"here's what almost broke"* angle outperforms the victory lap (Amy's $100k bungled-launch email is the #1 example).
+
+Skeleton (fill in W11):
+> *"What I expected: ___ attendees, ___ cohort sales. What happened: ___. The thing that almost killed it: ___. What I'd do differently next time: ___. The next cohort starts ___ — here's the link if you want in."*
+
+### Anti-letdown rule
+
+W11 broadcast + W11 LinkedIn posts + W12 video script all drafted by Fri W08. No "ship W10, then sit and watch the inbox." The momentum kills the slump.
+
+---
+
 ## Sub-count targets
 
 | Milestone | Date | Subs |
