@@ -312,6 +312,73 @@ Tractable on 32 GB nodes for ~3M users; serious problems at ~10M.
 
 **Slot:** Phase 1 W18 or W19 (post-cohort retro slot — students will be asking this exact question by then).
 
+### Topic 3 — Disk, blob storage, throughput, and chain pruning
+
+**Working title:** *"How Big Does an Antelope Chain Get? Disk Math + the 1 GB Video Question + How to Throw the Old Chain Away"*
+
+**Angle:** Pairs with the RAM-at-scale post (Topic 2). Where Topic 2 answers "how many users fit in RAM," this one answers "how much disk does it eat over time, and what do you do at year 5?" Disk content is rarer than RAM content in Antelope ecosystem, so high SEO value.
+
+**Audience hook:** Garnon's first instinct is "store everything on-chain — that's the whole point, right?" This post says no, and shows the math.
+
+**Spine — three sections:**
+
+#### 3a. Disk-space math (empty chain → busy chain)
+
+Antelope = 0.5s block time = ~172,800 blocks/day = ~63 M blocks/year.
+
+| Scenario | blocks.log/yr | state-history/yr | Notes |
+|---|---|---|---|
+| **Empty chain** (no actions) | ~4 GB | ~30–50 GB | header bytes only; SHIP overhead dominates |
+| **Game-typical** (10–100 tx/s) | ~50–200 GB | ~150–500 GB | breeding/marketplace tx are tiny |
+| **At 1 MB/block sustained** | ~63 TB | ~80+ TB | catastrophic — see §3b |
+
+Frame the takeaway: on a bare-metal cluster (Topic spec §6), a normal game chain costs you ~1 TB/yr disk. Cheap. A blob-storage chain costs you 60+ TB/yr. Plan for the right one.
+
+#### 3b. The "1 GB video on-chain" question — should the app allow it?
+
+**Answer: no, and here's why.**
+
+- Block-size cap (~1–2 MB/block on a private chain at acceptable propagation) means a 1 GB blob = ~1000 transactions, ~8 minutes minimum to commit.
+- blocks.log + state-history accumulate forever — every BP and replica pays the storage cost in perpetuity, multiplied by replica count.
+- Network: 1 MB/block sustained = 16 Mbit/s on every node, every replica, every reader — survivable on OVH but kills budget cloud nodes.
+- The chain becomes the bottleneck for a workload object storage was designed for.
+
+**The right architecture: hash on-chain, blob off-chain.**
+
+| Off-chain target | When to pick it | Cost (2026) |
+|---|---|---|
+| **S3 / Backblaze B2** | Mutable, you control retention | ~$5/TB/mo |
+| **IPFS (self-pinned + Pinata)** | Content-addressed, censorship-resistant, you can prune | ~$20/TB/mo |
+| **Arweave** | "Pay once, store forever" — matches on-chain ethos | ~$15 per GB one-time (2026 est, verify) |
+| **Filecoin** | Long-term archival with cryptographic proofs | ~$2/TB/yr |
+
+The contract stores: `{ blob_hash, blob_size, storage_uri, uploaded_by }`. Reject any `setrow` that exceeds a few KB at the contract level — make the wrong path impossible.
+
+#### 3c. Throwing the old chain away — pruning strategies after years 3–5
+
+When blocks.log + state-history hit 5+ TB and snapshots take hours, you have four options:
+
+| Strategy | What you keep | What you lose | Effort |
+|---|---|---|---|
+| **Snapshot + reset** | Current state, all balances, all contract storage | Full historical log (who-did-what-when) | Low — `nodeos --snapshot-to-snapshot` then start fresh chain from snapshot |
+| **Archive + new chain** | Snapshot of state on new chain + cold tarball of old blocks.log | Live queryability of history (must rehydrate one node to query) | Low — same as above + tar to S3 Glacier (~$1/TB/mo) |
+| **Hard fork to new genesis** | Migrated balances/state via contract calls; new chain ID | History continuity (apps must be re-pointed) | High — touches every dApp using the chain |
+| **Vaulta mainnet migration** | State migrated to public chain | Self-host control | High + governance dependency |
+
+**Recommended pattern (the user's instinct, validated):**
+
+> Snapshot → tar → S3 Glacier. **Don't run replica nodes of the archived chain.** Keep one bootable image so you can spin a single forensic node on-demand if anyone ever asks "what happened in 2027?" Saves €240+/mo per archived chain. Forensic node can run on a cheap €30/mo VPS only when needed.
+
+**Demo for the video:** live snapshot of the game chain, spin up a fresh chain from it, show that the new chain has all the kittens but none of the breeding history. Then `du -sh` the old `data/` dir to drive home what was thrown away.
+
+**Format:**
+- Long-form video (40 min): live disk-math walkthrough + intentionally-failed 1 GB upload demo + live snapshot+rehydrate
+- Blog: the three tables + the architecture decision tree
+- LinkedIn: ① "Stop storing files on-chain — the math" carousel, ② "How I throw away 5 years of chain history without losing customer balances" hot take, ③ snapshot-rehydrate GIF
+- Lead magnet: **disk-space + blob-storage decision spreadsheet** — input tx/sec, avg tx size, blob size, retention years → output TB/yr per node + recommended off-chain target
+
+**Slot:** Phase 1 W19 or W20 — natural sequel to the W18/W19 RAM-at-scale post. Together the two form a "Antelope Operations at Scale" mini-series, repackageable as a paid mini-course or cohort bonus module post-W21.
+
 ### Adding new backlog topics
 
 Append to this section as ideas surface. Each entry: working title + angle + audience hook + format + slot guess. Promote into the dated calendar when a slot opens.
