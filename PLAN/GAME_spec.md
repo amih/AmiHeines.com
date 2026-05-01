@@ -93,9 +93,9 @@ This is the on-chain game Ami builds in public, as both the cohort's reference i
 - NVMe (not SATA SSD) is mandatory — block production latency dies on slow disk.
 
 **Approximate cost (verify current OVH pricing at purchase time):**
-- 4 × RISE-1 / Advance-class servers ≈ €240–400/month total.
+- 4 × RISE-1 / Advance-class servers ≈ $240–400/month total.
 - Bandwidth: included on OVH bare metal.
-- Backups: rsync from node 4 → OVH "Public Cloud" object-storage (€5–10/mo).
+- Backups: rsync from node 4 → OVH "Public Cloud" object-storage ($5–10/mo).
 
 **Pros:**
 - Full control, infinite chain resets for teaching.
@@ -106,9 +106,13 @@ This is the on-chain game Ami builds in public, as both the cohort's reference i
 - Ami is on-call for chain liveness.
 - Patch / upgrade burden (Leap version bumps).
 - DDoS exposure on public RPC — needs Cloudflare (or equivalent) in front of node 3.
-- ~€300/mo before any cohort revenue → real cash burn in W01–W10.
+- ~$300/mo before any cohort revenue → real cash burn in W01–W10.
 
-**Mitigation:** start with **2 servers** in W04–W07 (1 BP + 1 API). Add nodes 3–4 only by W08 when the content angle pays for it.
+**Mitigation (revised 2026-05-01):** the full 4-node cluster is **deferred to W22+** along with Topics 1–4 in `GAME_content_calendar.md` Content backlog. For Phase 1 (W01–W21):
+- W01–W06: local `nodeos` dev env on Ami's laptop is sufficient for contract scaffolding + frontend wiring.
+- W07–W10: per `PLAN §6` cash-burn abort gate — either single OVH node ($60–100/mo) if W06 list ≥100 + warm-network green/yellow, or local + Vaulta testnet if W06 thresholds missed. Either supports the W08 indie-hacker recap post + W10 challenge demo (~20 attendees doing breeding).
+- W11–W21: cohort runs on the same single-node setup. Students don't need 4 BPs to learn Antelope.
+- W22+: full 4-node cluster build ships when the deferred Operations-at-Scale series justifies the spend (and when there's revenue to absorb it).
 
 ## 7. Build milestones (overlay on PLAN §5 calendar)
 

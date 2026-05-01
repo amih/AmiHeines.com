@@ -142,22 +142,20 @@ All weeks Mon–Sun. 20-hour cap.
 
 Phase 2 (W22+) targets first paid RE pilot $20k–$30k by ~W30.
 
-### Cash-burn abort gate (added 2026-05-01)
+### Cash-burn abort gate (added 2026-05-01, revised same day)
 
-OVH spend = €60–100/mo per node. Spec ramps from 1 → 2 → 4 nodes across W04–W08. Cumulative through W21 = ~€1,500–2,000 with zero revenue until W11 at the earliest.
+OVH spend = $60–100/mo per node. Per the 2026-05-01 sub-growth-priority decision, the full 4-node cluster has been **deferred to W22+** (see `GAME_spec.md` §6 mitigation). Phase 1 runs on **at most 1 OVH node** (often local `nodeos` + Vaulta testnet is enough). Cumulative Phase 1 OVH spend ceiling: ~$500 through W21 (vs the original ~$2,000 budget).
 
 **Decision gates (auto-evaluated at end of each named week):**
 
 | Gate | Check | Green | Yellow | Red |
 |---|---|---|---|---|
-| **End of W01** | `warm_network.md` total names | ≥30 (including ≥15 direct Garnon-shaped) → proceed full ramp | 20–29 → shrink to **single OVH node + Vaulta testnet** through W10 | <20 → **halt OVH ramp**. Revise persona / drop price / extend audience-building runway 6–12 weeks before W10. |
-| **End of W06** | List subs + warm names | ≥100 subs AND warm-network green/yellow → 2 nodes provision (TODO_w07) | 50–99 OR warm yellow → 1 node only; defer cluster expansion to W22+ | <50 OR warm red → halt OVH spend; reuse local `nodeos` for content track |
-| **End of W08** | List subs + warm names + W08 Show HN performance | ≥200 subs AND HN post made front-page top-30 → expand to 4 nodes per spec | ≥120 subs OR HN post landed but didn't spike → 2 nodes only; W09–W10 challenge runs on the smaller cluster | <120 subs AND no HN traction → halt cluster expansion; cancel node 4 backup, downgrade nodes 2+3 if economic |
-| **End of W11** | Cohort #1 seats sold | ≥3 seats → cluster expansion approved; ChainVault + Phase 2 prep proceeds | 1–2 seats → freeze cluster at current size; defer Phase 2 prep | 0 seats → **halt all OVH ramp; cancel node 4 + node 2 if possible**; reframe Phase 1 as audience-building only and run Cohort #2 attempt at month 5 |
+| **End of W01** | `warm_network.md` total names | ≥30 (incl. ≥15 direct Garnon-shaped) → proceed with single OVH node provision in W07 | 20–29 → defer OVH provision; run Phase 1 on local `nodeos` + Vaulta testnet only | <20 → **halt OVH ramp + revise persona / drop price / extend audience-building runway 6–12 weeks before W10** |
+| **End of W06** | List subs + warm names | ≥100 subs AND warm green/yellow → provision 1 OVH node in W07 ($60–100/mo) | 50–99 OR warm yellow → keep on local + Vaulta; revisit at W08 | <50 OR warm red → halt OVH spend entirely; Phase 1 runs on local + Vaulta only |
+| **End of W08** | List subs + warm names + W08 Show HN performance | ≥200 subs AND HN post made front-page top-30 → keep single OVH node through W10; W22+ cluster build approved | ≥120 subs OR HN post landed but didn't spike → keep single OVH node; W22+ cluster build deferred to post-W21 review | <120 subs AND no HN traction → cancel single OVH node post-W10 if no revenue lands |
+| **End of W11** | Cohort #1 seats sold | ≥3 seats → cluster build approved for W22+ (revenue-funded); ChainVault Phase 2 prep proceeds | 1–2 seats → cluster stays deferred indefinitely; Phase 2 prep continues | 0 seats → **halt all OVH spend immediately**; reframe Phase 1 as audience-building only and run Cohort #2 attempt at month 5; consider also pausing Phase 2 prep |
 
-**Why this exists:** the original plan committed to ~€2,000 of OVH burn against a §6 base case that depends on a warm network that wasn't enumerated. The W01 warm-network file + the gates above turn the spend into a series of small bets, each with an auto-evaluated abort condition. No silent autopilot.
-
-**Mitigation already chosen** (per `GAME_spec.md` §6 mitigation): start with 2 servers, not 4. The W01 / W06 / W08 / W11 gates above further refine this.
+**Why this exists:** the original plan committed to ~$2,000 of OVH burn against a §6 base case that depends on a warm network that wasn't enumerated AND was building cluster infra that didn't directly grow subs. The 2026-05-01 decision deferred the cluster, redirected freed hours to direct sub-growth (warm DMs + HN post production + lead-magnet polish), and capped Phase 1 OVH spend at ~$500. The W01 / W06 / W08 / W11 gates above turn the remaining single-node spend into a series of small bets with auto-evaluated abort conditions. No silent autopilot.
 
 ---
 

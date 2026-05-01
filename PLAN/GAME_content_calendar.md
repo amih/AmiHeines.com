@@ -123,22 +123,21 @@ Aligned to `PLAN_amiheinesConsultant.md` §5.
 - **Newsletter:** cohort announcement + early-bird discount.
 - **Shareable hook:** demo GIF → Twitter/X, Show HN warm-up.
 
-### W07 (Jun 15–21) — OVH self-host begins
-- **Dev:** node 1 (BP) + node 3 (API) provisioned on OVH, public RPC live, Cloudflare front.
-- **YT:** *"Self-Hosting an Antelope Block Producer on OVH (Live)"*.
-- **Blog:** the OVH provisioning walkthrough.
-- **LI:** ① "€60/mo for a chain node — here's the math", ② screenshot of `nodeos` running, ③ "what could go wrong (and did)".
-- **Newsletter:** "the chain is now public — try it".
-- **🎁 Lead magnet drop:** OVH self-hosting checklist (PDF).
+### W07 (Jun 15–21) — Cohort LP + payments + Build-in-Public Template build
+- **Dev:** game chain runs on either single OVH node OR local `nodeos` + Vaulta testnet (per W06 abort gate). 4-node cluster deferred to W22+.
+- **YT:** *"Why I Built My Own Cohort Sales Page Instead of Using a Template"* (Garnon-relevant build-in-public on the offer page itself).
+- **Blog:** auto-derived from the video.
+- **LI:** ① cohort offer page screenshot, ② "the 4 things on the page that took 80% of the time", ③ Invoice4U integration tip.
+- **Newsletter:** challenge announcement teaser (full reveal in W08 broadcast per launch playbook).
 
-### W08 (Jun 22–28) — Full 4-node cluster + list growth push (Garnon-shaped HN shot)
-- **Dev:** nodes 2 + 4 added, failover tested, snapshots automated, off-site backups working. (Infra ships, but it's NOT the public framing this week.)
+### W08 (Jun 22–28) — List growth push + Garnon-shaped Show HN shot
+- **Dev:** game chain stays on whatever was provisioned in W07 (single OVH node OR local + Vaulta). 4-node cluster expansion deferred to W22+ per the 2026-05-01 sub-growth-priority decision (`PLAN §6` cash-burn abort gate).
 - **YT:** *"8 Weeks Building a Web3 Game in Public — Numbers, Mistakes, What I'd Do Again"* (Garnon-aligned indie-hacker recap; pulls in junior devs who want to ship their own portfolio piece).
-- **Blog:** the indie-hacker recap post — **THE HN post; schedule for Tuesday US morning**. Body: weekly subscriber count, hours spent (build vs marketing vs sales), why Antelope, code snippets from the contract, the OVH cost breakdown as a *closing aside* ("if you're curious about infra, here's the spreadsheet — but you don't need this until later"). Frames the OVH content for the right audience and avoids the senior-infra HN spike that hurts cohort conversion.
+- **Blog:** the indie-hacker recap post — **THE HN post; schedule for Tuesday US morning**. Body: weekly subscriber count, hours spent (build vs marketing vs sales), why Antelope, code snippets from the contract. (No infra cost breakdown — that's deferred to W22+ with Topics 1–4. Keeps the post Garnon-shaped end-to-end.)
 - **LI:** ① "8-week numbers carousel" (sub count, hours, $0 spent so far), ② "5 things I'd build differently if I started over" (Garnon hot-take), ③ "the contract that runs the whole game — 60 lines of C++".
-- **Newsletter:** **primary lead magnet** = *"8-Week Build-in-Public Template (.zip — repo skeleton + GitHub Project board + weekly post template)"* → second sub spike, Garnon-shaped. **Secondary magnet** = the OVH cost spreadsheet (still there for the infra-curious tail; not the headline).
+- **Newsletter:** lead magnet = *"8-Week Build-in-Public Template (.zip — repo skeleton + GitHub Project board + weekly post template)"* → second sub spike, Garnon-shaped. (OVH cost spreadsheet deferred to W22+ when the cluster actually ships.)
 - **Shareable hook:** *"Show HN: 8 weeks building a Web3 game in public — full numbers, no hype"*. (The audience landing on this is junior devs + indie hackers, not SREs. That converts to challenge tickets at 5–10×.)
-- **Note:** the OVH 4-node cluster + cost breakdown content is preserved — moves to W22+ as part of the "Antelope Operations at Scale" mini-series. See "Content backlog" below.
+- **Note:** the OVH 4-node cluster build + cost-breakdown content + cost spreadsheet are all deferred to W22+ as part of the "Antelope Operations at Scale" mini-series. See "Content backlog" below. The W08 hours that would have gone to cluster expansion are redirected to Show HN post production + warmup comment storm + launch-day comment management (see `TODO_w08.md` Sub-growth section).
 
 ### W09 (Jun 29–Jul 05) — Game polish + challenge announce
 - **Dev:** game live at `play.amiheines.com`, gen-0 minted, breeding open.
@@ -225,18 +224,17 @@ W11 broadcast + W11 LinkedIn posts + W12 video script all drafted by Fri W08. No
 | W08 (OVH cost post) | Jun 28 | 200 |
 | W12 (quarterly retro) | Jul 26 | 600 |
 
-These are aggressive vs the `business_plans.xlsx → Funnel` base case (Cochrane mid-funnel rates). The accelerator here is **shareable infra/contract content** — the W04 contract template post and the W08 cost-breakdown post are designed as HN front-page candidates. One HN front-page ≈ ~3000 sessions ≈ ~30–60 subs by itself.
+These are aggressive vs the `business_plans.xlsx → Funnel` base case (Cochrane mid-funnel rates). The accelerator here is **Garnon-shaped shareable content** — the W04 contract-template post and the W08 indie-hacker recap post are both designed as HN front-page candidates AND filtered for the right audience (junior devs who actually buy the cohort, not senior infra people who don't). One HN front-page ≈ ~3000 sessions ≈ ~30–60 subs by itself; with the warm-network DM amplification + podcast bookings (W05) maturing into appearances W09–W14, the W12 600-sub target is achievable.
 
 ## Lead magnets
 
 | Week | Magnet | Audience |
 |---|---|---|
 | W04 | Antelope C++ contract starter template (.zip + README) | Garnon |
-| W07 | OVH self-hosting checklist (PDF) | infra-curious devs (secondary) |
-| W08 | **PRIMARY:** 8-Week Build-in-Public Template (.zip — repo skeleton + GitHub Project board + weekly post template) | **Garnon** |
-| W08 | SECONDARY: OVH cost spreadsheet (.xlsx) — for the infra-curious tail only | infra-curious devs (secondary) |
+| W08 | 8-Week Build-in-Public Template (.zip — repo skeleton + GitHub Project board + weekly post template) | **Garnon** |
 | W09 | Challenge curriculum preview | challenge-buyer adjacent |
 | W12 | 90-day retro (PDF, gated) | newsletter spike |
+| W22+ | OVH self-hosting checklist + cost spreadsheet (deferred with cluster) | infra-curious devs (secondary; ships with Topics 2–4) |
 
 ## What we are NOT doing in W01–W12
 
@@ -285,7 +283,7 @@ Slot all four post-W21 in the Phase 2 calendar (TBD; depends on Phase 2 GO/NO-GO
 
 **Working title:** *"My Antelope Chain Hit 1 Million Users — Here's What Broke and What I Did"* (or, if it hasn't happened yet, *"What Happens to an Antelope Private Chain at 1M Users — A Capacity Plan"*)
 
-**Angle:** Sequel to W08 OVH cost-breakdown. The W08 post sells "€300/mo for a chain" — this one earns trust by saying *"here's where €300/mo runs out and what you do next."* Honest scaling content is rare and shareable.
+**Angle:** Sequel to a future OVH cost-breakdown post (the original W08 OVH cost post was moved to W22+ along with this Topic 2 in the 2026-05-01 audience-fit decision; both ship as part of the W22+ Operations-at-Scale mini-series). The cost-breakdown post sells *"$300/mo for a chain"* — this one earns trust by saying *"here's where $300/mo runs out and what you do next."* Honest scaling content is rare and shareable.
 
 **Audience hook:** Garnon now believes he can ship on-chain. Next question: "but does it scale?" Most Antelope content stops before this.
 
@@ -306,7 +304,7 @@ Tractable on 32 GB nodes for ~3M users; serious problems at ~10M.
 
 | Option | When | Cost | Trade-off |
 |---|---|---|---|
-| **Vertical — bigger OVH boxes** | First (1M → 5M users) | €500–€1,500/mo per node × 4 | Cheap, easy, but linear. Cap ~512 GB RAM on OVH High-Grade. |
+| **Vertical — bigger OVH boxes** | First (1M → 5M users) | $500–$1,500/mo per node × 4 | Cheap, easy, but linear. Cap ~512 GB RAM on OVH High-Grade. |
 | **Off-chain state + on-chain proofs** | Second (5M+) | Same boxes + S3/IPFS | Refactor: only hashes/commitments on-chain, full state in object storage. Standard Web3 pattern. |
 | **Cloud bare-metal (AWS i4i, GCP)** | If you need geo-redundancy | 3–5× OVH cost | Buys cross-region failover, costs more for the same iron. |
 | **Horizontal sharding** | 50M+ users / multi-product | High eng cost | Antelope doesn't shard natively — split product across multiple chains, or wait for Vaulta sharding research |
@@ -402,7 +400,7 @@ When blocks.log + state-history hit 5+ TB and snapshots take hours, you have fou
 
 **Recommended pattern (the user's instinct, validated):**
 
-> Snapshot → tar → S3 Glacier. **Don't run replica nodes of the archived chain.** Keep one bootable image so you can spin a single forensic node on-demand if anyone ever asks "what happened in 2027?" Saves €240+/mo per archived chain. Forensic node can run on a cheap €30/mo VPS only when needed.
+> Snapshot → tar → S3 Glacier. **Don't run replica nodes of the archived chain.** Keep one bootable image so you can spin a single forensic node on-demand if anyone ever asks "what happened in 2027?" Saves $240+/mo per archived chain. Forensic node can run on a cheap $30/mo VPS only when needed.
 
 **Demo for the video:** live snapshot of the game chain, spin up a fresh chain from it, show that the new chain has all the kittens but none of the breeding history. Then `du -sh` the old `data/` dir to drive home what was thrown away.
 

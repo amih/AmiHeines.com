@@ -1,8 +1,8 @@
-# Week 5 — Frontend wiring + Video #4
+# Week 5 — Frontend wiring + Video #4 + podcast pitching + warm DMs (sub-growth over-cap)
 
 **Dates:** 2026-06-01 to 2026-06-07
 **Phase:** 1 — Cohort
-**Target hours:** ≤20 (hard cap)
+**Target hours:** ~25 (5h over cap; sub-growth investment per 2026-05-01 — booked podcast spots in W05 deliver subs in W09–W14 just as the challenge launches; warm-DM groundwork in W05 makes W08–W10 outreach effective).
 
 ---
 
@@ -39,10 +39,26 @@
 
 ---
 
+## Sub-growth (over-cap, 5h) — user-deliberate per 2026-05-01
+
+### Podcast pitching — 10 hosts, custom angle each (3h)
+- [ ] Build target list: 10 podcasts where Garnon-shape devs already listen. Mix indie-hacker + Web3-curious + AI-dev shows. Save to `PLAN/podcast_target_list.md`.
+- [ ] Write 10 individual 4-line pitches. NOT a template — each names the specific episode you'd appear on, the specific listener takeaway, and 1 thing you've shipped that's relevant. Generic pitches get ignored.
+- [ ] Send all 10 by Friday. Track replies → `podcast_target_list.md`.
+- [ ] **Realistic outcome:** 2–4 replies, 1–2 booked appearances delivering W09–W14. Each booking ≈ 50–200 high-quality subs.
+
+### Warm-network DM groundwork (2h) — see `warm_network.md`
+- [ ] Draft a personal note template (no copy-paste; use as scaffolding for true 1:1 messages).
+- [ ] Send to first 5 names from `warm_network.md` direct-Garnon bucket. Tone: "checking in, here's what I'm building, no ask." Pure relationship priming for the W08–W10 outreach push.
+
+---
+
 ## End-of-week checkpoints
 
 - [ ] Game playable end-to-end on testnet.
 - [ ] Video #4 live.
 - [ ] Pricing anchor evidence documented.
 - [ ] Curriculum v0 outlined.
-- [ ] Hours ≤20.
+- [ ] 10 podcast pitches sent; replies tracked.
+- [ ] 5 warm-network priming DMs sent.
+- [ ] Hours ~25 (5h over cap, deliberate sub-growth).

@@ -32,7 +32,7 @@ This file is reference. Concrete weekly checkpoints live in `TODO_w01.md` … `T
 
 ## Phase 4 — First self-submission (W08, Jun 22–28)
 
-- [ ] Title format: `Show HN: [thing] – [one-line value prop, no hype]`. Example: `Show HN: I run an Antelope chain on €300/mo of OVH – here's the breakdown`.
+- [ ] Title format: `Show HN: [thing] – [one-line value prop, no hype]`. Example: `Show HN: I run an Antelope chain on $300/mo of OVH – here's the breakdown`.
 - [ ] First comment under your submission = the technical "actual novel thing" + how it differs from existing alternatives. **No CTAs, no "subscribe to my newsletter."**
 - [ ] **Never ask for upvotes** — not on Twitter, LinkedIn, Slack, Discord, anywhere. Detected = instant kill + permanent account-reputation damage.
 - [ ] Engage technical questions in comments. Ignore vibes / hot takes — don't get drawn into defending the post.

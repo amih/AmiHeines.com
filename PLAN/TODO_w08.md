@@ -1,9 +1,9 @@
-# Week 8 — List growth + Video #7 + 4-node cluster + Tailscale (over-cap week)
+# Week 8 — List growth + Video #7 + Tailscale + Garnon-shaped Show HN shot (sub-growth over-cap)
 
 **Dates:** 2026-06-22 to 2026-06-28
 **Phase:** 1 — Cohort
-**Target hours:** ~26 — **EXPLICITLY OVER 20h CAP** (last of the over-cap stretch — W06/W07/W08 ship the OVH self-host content track. Returns to ≤20h cap from W09 — non-negotiable, the W10 challenge launch demands clear-headedness.)
-**Burnout watch:** if W08 actuals >28h, defer node 4 (read replica + backup target) to W11. Three nodes is enough to run the chain; the 4th adds the off-site backup story which can land later. (Note: the OVH cost-breakdown post itself was deferred to W22+ per audience-fit decision 2026-05-01 — W08's HN shot is now Garnon-shaped; see `GAME_content_calendar.md` W08 section. The cluster still ships this week, just not as the public framing.)
+**Target hours:** ~23 — **EXPLICITLY OVER 20h CAP** (changed 2026-05-01: OVH cluster expansion to 4 nodes deferred to W22+ per audience-fit + sub-growth-priority decision; freed 6h redirected to Show HN post production + warmup comment storm + launch-day comment management. Tailscale learning slot preserved — still useful for content + Phase 2.)
+**Burnout watch:** if W08 actuals >25h, drop the Tailscale Headscale-in-Docker substep (basic Tailscale fluency is enough; Headscale can wait).
 
 ---
 
@@ -17,23 +17,29 @@
 
 ---
 
-## Build (9h — over-cap)
+## Build (3h)
 
-### Learn Tailscale + Headscale (3h) — foundational for self-host content track
+### Learn Tailscale + Headscale (3h) — foundational for self-host content + Phase 2
 - [ ] Install Tailscale on laptop + 1 spare box. Tailnet up.
 - [ ] Read docs: ACLs, MagicDNS, subnet routes, exit nodes.
-- [ ] Stand up Headscale in a Docker container for sovereignty option.
-- [ ] Outcome: enough fluency to use Tailnet for OVH BP cluster inter-node + future MinIO mesh. Notes → `PLAN/notes_tailscale.md`.
+- [ ] Stand up Headscale in a Docker container for sovereignty option (skip if W08 actuals trending >25h).
+- [ ] Outcome: enough fluency to use Tailnet for any future infra (single OVH node hardening, Phase-2 MinIO mesh, etc.). Notes → `PLAN/notes_tailscale.md`.
 
-### OVH cluster expansion: nodes 2 + 4, Tailscale hardening, snapshots, backups (6h) — for `GAME_content_calendar.md` W08 dev beats
-- [ ] Order 2 more OVH servers — node 2 (BP secondary 32 GB / 1 TB NVMe), node 4 (read replica + backup target 16 GB / 2 TB NVMe).
-- [ ] Tailscale on all 4 nodes. ACL: BPs talk to each other + API on Tailnet only; only node 3 RPC stays publicly reachable through Cloudflare. Public-IP-direct inter-BP traffic disabled.
-- [ ] Configure node 2 as failover BP — sync from node 1's snapshot, P2P over Tailnet.
-- [ ] Configure node 4 as read replica + state-history snapshot source. Cron: nightly snapshot → tar → rsync to OVH Object Storage bucket (€5–10/mo).
-- [ ] Failover drill: kill node 1 `nodeos`, verify node 2 picks up block production within 30s. Restart node 1 as observer. Document the runbook → `PLAN/runbook_ovh_failover.md`.
-- [ ] Compile actual €/mo + actuals (server costs, bandwidth, storage) → spreadsheet for W08 lead magnet.
-- [ ] **Defers:** "Game side improvements as cohort demo material" — cohort polish moves to W09 if time permits, otherwise students will see W08 build state.
-- [ ] **If over budget:** node 4 + off-site backup automation slips to W11 (post-challenge); the W08 video focuses on the 3-node failover drill instead.
+### ~~OVH 4-node cluster expansion~~ — DEFERRED to W22+ (2026-05-01 decision)
+The cluster expansion (nodes 2 + 4, failover drill, off-site backup automation) was deferred along with Topics 1–4. Per `PLAN §6` cash-burn abort gate, the W08 chain runs on whatever the W06 gate selected (single OVH node OR local + Vaulta testnet). The full cluster ships W22+ when it pays for itself via the Operations-at-Scale series. Source data for the future cost-breakdown post (real $/mo, bandwidth, storage actuals) gets logged whenever the cluster does ship.
+
+## Sub-growth (over-cap, 6h) — user-deliberate investment per 2026-05-01 decision
+
+### Show HN post production + warmup comment storm (4h)
+- [ ] Draft the W08 indie-hacker recap post end-to-end — *"8 Weeks Building a Web3 Game in Public — Numbers, Mistakes, What I'd Do Again"*. ≥1,500 words, screenshots of GitHub Project board + actual sub-counter chart + contract code snippet. Not vague — specific numbers everywhere.
+- [ ] 3 trusted reviewers see the post by mid-week; rewrite from feedback by Friday.
+- [ ] Schedule HN submission for **Tuesday morning US Eastern** (15:00 IST). Verify HN warmup karma ≥150 (per `notes_hn_warmup.md` Phase 4 gate).
+- [ ] Pre-write the first comment under your own submission: technical-novel-thing recap, no CTAs, no newsletter links.
+- [ ] Pre-write 5 LinkedIn carousels mapping post sections; queue but don't publish until the HN post is up (cross-posting timing trips spam fingerprints — see `notes_hn_warmup.md`).
+
+### Launch-day comment management (2h)
+- [ ] Tuesday 15:00 IST onward: monitor HN thread. Answer technical questions within 30 min. Ignore vibes/hot takes. **Never ask for upvotes anywhere.**
+- [ ] If post lands top-30 by hour 4: amplification — share the HN URL (not the original post URL) on LinkedIn + warm-network DM blast. If it tanks: trigger `risk_register.md` R5 (Reddit r/eos / r/IndieHackers fallback within 24h).
 
 ---
 
@@ -58,8 +64,8 @@
 - [ ] Email list ≥200 subscribers.
 - [ ] Video #7 live.
 - [ ] 5 podcast/newsletter outreach replies tracked.
-- [ ] OVH 4-node cluster live; Tailnet enforced; failover drill passed and documented.
-- [ ] **Primary** W08 lead magnet ready: 8-Week Build-in-Public Template (.zip — repo skeleton + GH Project board + weekly post template). Garnon-shaped.
-- [ ] **Secondary** W08 lead magnet ready: OVH cost spreadsheet (.xlsx) — for the infra-curious tail; not the headline. (Source data for the future W22+ cost-breakdown post.)
+- [ ] **Primary** W08 lead magnet ready: 8-Week Build-in-Public Template (.zip + landing page). Garnon-shaped.
+- [ ] **Secondary** lead magnet (OVH cost spreadsheet) deferred to W22+ when the cluster actually ships. W08 doesn't carry it.
 - [ ] Tailscale fluency confirmed; primer post outline drafted for W18 finalization.
-- [ ] Hours **~26** (over-cap, deliberate — last over-cap week before W09 reset).
+- [ ] **W08 Show HN post live + comment-managed.** Cumulative HN karma ≥200.
+- [ ] Hours **~23** (3h over cap; sub-growth investment, not infra).

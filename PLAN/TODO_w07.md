@@ -1,9 +1,9 @@
-# Week 7 — Cohort LP + payments + Video #6 + OVH bootstrap (over-cap week)
+# Week 7 — Cohort LP + payments + Video #6 + Build-in-Public Template (sub-growth over-cap)
 
 **Dates:** 2026-06-15 to 2026-06-21
 **Phase:** 1 — Cohort
-**Target hours:** ~28 — **EXPLICITLY OVER 20h CAP** (per W06 note; OVH self-host content track. Returns to ≤20h cap from W09.)
-**Burnout watch:** if W07 actuals >30h, defer node 3 (API) to W08 — single-BP-only is enough for the W07 video; API node added in W08 alongside cluster expansion.
+**Target hours:** ~25 — **EXPLICITLY OVER 20h CAP** (changed 2026-05-01: OVH cluster bootstrap deferred to W22+ per the audience-fit + sub-growth-priority decision; freed 8h redirected to (a) the W08 primary lead magnet build, (b) warm-network DMs. Net cap-break is +5h instead of +8h.)
+**Burnout watch:** if W07 actuals >28h, drop the warm-network DM continuation to W09 only.
 
 ---
 
@@ -22,23 +22,29 @@
 
 ---
 
-## Build (12h — over-cap)
+## Build (4h)
 
 ### Cohort tooling decisions (4h)
 - [ ] Pick group call platform (Zoom or Meet) — buy seat / verify recording.
 - [ ] Pick async channel (private Discord server vs. Slack — Discord likely cheaper, devs-friendly).
 - [ ] Provision both (Discord server, Zoom recurring meeting). Test.
 
-### OVH self-host bootstrap — node 1 (BP) + node 3 (API) (8h) — for `GAME_content_calendar.md` W07 dev beats
-- [ ] Order 2 × OVH RISE-1 / Advance-class servers (32 GB RAM, NVMe). Verify current pricing first.
-- [ ] Provision Ubuntu 24.04 LTS, harden SSH (key-only, fail2ban, ufw).
-- [ ] Compile / install Antelope Leap `nodeos`. Genesis the private chain (single-BP genesis JSON).
-- [ ] Node 1: BP role, signs blocks. Node 3: API role with `chain_api` + `state_history` plugins enabled.
-- [ ] Cloudflare in front of node 3's RPC endpoint (rate limit + DDoS shield).
-- [ ] Deploy game contract to the OVH chain. Smoke test from laptop: mint, breed, list, buy.
-- [ ] Record OBS screen capture of the full provision → genesis → contract deploy flow for W07 video.
-- [ ] **Public IPs only this week.** Tailscale hardening lands W08 (Tailscale learning slot already there).
-- [ ] **If over budget:** ship single-node BP + API on the same box; split into 2 nodes in W08.
+### ~~OVH self-host bootstrap~~ — DEFERRED to W22+ (2026-05-01 decision)
+The 4-node OVH cluster build was deferred to W22+ as part of the same audience-fit + sub-growth-priority decision that moved Topics 1–4 out of Phase 1. Per `PLAN §6` cash-burn abort gate, W07–W10 game work runs on either:
+- a single $60–100/mo OVH node (if W06 list ≥100 + warm-network green/yellow), OR
+- local `nodeos` + Vaulta testnet (if W06 thresholds missed)
+Either is sufficient for the W08 indie-hacker recap post + W10 challenge demo (~20 attendees doing breeding tests). The $600+/mo full-cluster spend is now W22+ when it pays for itself via the deferred Operations-at-Scale series.
+
+## Sub-growth (over-cap, 5h) — user-deliberate investment per 2026-05-01 decision
+
+### W08 primary lead-magnet build: 8-Week Build-in-Public Template (3h)
+- [ ] Repo skeleton (public GitHub) with: README template, GitHub Project board template, weekly post template (.md), weekly newsletter template (.md), simple sub-counter integration spec.
+- [ ] Cover image / OG image for the magnet landing page.
+- [ ] Magnet landing page on amiheines.com gated behind email signup.
+- [ ] **Why this matters:** this is THE W08 HN-bait magnet. Conversion of W08 HN visitors → subs depends on this magnet's quality. 3h in W07 = polished launch in W08, not last-minute scramble.
+
+### Warm-network DM continuation (2h)
+- [ ] Personal messages to 6–8 names from `warm_network.md`. Soft mention that the challenge is coming. Not pitches — warm relationship maintenance.
 
 ---
 
@@ -64,6 +70,7 @@
 - [ ] Discord + Zoom provisioned.
 - [ ] Refund policy + agreement drafted.
 - [ ] Video #6 live.
-- [ ] OVH chain live: 2 nodes up, public RPC behind Cloudflare, game contract deployed and reachable.
-- [ ] Provision flow recorded for W07 self-host video.
-- [ ] Hours **~28** (over-cap, deliberate).
+- [ ] Game chain live on either a single OVH node OR local `nodeos` + Vaulta testnet (per W06 abort-gate decision).
+- [ ] 8-Week Build-in-Public Template repo + landing page ready for W08 launch.
+- [ ] 6–8 warm-network DMs sent.
+- [ ] Hours **~25** (5h over-cap; sub-growth investment, not infra).

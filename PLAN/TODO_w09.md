@@ -1,8 +1,8 @@
-# Week 9 — Challenge announce + Video #8
+# Week 9 — Challenge announce + Video #8 + warm-DM ticket push (sub-growth over-cap)
 
 **Dates:** 2026-06-29 to 2026-07-05
 **Phase:** 1 — Cohort
-**Target hours:** ≤20 (hard cap)
+**Target hours:** ~23 (3h over cap; sub-growth investment per 2026-05-01 — warm DMs in W09 are the highest-leverage way to lift challenge ticket sales above the W09 ≥10 early-bird target).
 
 ---
 
@@ -39,10 +39,20 @@
 
 ---
 
+## Sub-growth (over-cap, 3h) — user-deliberate per 2026-05-01
+
+### Warm-network challenge-ticket push (3h) — see `warm_network.md`
+- [ ] Personal note to **every** name in `warm_network.md` direct-Garnon bucket who hasn't already bought a ticket (target: ~15 personal messages).
+- [ ] Each note is genuinely 1:1 — references something specific about that person + why this challenge would be relevant to them. NOT a mass DM. NOT a pitch — an invitation.
+- [ ] Track replies + ticket sales attributable to warm-network in `warm_network.md`. If conversion < 15%, the bucket is mis-classified — note for Cohort #2 recalibration.
+
+---
+
 ## End-of-week checkpoints
 
 - [ ] /challenge LP live, payments tested.
 - [ ] ≥10 tickets sold pre-launch.
 - [ ] Video #8 live.
 - [ ] All 5 daily lesson plans drafted.
-- [ ] Hours ≤20.
+- [ ] All direct-Garnon warm-network names personally invited to the challenge. Track conversion in `warm_network.md`.
+- [ ] Hours ~23 (3h over cap, deliberate sub-growth).
