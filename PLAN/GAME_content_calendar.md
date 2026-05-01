@@ -244,3 +244,74 @@ These are aggressive vs the `business_plans.xlsx → Funnel` base case (Cochrane
 - No external-link-in-body LinkedIn posts.
 - No newsletter sponsorship swaps before W08 (need ≥200 subs first).
 - No multi-topic content drift (gambling, meta-reporting only as it serves the build-in-public spine).
+
+---
+
+## Content backlog (post-W12 + supplementary)
+
+Topics that don't fit the W01–W12 spine but are high-value for Garnon + infra-curious devs. Slot into Phase 1 W13–W21 video schedule when the W08 cost-breakdown / W12 retro buys breathing room, or hold for cohort #2 enrollment cycle.
+
+### Topic 1 — Glacier-style cold storage, adapted (non-Bitcoin + tunable paranoia)
+
+**Working title:** *"You Don't Need Glacier-Grade Paranoia for a $10k Wallet — Here's the Tier System"*
+
+**Angle:** Glacier Protocol (glacierprotocol.org) is the gold-standard open-source cold-storage spec for Bitcoin: air-gapped laptops, geographically distributed multi-sig quorum, tamper-evident bags. It assumes nation-state adversary + 7-figure holdings. **Most devs need ~10% of that paranoia** — but no one tells them where the line is.
+
+**Audience hook:** Garnon has $500–$50k in chain assets, uses MetaMask hot wallet, knows it's wrong but doesn't know what's right. Glacier looks like overkill (correct), so they do nothing (wrong).
+
+**The tunable-paranoia tier framework (the post's spine):**
+
+| Tier | Holding | Threat model | Setup |
+|---|---|---|---|
+| Casual | <$1k | Phishing, malware | Hardware wallet (Ledger/Trezor), seed in fireproof safe |
+| Serious | $1k–$50k | Targeted phishing, home theft | 2-of-3 multi-sig, seeds in 3 physical locations, no cloud |
+| Treasury | $50k–$1M | Sophisticated attacker, kidnapping | 3-of-5 multi-sig across people you trust, geographic distribution, 24h time-lock on large outflows |
+| Glacier-grade | $1M+ / nation-state risk | State actor, $5 wrench attack | Full Glacier Protocol — air-gapped, geographic quorum, dead-man's switch |
+
+**Adapt-to-any-chain section:** how the Glacier patterns translate to:
+- **Antelope** — built-in `setpermission` multi-sig + custom `weight` thresholds (cleaner than Bitcoin); `delay_sec` for time-lock built into permission system
+- **Ethereum** — Gnosis Safe is the closest analog; Safe + Aragon for time-locks
+- **Solana** — Squads multi-sig (less mature, document the gaps)
+
+**Format:** 1 long-form video (35 min) + 1 deep blog post (the framework table) + 1 LinkedIn carousel (the tier table is shareable on its own) + lead magnet ("Cold-storage tier picker — 5 questions that tell you which tier you need", PDF).
+
+**Slot:** Phase 1 W14 or W15 (cohort week 3–4 — students will have asked about key custody by then).
+
+### Topic 2 — Antelope RAM at scale: what happens when you hit 1M users?
+
+**Working title:** *"My Antelope Chain Hit 1 Million Users — Here's What Broke and What I Did"* (or, if it hasn't happened yet, *"What Happens to an Antelope Private Chain at 1M Users — A Capacity Plan"*)
+
+**Angle:** Sequel to W08 OVH cost-breakdown. The W08 post sells "€300/mo for a chain" — this one earns trust by saying *"here's where €300/mo runs out and what you do next."* Honest scaling content is rare and shareable.
+
+**Audience hook:** Garnon now believes he can ship on-chain. Next question: "but does it scale?" Most Antelope content stops before this.
+
+**The capacity-planning math (the post's spine):**
+
+```
+1M users × 5 kittens avg × 150 bytes packed = 750 MB
++ ownership history (3× turnover): ~2 GB
++ marketplace listings (1% active): ~10 MB
++ breeding cooldowns + auxiliary tables: ~500 MB
+≈ 3.5 GB chain RAM steady state
++ state-history-plugin growth: ~10 GB / month at 100 tx/sec
+```
+
+Tractable on 32 GB nodes for ~3M users; serious problems at ~10M.
+
+**Scaling options ladder (each gets its own video segment):**
+
+| Option | When | Cost | Trade-off |
+|---|---|---|---|
+| **Vertical — bigger OVH boxes** | First (1M → 5M users) | €500–€1,500/mo per node × 4 | Cheap, easy, but linear. Cap ~512 GB RAM on OVH High-Grade. |
+| **Off-chain state + on-chain proofs** | Second (5M+) | Same boxes + S3/IPFS | Refactor: only hashes/commitments on-chain, full state in object storage. Standard Web3 pattern. |
+| **Cloud bare-metal (AWS i4i, GCP)** | If you need geo-redundancy | 3–5× OVH cost | Buys cross-region failover, costs more for the same iron. |
+| **Horizontal sharding** | 50M+ users / multi-product | High eng cost | Antelope doesn't shard natively — split product across multiple chains, or wait for Vaulta sharding research |
+| **Move to Vaulta mainnet** | If decentralization > cost control | Variable | Trade your private-chain advantages for a real public chain |
+
+**Format:** 1 long-form video (40 min, the capacity math is the visual) + 1 deep blog post (the math table is the lead magnet) + 1 LinkedIn carousel + spreadsheet lead magnet ("Antelope capacity calculator — input users, get RAM/disk/cost").
+
+**Slot:** Phase 1 W18 or W19 (post-cohort retro slot — students will be asking this exact question by then).
+
+### Adding new backlog topics
+
+Append to this section as ideas surface. Each entry: working title + angle + audience hook + format + slot guess. Promote into the dated calendar when a slot opens.
