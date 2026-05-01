@@ -1,8 +1,9 @@
-# Week 6 — Magic Offer page + Video #5
+# Week 6 — Magic Offer page + Video #5 + Marketplace dev (over-cap week)
 
 **Dates:** 2026-06-08 to 2026-06-14
 **Phase:** 1 — Cohort
-**Target hours:** ≤20 (hard cap)
+**Target hours:** ~28 — **EXPLICITLY OVER 20h CAP** (Cochrane discipline broken for W06–W08 to ship OVH self-host content track per `GAME_content_calendar.md`. Returns to ≤20h cap from W09.)
+**Burnout watch:** if W06 actuals exceed 30h, drop the marketplace UI polish and ship plain HTML in Build §6b — preserve sleep, content can iterate.
 
 ---
 
@@ -21,10 +22,17 @@
 
 ---
 
-## Build (3h)
+## Build (11h — over-cap)
 
 ### Game polish (3h)
 - [ ] Bug-fix pass on testnet game; add "best move" or scoring polish so it's actually fun.
+
+### Marketplace contract + UI (8h) — for `GAME_content_calendar.md` W06 dev beats
+- [ ] C++ contract: `list(kitten_id, price)`, `unlist(kitten_id)`, `buy(kitten_id)` actions. RAM-conscious (~80 bytes/listing).
+- [ ] Marketplace UI in React: list view + own-listings view + buy button.
+- [ ] End-to-end demo: kitten changes hands between two test wallets, contract emits event, UI updates.
+- [ ] Record a 90-sec screen capture of the full flow → goes into Topic 4 / W06 video B-roll.
+- [ ] **If over budget:** ship contract only, defer UI to W07.
 
 ---
 
@@ -49,4 +57,5 @@
 - [ ] /cohort page v2 live (price hidden until W09 announce).
 - [ ] Curriculum v1 documented.
 - [ ] Video #5 live.
-- [ ] Hours ≤20.
+- [ ] Marketplace contract live on local testnet, end-to-end demo recorded.
+- [ ] Hours **~28** (over-cap, deliberate — return to ≤20 from W09).

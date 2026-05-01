@@ -347,12 +347,43 @@ Frame the takeaway: on a bare-metal cluster (Topic spec §6), a normal game chai
 
 | Off-chain target | When to pick it | Cost (2026) |
 |---|---|---|
-| **S3 / Backblaze B2** | Mutable, you control retention | ~$5/TB/mo |
-| **IPFS (self-pinned + Pinata)** | Content-addressed, censorship-resistant, you can prune | ~$20/TB/mo |
-| **Arweave** | "Pay once, store forever" — matches on-chain ethos | ~$15 per GB one-time (2026 est, verify) |
-| **Filecoin** | Long-term archival with cryptographic proofs | ~$2/TB/yr |
+| **S3 / MinIO / Backblaze B2** | Mutable, you control retention, app needs delete/edit/access-control | ~$5/TB/mo (B2); MinIO mesh ~$3–7/TB/mo all-in (see Topic 4) |
+| **IPFS (self-pinned + Pinata)** | Content-addressed, dedupable, censorship-resistant, immutable | ~$20/TB/mo (Pinata pin); ~$0 if you self-pin + accept the risk |
+| **Arweave** | "Pay once, store forever" — matches on-chain ethos for permanent assets | ~$15 per GB one-time (2026 est, verify) |
+| **Filecoin** | Long-term archival with cryptographic proofs of replication | ~$2/TB/yr |
 
 The contract stores: `{ blob_hash, blob_size, storage_uri, uploaded_by }`. Reject any `setrow` that exceeds a few KB at the contract level — make the wrong path impossible.
+
+**IPFS deep-dive — same problem space as S3, fundamentally different paradigm**
+
+Worth its own treatment because devs new to web3 confuse it with "decentralized S3" — it isn't.
+
+| Dimension | S3 / MinIO | IPFS |
+|---|---|---|
+| Addressing | Location (`bucket/key` — mutable pointer) | Content (`CID = sha256-of-bytes` — pointer changes if content changes) |
+| Mutability | Edit / overwrite / version / delete freely | **Immutable.** Edit = new CID. Old content lives until last pin drops. |
+| Hosting | You (or cloud) own the bytes | Anyone in the IPFS swarm; **bytes disappear unless someone "pins" them** |
+| Access control | IAM, signed URLs, bucket policies | **None native.** Anyone with the CID gets the bytes. Encrypt before upload if private. |
+| Deduplication | Per-bucket, manual | Free + automatic across the entire swarm — same kitten sprite uploaded by 1M users = 1 stored copy globally |
+| Best for | User-private blobs (saves, account data, anything you might delete) | Permanent shared assets (NFT art, game-wide sprites, public proofs) |
+| Worst for | Permanent immutable proofs | Anything you might want to retract, edit, or access-control |
+
+**When to use which (decision tree for the game):**
+
+1. **Is the blob the SAME across many users?** (game art, sprite sheet, NFT metadata) → **IPFS** — dedup is free, perfect fit. Pin via own node + Pinata fallback.
+2. **Is the blob private to one user?** (save game, settings, profile photo) → **MinIO/S3** — IAM + delete are required, IPFS gives you neither.
+3. **Is the blob a permanent on-chain proof companion?** (auction record, breeding-event evidence) → **Arweave** — pay once, durable forever, content-addressed (so the on-chain hash = the Arweave key).
+4. **Is the blob cold-archive backup?** (year-3 chain pruning artifact) → **Filecoin** or **S3 Glacier** — cheap, slow retrieval is fine.
+5. **All of the above in one game?** Yes — a real-world game uses 3+ tiers. The contract just stores hash + storage_uri; the URI scheme (`ipfs://`, `s3://`, `ar://`) tells the client which retriever to use.
+
+**Pinata / Web3.Storage / Filebase make IPFS feel like S3** — they expose an S3-API in front of an IPFS pinning service. App code does S3 puts/gets; underneath, content is pinned to IPFS + cached on Filecoin. Best of both for game art workloads where you want IPFS's dedup + permanence but don't want to operate pin nodes.
+
+**Pros / cons summary:**
+
+| | Pros | Cons |
+|---|---|---|
+| **IPFS** | Free dedup, censorship-resistant, content-addressed (hash IS the address), permanent if pinned, swarm caches popular content | No mutate/delete, no access control, **content disappears if no one pins**, gateway latency variable, hot-content vs cold-content imbalance |
+| **MinIO/S3** | Mutable, IAM, predictable latency, mature ecosystem, fine-grained control | No native dedup, you pay per-byte stored regardless of demand, single point of trust (the bucket owner) |
 
 #### 3c. Throwing the old chain away — pruning strategies after years 3–5
 
