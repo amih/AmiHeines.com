@@ -92,7 +92,7 @@ Why 7 days specifically: matches Day 1 of cohort plus a 6-day grace period. Most
 
 | Metric | Target |
 |---|---|
-| Lump-vs-plan split | ~55/45 |
+| Lump-vs-plan split | ~55% lump / ~45% plan (= 45% take the plan, in line with industry 40–60% range cited in `PLAN §3`) |
 | Plan default rate | <10% |
 | Refunds within 7-day window | <15% of seats |
 | Chargebacks (90 days) | <1% (industry threshold) |

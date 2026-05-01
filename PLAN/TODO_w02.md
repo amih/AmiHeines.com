@@ -25,9 +25,9 @@
 ## Build (4h)
 
 ### Game project kickoff (4h)
-- [ ] Game design doc: pick game type (suggest: simple on-chain dice / coin flip / micro-strategy game). Decide rules. Save to `PLAN/game_spec.md`.
-- [ ] Repo created (private until cohort), README with the cohort framing.
-- [ ] Decide chain: Antelope/Vaulta testnet endpoint chosen, account created.
+- [ ] Confirm game design per existing `PLAN/GAME_spec.md` (CryptoKitties-style breeding, web-only, Antelope private chain). No re-deciding the game type — spec is locked.
+- [ ] Repo created (public per `GAME_spec.md` §7 — build-in-public from day 1), README points at `GAME_spec.md` and the cohort framing.
+- [ ] Local `nodeos` dev env up; smoke-test a hello-world contract compiles + deploys to local single-BP chain.
 
 ---
 

@@ -1,7 +1,7 @@
 # HN Warmup — old dormant account → submission-credible
 
 **Created:** 2026-05-01
-**Why this exists:** Ami has an old unused `news.ycombinator.com` account. Posting from it cold = textbook "account-warming-for-spam" pattern that HN's auto-mod fingerprints. The W08 OVH cost-breakdown post (~Jun 22–28) is the first big shot. **8-week runway from today.** Subsequent shots: Topic 2 RAM-at-scale (W18 ~Aug 31), Topic 3 disk + chain pruning (W19 ~Sep 7), Topic 4 MinIO mesh (W20 ~Sep 14).
+**Why this exists:** Ami has an old unused `news.ycombinator.com` account. Posting from it cold = textbook "account-warming-for-spam" pattern that HN's auto-mod fingerprints. The W08 Garnon-shaped Show HN post (~Jun 22–28) is the first big shot. **8-week runway from W01 (May 4) → W08 (Jun 22).** Subsequent shots: Topics 2/3/4 (RAM at scale, disk + chain pruning, MinIO mesh) all deferred to W22+ per the audience-fit decision (see `GAME_content_calendar.md` "Content backlog" — these target the secondary infra-curious audience, not Garnon).
 
 This file is reference. Concrete weekly checkpoints live in `TODO_w01.md` … `TODO_w05.md` EAD/admin sections.
 

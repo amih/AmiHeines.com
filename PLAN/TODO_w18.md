@@ -49,4 +49,4 @@
 - [ ] Cohort offer page v3 live with social proof.
 - [ ] Video #16 live.
 - [ ] Cohort #2 dates locked.
-- [ ] Hours ≤18 (deliberate downshift).
+- [ ] Hours ≤20 (subtotals add to 20; downshift only if real; otherwise honest cap).

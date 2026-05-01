@@ -132,7 +132,7 @@ All weeks Mon–Sun. 20-hour cap.
 | Source | W | Amount |
 |---|---|---|
 | Paid 5-day challenge tickets (15 × $97 + 3 VIP × $297) | W10 | $2,346 |
-| Cohort #1 (3 seats × $5,000 — base) | W11–W17 | $15,000 |
+| Cohort #1 (3 seats × $5,000 — base) | W12–W17 | $15,000 |
 | **Phase 1 total — base** | | **$17,346** |
 
 **Stretch:** 30 attendees + 5 cohort seats = $27,910.

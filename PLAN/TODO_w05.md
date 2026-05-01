@@ -19,7 +19,7 @@
 ### Frontend talking to chain (10h)
 - [ ] React app: connect wallet (anchor / scatter or Vaulta-native), call contract actions, render game state.
 - [ ] Tailwind UI, mobile-friendly.
-- [ ] Push, deploy to Vercel/Netlify subdomain `game.amiheines.com` (or similar).
+- [ ] Push, deploy to Vercel/Netlify subdomain `play.amiheines.com` (locked in `GAME_spec.md` §2).
 
 ---
 

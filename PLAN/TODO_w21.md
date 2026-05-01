@@ -43,4 +43,4 @@
 - [ ] Phase 2 decision documented.
 - [ ] Video #19 live.
 - [ ] Quarterly review doc saved.
-- [ ] Hours ≤18.
+- [ ] Hours ≤20 (subtotals add to 20; downshift only if real).

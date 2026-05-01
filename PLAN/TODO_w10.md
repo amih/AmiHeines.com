@@ -45,4 +45,4 @@
 - [ ] **Attendees:** Base 18 / Stretch 30.
 - [ ] **Cohort seats sold:** Base 3 / Stretch 5 / Bull 8.
 - [ ] Recording archive saved.
-- [ ] Hours ≤25 (acceptable spike for launch week).
+- [ ] Hours ≤20 (subtotals fit; no spike).

@@ -46,4 +46,4 @@
 - [ ] Module 1 prep complete.
 - [ ] Video #9 live.
 - [ ] Cohort #1 seat count finalized.
-- [ ] Hours ≤22 (week-after-launch tail).
+- [ ] Hours ≤20 (subtotals fit; no week-after-launch spike).
